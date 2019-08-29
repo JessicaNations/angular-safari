@@ -1,0 +1,23 @@
+<h2>My Calendars</h2>
+
+<ul class="calendars">
+  <li *ngFor="let calendar of calendars" (click)="onSelect(calendar)" [class.selected]="calendar === selectedCalendar">
+    <span class="calendar-element">
+      <span class="badge">{{calendar.id}}</span> {{calendar.name}}
+    </span>
+    <button class="delete-button" (click)="deleteCalendar(calendar, $calendar)">Delete</button>
+  </li>
+</ul>
+
+<div class="error" *ngIf="error">{{error}}</div>
+<button (click)="addCalendar()">Add New Calendar</button>
+<div *ngIf="addingCalendar">
+  <my-calendar-detail (close)="close($calendar)"></my-calendar-detail>
+</div>
+
+<div *ngIf="selectedCalendar">
+  <h2>
+    {{selectedCalendar.name | uppercase}} is my calendar
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>

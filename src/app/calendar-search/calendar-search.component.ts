@@ -7,21 +7,21 @@ import {
   distinctUntilChanged,
   switchMap
 } from 'rxjs/operators';
-import { Hero } from './hero';
-import { HeroSearchService } from './hero-search.service';
+import { Calendar } from '../calendar';
+import { CalendarSearchService } from '../calendar-search.service';
 
 @Component({
-  selector: 'my-hero-search',
-  templateUrl: './hero-search.component.html',
-  styleUrls: ['./hero-search.component.css'],
-  providers: [HeroSearchService]
+  selector: 'my-calendar-search',
+  templateUrl: './calendar-search.component.html',
+  styleUrls: ['./calendar-search.component.css'],
+  providers: [CalendarSearchService]
 })
-export class HeroSearchComponent implements OnInit {
-  heroes: Observable<Hero[]>;
+export class CalendarSearchComponent implements OnInit {
+  calendars: Observable<Calendar[]>;
   private searchTerms = new Subject<string>();
 
   constructor(
-    private heroSearchService: HeroSearchService,
+    private calendarSearchService: CalendarSearchService,
     private router: Router
   ) {}
 
@@ -31,27 +31,27 @@ export class HeroSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.heroes = this.searchTerms.pipe(
-      debounceTime(300), // wait for 300ms pause in events
+    this.calendars = this.searchTerms.pipe(
+      debounceTime(300), // wait for 300ms pause in calendars
       distinctUntilChanged(), // ignore if next search term is same as previous
       switchMap(
         term =>
           term // switch to new observable each time
             ? // return the http search observable
-              this.heroSearchService.search(term)
-            : // or the observable of empty heroes if no search term
-              of<Hero[]>([])
+              this.calendarSearchService.search(term)
+            : // or the observable of empty calendars if no search term
+              of<Calendar[]>([])
       ),
       catchError(error => {
         // TODO: real error handling
         console.log(`Error in component ... ${error}`);
-        return of<Hero[]>([]);
+        return of<Calendar[]>([]);
       })
     );
   }
 
-  gotoDetail(hero: Hero): void {
-    const link = ['/detail', hero.id];
+  gotoDetail(calendar: Calendar): void {
+    const link = ['/detail', calendar.id];
     this.router.navigate(link);
   }
 }
