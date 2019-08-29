@@ -6,5 +6,5 @@
     * The menu button is meant to contain an icon, but doesn't
 
 ## 8/28/19 Images:
-![Dashboard](https://github.com/JessicaNations/Safari/blob/master/src/assets/images/dashboard8-29.png)
-![Calendars](https://github.com/JessicaNations/Safari/blob/master/src/assets/images/calendars8-29.png)
+![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard8-29.png)
+![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/calendars8-29.png)
