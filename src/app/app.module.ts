@@ -31,6 +31,8 @@ import {
   MatListModule,
   MatButtonModule
 } from '@angular/material';
+import {MatChipsModule} from '@angular/material/chips';
+
 
 @NgModule({
   imports: [
@@ -50,7 +52,8 @@ import {
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatChipsModule
   ],
   declarations: [
     AppComponent,

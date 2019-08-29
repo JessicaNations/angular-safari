@@ -7,7 +7,7 @@
 * I deleted and changed over to angular theming and didn't break it!
     * Needs a core
     * button styling is lame
-    * chiplist?
+    * Added chiplist module to app and material -- it totally breaks that app lol
 
 ## Errors:
 * Angular is running in the development mode. Call enableProdMode() to enable the production mode.
