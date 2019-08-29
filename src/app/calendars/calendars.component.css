@@ -1,4 +1,4 @@
-.selected {
+/* .selected {
   background-color: #CFD8DC !important;
   background-color: rgb(0,120,215) !important;
   color: white;
@@ -25,9 +25,9 @@
   background-color: #DDD;
   left: .1em;
 }
-.calendars li.selected:hover {
+.calendars li.selected:hover { */
   /*background-color: #BBD8DC !important;*/
-  color: white;
+  /* color: white;
 }
 .calendars .text {
   position: relative;
@@ -66,4 +66,4 @@ button.delete-button{
   background-color: gray !important;
   background-color: rgb(216,59,1) !important;
   color:white;
-}
+} */
