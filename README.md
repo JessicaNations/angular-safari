@@ -4,9 +4,10 @@
     * It is appears under the existing content or else it's transparent
     * It doesn't close until you click the menu button again
     
-* I changed over to angular theming and didn't break it!
+* I deleted and changed over to angular theming and didn't break it!
     * Needs a core
-* The calendar list needs to be a chiplist, except I don't care lol
+    * button styling is lame
+    * chiplist?
 
 ## Errors:
 * Angular is running in the development mode. Call enableProdMode() to enable the production mode.
