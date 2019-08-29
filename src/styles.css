@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
 
 h2 { color: #444; font-weight: lighter; }
 body { margin: 2em; }
