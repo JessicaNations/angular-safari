@@ -24,6 +24,8 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatChipsModule} from '@angular/material/chips';
+
 
 @NgModule({
 
@@ -49,7 +51,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatFormFieldModule,
     MatProgressSpinnerModule,
     MatInputModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatChipsModule
   ],
   exports: [
     MatTabsModule,
