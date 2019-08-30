@@ -21,7 +21,7 @@ import { SecuredImageComponent } from './dashboard/secured-image.component';
 import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+// import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { MyMaterialModule } from './material.module';
 import {
@@ -32,6 +32,8 @@ import {
   MatButtonModule
 } from '@angular/material';
 import {MatChipsModule} from '@angular/material/chips';
+import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-carousel';
+
 
 
 @NgModule({
@@ -46,7 +48,9 @@ import {MatChipsModule} from '@angular/material/chips';
       delay: 300,
       passThruUnknownUrl: true
     }),
-    CarouselModule.forRoot(),
+    // CarouselModule.forRoot(),
+    MatCarouselModule,
+    MatCarouselComponent,
     MyMaterialModule,
     MatToolbarModule,
     MatSidenavModule,
