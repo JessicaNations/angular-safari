@@ -106,9 +106,8 @@
 ## Began implementation of Mat Carousel
 * I'm probably going to forget what I'm doing in the middle of the thing I'm doing :/
 * Trying to figure out where the images go
-* I need to make it display on the dashboard
-* Maybe comment out the dashboard and point to the carousel instead
-
+* 9:40 Commented out the dashboard and pointed to the carousel instead
+## npm install @angular/material @angular/cdk
 
 ## 8/28/19 Images:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard8-29.png)

@@ -25,7 +25,7 @@ export class CarouselSlideComponent
 
   @ViewChild(TemplateRef) public templateRef: TemplateRef<any>;
 
-  constructor(public sanitizer: DomSanitizer, private router: Router) {
+  constructor(public sanitizer: DomSanitizer) {  // , private router: Router
   }
 
   public ngOnInit(): void {
