@@ -103,6 +103,12 @@
 ## Errors:
 * Angular is running in the development mode. Call enableProdMode() to enable the production mode.
 * sockjs.js:2998 WebSocket connection to 'ws://localhost:4200/sockjs-node/074/nrgdwlyn/websocket' failed: WebSocket is closed before the connection is established.
+## Began implementation of Mat Carousel
+* I'm probably going to forget what I'm doing in the middle of the thing I'm doing :/
+* Trying to figure out where the images go
+* I need to make it display on the dashboard
+* Maybe comment out the dashboard and point to the carousel instead
+
 
 ## 8/28/19 Images:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard8-29.png)

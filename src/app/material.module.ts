@@ -24,7 +24,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatDividerModule } from '@angular/material/divider';
-import {MatChipsModule} from '@angular/material/chips';
+import { MatChipsModule} from '@angular/material/chips';
 import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-carousel';
 
 @NgModule({
@@ -54,7 +54,7 @@ import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-caro
     MatPaginatorModule,
     MatChipsModule,
     MatCarouselModule,
-    MatCarouselComponent
+    // MatCarouselComponent
   ],
   exports: [
     MatTabsModule,
@@ -78,7 +78,9 @@ import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-caro
     MatFormFieldModule,
     MatProgressSpinnerModule,
     MatInputModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCarouselModule,
+    // MatCarouselComponent
   ],
 
 })

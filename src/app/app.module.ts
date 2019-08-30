@@ -12,14 +12,17 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CalendarService } from './calendar.service';
-import { DashboardComponent } from './dashboard/dashboard.component';
+// import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalendarsComponent } from './calendars/calendars.component';
 import { CalendarDetailComponent } from './calendar-detail/calendar-detail.component';
 import { CalendarSearchComponent } from './calendar-search/calendar-search.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselSlideComponent } from './carousel-slide/carousel-slide.component';
 
-import { SecuredImageComponent } from './dashboard/secured-image.component';
-import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+
+// import { SecuredImageComponent } from './dashboard/secured-image.component';
+// import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
+// import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // import { CarouselModule } from 'ngx-bootstrap/carousel';
 
@@ -50,7 +53,6 @@ import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-caro
     }),
     // CarouselModule.forRoot(),
     MatCarouselModule,
-    MatCarouselComponent,
     MyMaterialModule,
     MatToolbarModule,
     MatSidenavModule,
@@ -61,15 +63,17 @@ import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-caro
   ],
   declarations: [
     AppComponent,
-    DashboardComponent,
-    SecuredImageComponent,
+    // DashboardComponent,
+    // SecuredImageComponent,
     CalendarSearchComponent,
     CalendarsComponent,
     CalendarDetailComponent,
+    CarouselComponent,
+    CarouselSlideComponent
   ],
-  providers: [CalendarService, {
-    provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true
-  }],
+  providers: [CalendarService,
+    // {provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
