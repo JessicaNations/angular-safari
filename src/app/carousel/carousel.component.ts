@@ -10,7 +10,6 @@ import {
 @Component({
   selector: 'my-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
   private static readonly INSTALL_TEXT =

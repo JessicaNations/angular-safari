@@ -25,7 +25,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule} from '@angular/material/chips';
-import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-carousel';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
 
@@ -54,7 +55,7 @@ import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-caro
     MatPaginatorModule,
     MatChipsModule,
     MatCarouselModule,
-    // MatCarouselComponent
+    MatMenuModule
   ],
   exports: [
     MatTabsModule,
@@ -80,7 +81,7 @@ import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-caro
     MatInputModule,
     MatPaginatorModule,
     MatCarouselModule,
-    // MatCarouselComponent
+    MatMenuModule
   ],
 
 })

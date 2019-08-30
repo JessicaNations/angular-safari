@@ -112,6 +112,11 @@
 * found images in app.component.html
 * npm install node-sass
 * npm i @ngmodule/material-carousel
+## Carousel works!
+* theme is red?
+* no pics
+* off center
+* ALSO FIX THE TOOLBAR TABS
 ## 8/28/19 Images:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard8-29.png)
 ![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/calendars8-29.png)

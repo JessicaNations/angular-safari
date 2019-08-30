@@ -34,6 +34,7 @@ import {
 } from '@angular/material';
 import {MatChipsModule} from '@angular/material/chips';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -57,7 +58,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatMenuModule
   ],
   declarations: [
     AppComponent,

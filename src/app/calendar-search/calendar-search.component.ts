@@ -13,7 +13,6 @@ import { CalendarSearchService } from '../calendar-search.service';
 @Component({
   selector: 'my-calendar-search',
   templateUrl: './calendar-search.component.html',
-  styleUrls: ['./calendar-search.component.css'],
   providers: [CalendarSearchService]
 })
 export class CalendarSearchComponent implements OnInit {

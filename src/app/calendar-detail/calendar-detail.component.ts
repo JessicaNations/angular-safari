@@ -6,7 +6,6 @@ import { CalendarService } from '../calendar.service';
 @Component({
   selector: 'my-calendar-detail',
   templateUrl: './calendar-detail.component.html',
-  styleUrls: ['./calendar-detail.component.css']
 })
 export class CalendarDetailComponent implements OnInit {
   @Input() calendar: Calendar;
