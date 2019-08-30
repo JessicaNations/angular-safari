@@ -1,33 +1,24 @@
 <mat-toolbar>
-
     <span>{{title}}</span>
-
-    <span class="demo-spacer"></span>
-
-    <span class="demo-source">
-      <button mat-button [matMenuTriggerFor]="demoMenu">
+    <span class="safari-spacer"></span>
+    <span class="safari-source">
+      <button mat-button [matMenuTriggerFor]="safariMenu">
         <mat-icon>menu</mat-icon>
       </button>
-      <mat-menu #demoMenu="matMenu">
+      <mat-menu #safariMenu="matMenu">
         <a
           routerLink="/carousel" routerLinkActive="active"
-          mat-menu-item
-        >
+          mat-menu-item>
           Carousel
         </a>
         <a
           routerLink="/calendars" routerLinkActive="active"
-          mat-menu-item
-        >
+          mat-menu-item>
           Calendar
         </a>
       </mat-menu>
-
     </span>
-
-
   </mat-toolbar>
-
   <main>
     <router-outlet></router-outlet>
   </main>

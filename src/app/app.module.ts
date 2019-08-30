@@ -12,17 +12,10 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CalendarService } from './calendar.service';
-// import { DashboardComponent } from './dashboard/dashboard.component';
 import { CalendarsComponent } from './calendars/calendars.component';
 import { CalendarDetailComponent } from './calendar-detail/calendar-detail.component';
 import { CalendarSearchComponent } from './calendar-search/calendar-search.component';
 import { CarouselComponent } from './carousel/carousel.component';
-
-// import { SecuredImageComponent } from './dashboard/secured-image.component';
-// import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
-// import { HTTP_INTERCEPTORS } from '@angular/common/http';
-
-// import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { MyMaterialModule } from './material.module';
 import {
@@ -37,7 +30,6 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 import {MatMenuModule} from '@angular/material/menu';
 
 
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -50,7 +42,6 @@ import {MatMenuModule} from '@angular/material/menu';
       delay: 300,
       passThruUnknownUrl: true
     }),
-    // CarouselModule.forRoot(),
     MatCarouselModule,
     MyMaterialModule,
     MatToolbarModule,
@@ -63,16 +54,12 @@ import {MatMenuModule} from '@angular/material/menu';
   ],
   declarations: [
     AppComponent,
-    // DashboardComponent,
-    // SecuredImageComponent,
     CalendarSearchComponent,
     CalendarsComponent,
     CalendarDetailComponent,
     CarouselComponent
   ],
-  providers: [CalendarService,
-    // {provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true}
-  ],
+  providers: [CalendarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

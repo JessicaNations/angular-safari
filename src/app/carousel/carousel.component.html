@@ -1,48 +1,49 @@
 <mat-card>
-    <mat-card-content>
-      <div class="demo-carousel">
-        <mat-carousel
-          #matCarousel
-          [timings]="timings"
-          [autoplay]="autoplay"
-          [interval]="interval"
-          [loop]="loop"
-          [hideArrows]="hideArrows"
-          [hideIndicators]="hideIndicators"
-          [color]="color"
-          [maxWidth]="maxWidth"
-          [proportion]="proportion"
-          [useKeyboard]="useKeyboard"
-          [useMouseWheel]="useMouseWheel"
-          [orientation]="orientation"
-          [slides]="slides"
-          (change)="onChange($event)"
+  <mat-card-content>
+    <div class="safari-carousel">
+      <mat-carousel
+        #matCarousel
+        [timings]="timings"
+        [autoplay]="autoplay"
+        [interval]="interval"
+        [loop]="loop"
+        [hideArrows]="hideArrows"
+        [hideIndicators]="hideIndicators"
+        [color]="color"
+        [maxWidth]="maxWidth"
+        [proportion]="proportion"
+        [useKeyboard]="useKeyboard"
+        [useMouseWheel]="useMouseWheel"
+        [orientation]="orientation"
+        [slides]="slides"
+        (change)="onChange($event)"
+      >
+        <mat-carousel-slide
+          #matCarouselSlide
+          *ngFor="let slide of slideList; let i = index"
+          image="assets/images/zebra.jpg"
+          [overlayColor]="overlayColor"
+          [hideOverlay]="hideOverlay"
         >
-          <mat-carousel-slide
-            #matCarouselSlide
-            *ngFor="let slide of slidesList; let i = index"
-            image="assets/zebra.jpg"
-            [overlayColor]="overlayColor"
-            [hideOverlay]="hideOverlay"
-          >
-            <ng-container *ngIf="showContent">
-              <div
-                style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center"
+          <ng-container *ngIf="showContent">
+            <div
+              style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center"
+            >
+              <h1>{{ i }}</h1>
+              <p>disabled: {{ matCarouselSlide.disabled }}</p>
+              <button
+                mat-flat-button
+                (click)="
+                  matCarouselSlide.disabled = !matCarouselSlide.disabled
+                "
               >
-                <h1>{{ i }}</h1>
-                <p>disabled: {{ matCarouselSlide.disabled }}</p>
-                <button
-                  mat-flat-button
-                  (click)="
-                    matCarouselSlide.disabled = !matCarouselSlide.disabled
-                  "
-                >
-                  Click me!
-                </button>
-              </div>
-            </ng-container>
-          </mat-carousel-slide>
-        </mat-carousel>
-      </div>
-    </mat-card-content>
-  </mat-card>
+                Click me!
+              </button>
+            </div>
+          </ng-container>
+        </mat-carousel-slide>
+      </mat-carousel>
+    </div>
+  </mat-card-content>
+</mat-card>
+
