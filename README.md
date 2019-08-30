@@ -89,32 +89,12 @@
 # SUPPORT
 * donations
 * volunteer
-# Angular Material Implemented
-* Console errors unresolved
-* side nav executed, but not the way it should be lol
-    * It is appears under the existing content or else it's transparent
-    * It doesn't close until you click the menu button again
-    
-* I deleted and changed over to angular theming and didn't break it!
-    * Needs a core
-    * button styling is lame
-    * Added chiplist module to app and material -- it totally breaks the whole app lol
-
-## Errors:
-* Angular is running in the development mode. Call enableProdMode() to enable the production mode.
-* sockjs.js:2998 WebSocket connection to 'ws://localhost:4200/sockjs-node/074/nrgdwlyn/websocket' failed: WebSocket is closed before the connection is established.
-## Began implementation of Mat Carousel
-* I'm probably going to forget what I'm doing in the middle of the thing I'm doing :/
-* Trying to figure out where the images go
-* 9:40 Commented out the dashboard and pointed to the carousel instead
-## npm install @angular/material @angular/cdk
-* cloned a carousel demo
-* found images in app.component.html
+## Installations:
 * npm install node-sass
 * npm i @ngmodule/material-carousel
-## Carousel works!
-* had pics, broke 'em
-* off center (maybe img count==5)
+## Errors:
+* carousel index dots off center (maybe img count==5)
+* needs array of imgs/slideslist
 ## 8/28/19 Images:
 ![Carousel](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard8-29.png)
 ![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/calendars8-29.png)

@@ -27,7 +27,7 @@ export class CarouselComponent {
   public hideOverlay = false;
   public useKeyboard = true;
   public useMouseWheel = false;
-  public orientation: Orientation = 'ltr';
+  // public orientation: Orientation = 'ltr';
   public log: string[] = [];
 
   @ViewChildren(MatCarouselSlideComponent) public carouselSlides: QueryList<
