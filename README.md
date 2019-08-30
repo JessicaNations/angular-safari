@@ -108,7 +108,10 @@
 * Trying to figure out where the images go
 * 9:40 Commented out the dashboard and pointed to the carousel instead
 ## npm install @angular/material @angular/cdk
-
+* cloned a carousel demo
+* found images in app.component.html
+* npm install node-sass
+* npm i @ngmodule/material-carousel
 ## 8/28/19 Images:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard8-29.png)
 ![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/calendars8-29.png)

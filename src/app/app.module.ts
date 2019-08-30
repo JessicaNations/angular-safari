@@ -17,8 +17,6 @@ import { CalendarsComponent } from './calendars/calendars.component';
 import { CalendarDetailComponent } from './calendar-detail/calendar-detail.component';
 import { CalendarSearchComponent } from './calendar-search/calendar-search.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { CarouselSlideComponent } from './carousel-slide/carousel-slide.component';
-
 
 // import { SecuredImageComponent } from './dashboard/secured-image.component';
 // import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
@@ -35,7 +33,7 @@ import {
   MatButtonModule
 } from '@angular/material';
 import {MatChipsModule} from '@angular/material/chips';
-import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-carousel';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 
@@ -68,8 +66,7 @@ import { MatCarouselModule, MatCarouselComponent } from '@ngmodule/material-caro
     CalendarSearchComponent,
     CalendarsComponent,
     CalendarDetailComponent,
-    CarouselComponent,
-    CarouselSlideComponent
+    CarouselComponent
   ],
   providers: [CalendarService,
     // {provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true}

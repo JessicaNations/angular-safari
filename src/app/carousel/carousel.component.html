@@ -1,80 +1,48 @@
-<div
-  #carouselContainer
-  class="carousel"
-  tabindex="0"
-  [style.max-width]="maxWidth"
->
-  <ul
-    #carouselList
-    class="carousel-list"
-    role="listbox"
-    [style.flex-direction]="orientation === 'rtl' ? 'row-reverse' : 'row'"
-  >
-    <li
-      #carouselSlide
-      *ngFor="let slide of slidesList"
-      class="carousel-slide"
-      role="option"
-      [style.padding-bottom]="proportion + '%'"
-      (panleft)="onPan($event, carouselSlide)"
-      (panright)="onPan($event, carouselSlide)"
-      (panend)="onPanEnd($event, carouselSlide)"
-      (pancancel)="onPanEnd($event, carouselSlide)"
-    >
-      <ng-container [ngTemplateOutlet]="slide.templateRef"></ng-container>
-    </li>
-  </ul>
-
-  <button
-    *ngIf="!hideArrows"
-    mat-icon-button
-    type="button"
-    tabindex="-1"
-    [color]="color"
-    [disabled]="!loop && currentIndex == 0"
-    (click)="previous()"
-  >
-    <mat-icon
-      *ngIf="svgIconOverrides?.arrowBack; else: defaultArrowBack"
-      [svgIcon]="svgIconOverrides.arrowBack"
-    ></mat-icon>
-    <ng-template #defaultArrowBack>
-      <mat-icon>arrow_back</mat-icon>
-    </ng-template>
-  </button>
-  <button
-    *ngIf="!hideArrows"
-    mat-icon-button
-    type="button"
-    tabindex="-1"
-    [color]="color"
-    [disabled]="!loop && currentIndex == slidesList.length - 1"
-    (click)="next()"
-  >
-    <mat-icon
-      *ngIf="svgIconOverrides?.arrowForward; else: defaultArrowForward"
-      [svgIcon]="svgIconOverrides.arrowForward"
-    ></mat-icon>
-    <ng-template #defaultArrowForward>
-      <mat-icon>arrow_forward</mat-icon>
-    </ng-template>
-  </button>
-
-  <div
-    *ngIf="!hideIndicators"
-    class="carousel-indicators"
-    tabindex="-1"
-    [style.flex-direction]="orientation === 'rtl' ? 'row-reverse' : 'row'"
-  >
-    <button
-      *ngFor="let slide of slidesList; let i = index"
-      type="button"
-      tabindex="-1"
-      mat-mini-fab
-      [color]="color"
-      [disabled]="i == currentIndex"
-      (click)="slideTo(i)"
-      (focus)="carouselContainer.focus()"
-    ></button>
-  </div>
-</div>
+<mat-card>
+    <mat-card-content>
+      <div class="demo-carousel">
+        <mat-carousel
+          #matCarousel
+          [timings]="timings"
+          [autoplay]="autoplay"
+          [interval]="interval"
+          [loop]="loop"
+          [hideArrows]="hideArrows"
+          [hideIndicators]="hideIndicators"
+          [color]="color"
+          [maxWidth]="maxWidth"
+          [proportion]="proportion"
+          [useKeyboard]="useKeyboard"
+          [useMouseWheel]="useMouseWheel"
+          [orientation]="orientation"
+          [slides]="slides"
+          (change)="onChange($event)"
+        >
+          <mat-carousel-slide
+            #matCarouselSlide
+            *ngFor="let slide of slidesList; let i = index"
+            image="assets/zebra.jpg"
+            [overlayColor]="overlayColor"
+            [hideOverlay]="hideOverlay"
+          >
+            <ng-container *ngIf="showContent">
+              <div
+                style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center"
+              >
+                <h1>{{ i }}</h1>
+                <p>disabled: {{ matCarouselSlide.disabled }}</p>
+                <button
+                  mat-flat-button
+                  (click)="
+                    matCarouselSlide.disabled = !matCarouselSlide.disabled
+                  "
+                >
+                  Click me!
+                </button>
+              </div>
+            </ng-container>
+          </mat-carousel-slide>
+        </mat-carousel>
+      </div>
+    </mat-card-content>
+  </mat-card>
