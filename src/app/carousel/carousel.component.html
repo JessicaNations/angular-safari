@@ -20,30 +20,13 @@
       >
         <mat-carousel-slide
           #matCarouselSlide
-          *ngFor="let slide of slideList; let i = index"
+          *ngFor="let slide of slidesList; let i = index"
           image="assets/images/zebra.jpg"
           [overlayColor]="overlayColor"
           [hideOverlay]="hideOverlay"
         >
-          <ng-container *ngIf="showContent">
-            <div
-              style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center"
-            >
-              <h1>{{ i }}</h1>
-              <p>disabled: {{ matCarouselSlide.disabled }}</p>
-              <button
-                mat-flat-button
-                (click)="
-                  matCarouselSlide.disabled = !matCarouselSlide.disabled
-                "
-              >
-                Click me!
-              </button>
-            </div>
-          </ng-container>
         </mat-carousel-slide>
       </mat-carousel>
     </div>
   </mat-card-content>
 </mat-card>
-
