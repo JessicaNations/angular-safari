@@ -1,16 +1,18 @@
 import { Component, QueryList, ViewChildren } from '@angular/core';
 import { ThemePalette } from '@angular/material';
-import {
-  MatCarouselSlideComponent,
-  Orientation
-} from '@ngmodule/material-carousel';
+import { MatCarouselSlideComponent } from '@ngmodule/material-carousel';  // Orientation
 
 @Component({
   selector: 'my-carousel',
   templateUrl: './carousel.component.html',
 })
 export class CarouselComponent {
-  public slidesList = new Array<never>(5);
+  // public slidesList = new Array<never>(3);
+  public slidesList = [
+    '/assets/images/calf.jpg',
+    '/assets/images/peacock.jpg',
+    '/assets/images/zebra.jpg'
+  ];
   public showContent = false;
 
   public timings = '250ms ease-in';
