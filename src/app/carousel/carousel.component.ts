@@ -7,8 +7,8 @@ import { MatCarouselSlideComponent } from '@ngmodule/material-carousel';  // Ori
   templateUrl: './carousel.component.html',
 })
 export class CarouselComponent {
-  // public slidesList = new Array<never>(3);
-  public slidesList = [
+  public slidesList = new Array<never>(3);
+  public Array = [
     '/assets/images/calf.jpg',
     '/assets/images/peacock.jpg',
     '/assets/images/zebra.jpg'
