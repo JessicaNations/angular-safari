@@ -95,6 +95,7 @@
 ## Errors:
 * carousel index dots off center (maybe img count==5)
 * needs array of imgs/slideslist
+* I might be on to something with ng image slider
 ## 8/28/19 Images:
 ![Carousel](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard8-29.png)
 ![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars8-29.png)
