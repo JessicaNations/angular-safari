@@ -96,5 +96,5 @@
 * carousel index dots off center (maybe img count==5)
 * needs array of imgs/slideslist
 ## 8/28/19 Images:
-![Carousel](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard8-29.png)
-![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/calendars8-29.png)
+![Carousel](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard8-29.png)
+![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars8-29.png)

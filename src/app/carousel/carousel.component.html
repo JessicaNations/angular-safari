@@ -21,7 +21,7 @@
         <mat-carousel-slide
           #matCarouselSlide
           *ngFor="let slide of slidesList; let i = index"
-          image="assets/images/zebra.jpg"
+          image="'https://github.com/JessicaNations/angular-safari/tree/master/src/assets/images' + image.src"
           [overlayColor]="overlayColor"
           [hideOverlay]="hideOverlay"
         >
