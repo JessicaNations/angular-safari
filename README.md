@@ -89,15 +89,8 @@
 # SUPPORT
 * donations
 * volunteer
-## Installations:
-* npm install node-sass
-* npm i @ngmodule/material-carousel
-## Errors:
-* carousel index dots off center (maybe img count==5)
-* needs array of imgs/slideslist
-* I might be on to something with ng image slider
-* GET http://localhost:4200/[object%20Object],
-* [object%20Object],[object%20Object] 404 (Not Found)
-## 8/28/19 Images:
-![Carousel](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard8-29.png)
-![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars8-29.png)
+## Errors
+
+## 9/5/19 Images:
+![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard.png)
+![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/calendars.png)
