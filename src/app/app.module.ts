@@ -27,9 +27,9 @@ import {
   MatListModule,
   MatButtonModule
 } from '@angular/material';
-import {MatChipsModule} from '@angular/material/chips';
+import { MatChipsModule } from '@angular/material/chips';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
