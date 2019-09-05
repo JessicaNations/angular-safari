@@ -5,12 +5,16 @@
     <span class="calendar-element">
       <span class="badge">{{calendar.id}}</span> {{calendar.name}}
     </span>
-    <button class="delete-button" (click)="deleteCalendar(calendar, $calendar)">Delete</button>
+  <mat-chip-list>
+    <mat-chip class="delete-button" (click)="deleteCalendar(calendar, $calendar)">Delete</mat-chip>
+  </mat-chip-list>
   </li>
 </ul>
 
 <div class="error" *ngIf="error">{{error}}</div>
-<button (click)="addCalendar()">Add New Calendar</button>
+<mat-chip-list>
+<mat-chip (click)="addCalendar()">Add New Calendar</mat-chip>
+</mat-chip-list>
 <div *ngIf="addingCalendar">
   <my-calendar-detail (close)="close($calendar)"></my-calendar-detail>
 </div>
@@ -19,5 +23,7 @@
   <h2>
     {{selectedCalendar.name}} is my calendar
   </h2>
-  <button (click)="gotoDetail()">View Details</button>
+  <mat-chip-list>
+  <mat-chip (click)="gotoDetail()">View Details</mat-chip>
+</mat-chip-list>
 </div>
