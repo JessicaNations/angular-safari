@@ -92,5 +92,5 @@
 ## Errors
 
 ## 9/5/19 Images:
-![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/dashboard.png)
-![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/calendars.png)
+![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)
+![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars.png)
