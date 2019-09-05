@@ -15,7 +15,9 @@ import { CalendarService } from './calendar.service';
 import { CalendarsComponent } from './calendars/calendars.component';
 import { CalendarDetailComponent } from './calendar-detail/calendar-detail.component';
 import { CalendarSearchComponent } from './calendar-search/calendar-search.component';
-import { CarouselComponent } from './carousel/carousel.component';
+// import { CarouselComponent } from './carousel/carousel.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 import { MyMaterialModule } from './material.module';
 import {
@@ -37,7 +39,8 @@ import {MatMenuModule} from '@angular/material/menu';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, {
       dataEncapsulation: false,
       delay: 300,
       passThruUnknownUrl: true
@@ -57,7 +60,8 @@ import {MatMenuModule} from '@angular/material/menu';
     CalendarSearchComponent,
     CalendarsComponent,
     CalendarDetailComponent,
-    CarouselComponent
+    // CarouselComponent
+    DashboardComponent
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]
