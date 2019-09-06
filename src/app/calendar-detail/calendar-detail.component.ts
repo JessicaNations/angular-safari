@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Calendar } from '../calendar';
 import { CalendarService } from '../calendar.service';
 
@@ -15,7 +15,8 @@ export class CalendarDetailComponent implements OnInit {
 
   constructor(
     private calendarService: CalendarService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -34,7 +35,8 @@ export class CalendarDetailComponent implements OnInit {
   save(): void {
     this.calendarService.save(this.calendar).subscribe(calendar => {
       this.calendar = calendar; // saved calendar, w/ id if new
-      this.goBack(calendar);
+      const link = ['/calendars'];
+      this.router.navigate(link);
     }, error => (this.error = error)); // TODO: Display error message
   }
 

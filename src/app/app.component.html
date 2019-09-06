@@ -1,30 +1,20 @@
 <mat-toolbar>
-    <span>{{title}}</span>
-    <span class="safari-spacer"></span>
-    <span class="safari-source">
-      <button mat-button [matMenuTriggerFor]="safariMenu">
-        <mat-icon>menu</mat-icon>
+  <button mat-button [matMenuTriggerFor]="safariMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #safariMenu="matMenu">
+      <button mat-menu-item (click)="goBack()">
+        Dashboard
       </button>
-      <mat-menu #safariMenu="matMenu">
-        <!-- <a
-          routerLink="/carousel" routerLinkActive="active"
-          mat-menu-item>
-          Carousel
-        </a> -->
-        <a
-          routerLink="/dashboard" routerLinkActive="active"
-          mat-menu-item>
-          Dashboard
-        </a>
-        <a
-          routerLink="/calendars" routerLinkActive="active"
-          mat-menu-item>
-          Calendar
-        </a>
-      </mat-menu>
-    </span>
-  </mat-toolbar>
-  <main>
-    <router-outlet></router-outlet>
-  </main>
+      <button mat-menu-item (click)="goCalendar()">
+        Calendar
+      </button>
+  </mat-menu>
+
+      <span (click)="goBack()">{{title}}
+      </span>
+    </mat-toolbar>
+<main>
+  <router-outlet></router-outlet>
+</main>
 

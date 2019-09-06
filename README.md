@@ -94,7 +94,9 @@
 * added a basic share button
     * it doesn't work
     * Extra credit: set it overlapping the image and text
-* 4 details buttons for some reason
+* 4 details buttons for some reason that was with the original app
+## Console Errors
+* 
 
 ## 9/5/19 Images:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)

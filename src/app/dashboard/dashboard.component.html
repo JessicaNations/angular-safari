@@ -2,7 +2,8 @@
   <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>July 4th, 2020 &nbsp;
-      <button mat-min-fab class="iconify" data-icon="zmdi-share" data-inline="false"></button>
+        <button  class="iconify" data-icon="zmdi-share" data-inline="false"><a
+          routerLink="/calendar" routerLinkActive="active"></a></button>
     </p>
     <h4>Shiba Inu</h4>
     <p>
@@ -13,12 +14,18 @@
 
   </mat-card-content>
   <mat-card-actions>
+    <my-calendar-search></my-calendar-search>
+    <mat-form-field class="example-full-width">
+      <input matInput [matDatepicker]="picker" placeholder="Or choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
     <mat-chip-list>
-    <mat-chip *ngFor="let calendar of calendars" (click)="gotoDetail(calendar)">Details</mat-chip>
-  </mat-chip-list>
+      <mat-chip *ngFor="let calendar of calendars" (click)="gotoDetail(calendar)">Details</mat-chip>
+    </mat-chip-list>
   </mat-card-actions>
 </mat-card>
 
-<!-- <my-calendar-search></my-calendar-search> -->
+<!--  -->
 <!-- <input [matDatepicker]="myDatepicker"> -->
 <!-- <mat-datepicker #myDatepicker></mat-datepicker> -->

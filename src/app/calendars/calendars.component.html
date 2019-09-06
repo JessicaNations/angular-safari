@@ -1,4 +1,4 @@
-<h2>My Calendars</h2>
+<h2>Upcoming Events</h2>
 
 <ul class="calendars">
   <li *ngFor="let calendar of calendars" (click)="onSelect(calendar)" [class.selected]="calendar === selectedCalendar">
@@ -13,7 +13,7 @@
 
 <div class="error" *ngIf="error">{{error}}</div>
 <mat-chip-list>
-<mat-chip (click)="addCalendar()">Add New Calendar</mat-chip>
+<mat-chip (click)="addCalendar()">Add New Event</mat-chip>
 </mat-chip-list>
 <div *ngIf="addingCalendar">
   <my-calendar-detail (close)="close($calendar)"></my-calendar-detail>

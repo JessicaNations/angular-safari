@@ -1,5 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatMenuTrigger } from '@angular/material';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'my-root',
@@ -9,6 +11,9 @@ export class AppComponent {
   title = 'Tour of Calendars';
   events: string[] = [];
   opened: boolean;
+  constructor(
+    private router: Router
+  ) {}
 
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
@@ -16,5 +21,14 @@ export class AppComponent {
     this.trigger.openMenu();
   }
 
+  goBack(): void {
+    const link = ['/dashboard'];
+    this.router.navigate(link);
+  }
+
+  goCalendar(): void {
+    const link = ['/calendars'];
+    this.router.navigate(link);
+  }
 }
 
