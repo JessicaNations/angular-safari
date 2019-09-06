@@ -17,6 +17,11 @@ import { CalendarDetailComponent } from './calendar-detail/calendar-detail.compo
 import { CalendarSearchComponent } from './calendar-search/calendar-search.component';
 // import { CarouselComponent } from './carousel/carousel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { VisitComponent } from './visit/visit.component';
+import { VisitNavbarComponent } from './visit-navbar/visit-navbar.component';
+import { ParkMapComponent } from './park-map/park-map.component';
+import { ParkPoliciesComponent } from './park-policies/park-policies.component';
+import { AccessibilityComponent } from './accessibility/accessibility.component';
 
 
 import { MyMaterialModule } from './material.module';
@@ -44,7 +49,12 @@ import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
     CalendarsComponent,
     CalendarDetailComponent,
     // CarouselComponent
-    DashboardComponent
+    DashboardComponent,
+    VisitComponent,
+    VisitNavbarComponent,
+    ParkMapComponent,
+    ParkPoliciesComponent,
+    AccessibilityComponent
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]

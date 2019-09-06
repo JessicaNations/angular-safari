@@ -16,7 +16,7 @@ import {
   // MatSnackBarModule,
   // MatSortModule,
   // MatTableModule,
-  // MatTabsModule,
+  MatTabsModule,
   MatToolbarModule
  } from '@angular/material';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
@@ -50,7 +50,7 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatSliderModule,
     // MatSortModule,
     // MatTableModule,
-    // MatTabsModule,
+    MatTabsModule,
     MatToolbarModule
   ],
   providers: [
@@ -79,7 +79,7 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatSliderModule,
     // MatSortModule,
     // MatTableModule,
-    // MatTabsModule,
+    MatTabsModule,
     MatToolbarModule
   ]
 })

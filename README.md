@@ -47,6 +47,10 @@
 * Pony rides
 * Hayrides
 * Concessions
+* Groups
+    * parties
+    * school tours
+    * modals and steppers
 # VISIT -- with submenu
 * Hours
     * Monday: 10am - 5pm [format]
@@ -60,10 +64,6 @@
     * Or minimalist line drawing
     * Picture of the the park entrance
     * ?Picture of the street view in google maps?
-* Groups
-    * parties
-    * school tours
-    * modals and steppers
 * Accessibility
     * wheel-chair access
     * Input box for access suggestions
@@ -88,19 +88,10 @@
 * might make an img slider of cards
 * added a fake share button
     * Extra credit: set it overlapping the image and text
-# Stackblitz Errors
-* Error in /turbo_modules/@angular/compiler@6.0.0/bundles/compiler.umd.js (301:17)
-* Template parse errors:
-    * More than one component matched on this element.
-    * Make sure that only one component's selector can match a given element.
-* Conflicting components: MatFormField,MatFormField ("
-<div>
-<label>July 4th through the&nbsp;</label>{{calendar.id}}th</div>
-* ERROR CalendarDetailComponent
-mat-form-field class="example-full-width"
-input matInput [matDatepicker]="picker" placeholder
-* https://stackoverflow.com/questions/53900488/why-does-my-project-result-in-the-more-than-one-component-matched
-
+* Added Plan Visit content
+    * it's currently a mess
+    * routing or something needs to be figured out
+    * made a service file, but idk what I'm doing
 # Images:
 ## Dashboard:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)
