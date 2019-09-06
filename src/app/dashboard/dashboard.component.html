@@ -21,7 +21,9 @@
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
     <mat-chip-list>
-      <mat-chip *ngFor="let calendar of calendars" (click)="gotoDetail(calendar)">Details</mat-chip>
+      <label>Or select one of the dates below:</label>
+      <mat-chip *ngFor="let calendar of calendars" (click)="gotoDetail(calendar)">{{calendar.id}}th Details</mat-chip>
+      <!-- List more than one calendar with: *ngFor="let calendar of calendars" -->
     </mat-chip-list>
   </mat-card-actions>
 </mat-card>

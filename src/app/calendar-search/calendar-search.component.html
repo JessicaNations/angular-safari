@@ -1,5 +1,5 @@
 <div id="search-component">
-  <input matinput #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Choose an event">
+  <input matinput #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Search for an event">
     <div *ngFor="let calendar of calendars | async"
          (click)="gotoDetail(calendar)" class="search-result" >
       {{calendar.name}}
