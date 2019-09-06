@@ -1,5 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { MatMenuTrigger } from '@angular/material';
+import { Component, ViewChild, Input } from '@angular/core';
+import { MatMenuTrigger, ThemePalette } from '@angular/material';
 import { Router } from '@angular/router';
 
 
