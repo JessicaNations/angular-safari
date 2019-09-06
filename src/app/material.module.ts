@@ -9,23 +9,23 @@ import {
   // MatFormFieldModule,
   MatIconModule,
   MatInputModule,
-  MatNativeDateModule,
+  // MatNativeDateModule,
   // MatPaginatorModule,
   // MatProgressSpinnerModule,
   // MatSnackBarModule,
   // MatSortModule,
   // MatTableModule,
-  MatTabsModule,
+  // MatTabsModule,
   MatToolbarModule
  } from '@angular/material';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatDividerModule } from '@angular/material/divider';
+// import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 // import { MatRadioModule } from '@angular/material/radio';
-import { MatSelectModule } from '@angular/material/select';
-import { MatSliderModule } from '@angular/material/slider';
+// import { MatSelectModule } from '@angular/material/select';
+// import { MatSliderModule } from '@angular/material/slider';
 @NgModule({
   imports: [
     MatButtonModule,
@@ -36,21 +36,21 @@ import { MatSliderModule } from '@angular/material/slider';
     MatChipsModule,
     MatDatepickerModule,
     // MatDialogModule,
-    MatDividerModule,
+    // MatDividerModule,
     // MatFormFieldModule,
     MatIconModule,
     MatInputModule,
     MatMenuModule,
-    MatNativeDateModule,
+    // MatNativeDateModule,
     // MatPaginatorModule,
     // MatProgressSpinnerModule,
     // MatRadioModule,
-    MatSelectModule,
+    // MatSelectModule,
     // MatSnackBarModule,
-    MatSliderModule,
+    // MatSliderModule,
     // MatSortModule,
     // MatTableModule,
-    MatTabsModule,
+    // MatTabsModule,
     MatToolbarModule
   ],
   exports: [
@@ -62,21 +62,21 @@ import { MatSliderModule } from '@angular/material/slider';
     MatChipsModule,
     MatDatepickerModule,
     // MatDialogModule,
-    MatDividerModule,
+    // MatDividerModule,
     // MatFormFieldModule,
     MatIconModule,
     MatInputModule,
     MatMenuModule,
-    MatNativeDateModule,
+    // MatNativeDateModule,
     // MatPaginatorModule,
     // MatProgressSpinnerModule,
     // MatRadioModule,
-    MatSelectModule,
+    // MatSelectModule,
     // MatSnackBarModule,
-    MatSliderModule,
+    // MatSliderModule,
     // MatSortModule,
     // MatTableModule,
-    MatTabsModule,
+    // MatTabsModule,
     MatToolbarModule
   ]
 })
