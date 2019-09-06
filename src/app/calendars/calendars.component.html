@@ -13,7 +13,7 @@
 
 <div class="error" *ngIf="error">{{error}}</div>
 <mat-chip-list>
-<mat-chip (click)="addCalendar()">Add New Event</mat-chip>
+<mat-chip (click)="addCalendar()">Add New Date</mat-chip>
 </mat-chip-list>
 <div *ngIf="addingCalendar">
   <my-calendar-detail (close)="close($calendar)"></my-calendar-detail>
