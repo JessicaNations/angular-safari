@@ -1,13 +1,17 @@
 <div *ngIf="calendar">
-  <h2>{{calendar.name}} details!</h2>
+<form>
+  <h2>{{calendar.name}} details:</h2>
   <div>
-    <label>id: </label>{{calendar.id}}</div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="calendar.name" placeholder="name" />
-  </div>
+  <label>July 4th through the&nbsp;</label>{{calendar.id}}th</div>
+  <mat-form-field class="example-full-width">
+    <!-- <input matInput [(ngModel)]="calendar.name" placeholder="Enter Calendar Name"> -->
+    <input matInput [(ngModel)]="calendar.name" [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
   <mat-chip-list>
     <mat-chip (click)="goBack()">Back</mat-chip>
     <mat-chip (click)="save()">Save</mat-chip>
   </mat-chip-list>
+</form>
 </div>
