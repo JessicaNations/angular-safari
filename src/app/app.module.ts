@@ -20,6 +20,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 import { MyMaterialModule } from './material.module';
+import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 
 @NgModule({
@@ -35,7 +36,9 @@ import { MyMaterialModule } from './material.module';
       delay: 300,
       passThruUnknownUrl: true
     }),
-    MyMaterialModule
+    MyMaterialModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   declarations: [
     AppComponent,
