@@ -20,7 +20,7 @@ import {
  } from '@angular/material';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatChipsModule } from '@angular/material/chips';
-import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDatepickerModule, MatDatepicker } from '@angular/material/datepicker';
 // import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 // import { MatRadioModule } from '@angular/material/radio';
@@ -78,6 +78,9 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatTableModule,
     // MatTabsModule,
     MatToolbarModule
+  ],
+  providers: [
+    MatDatepickerModule
   ]
 })
 export class MyMaterialModule { }
