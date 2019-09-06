@@ -9,7 +9,7 @@ import {
   // MatFormFieldModule,
   MatIconModule,
   MatInputModule,
-  // MatNativeDateModule,
+  MatNativeDateModule,
   // MatPaginatorModule,
   // MatProgressSpinnerModule,
   // MatSnackBarModule,
@@ -41,7 +41,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatIconModule,
     MatInputModule,
     MatMenuModule,
-    // MatNativeDateModule,
+    MatNativeDateModule,
     // MatPaginatorModule,
     // MatProgressSpinnerModule,
     // MatRadioModule,
@@ -81,4 +81,3 @@ import { MatMenuModule } from '@angular/material/menu';
   ]
 })
 export class MyMaterialModule { }
-
