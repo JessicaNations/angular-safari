@@ -104,8 +104,8 @@
 <div>
 <label>July 4th through the&nbsp;</label>{{calendar.id}}th</div>
 * ERROR
-<mat-form-field class="example-full-width">
-<input matInput [matDatepicker]="picker" placeholder="): ng:///AppModule/CalendarDetailComponent.html@5:2
+(<mat-form-field class="example-full-width">
+<input matInput [matDatepicker]="picker" placeholder="): ng:///AppModule/CalendarDetailComponent.html@5:2)
 
 # Images:
 ## Dashboard:
