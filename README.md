@@ -1,22 +1,16 @@
 # Safari
-# DASHBOARD/CALENDAR
-* Welcome page
-* Title header
-* Nav bar
-* With tabs:
-    * Dashboard
-    * Calendars (Events)
+# DASHBOARD
+* Tabs:
+    * Events
     * Admission
     * Visit
     * About
     * Support
-* Animal gif/carousel
+* Event Cards (maybe carousel)
+* OR Animal gif/carousel
 * ?instagram carousel? do they moderate that?
-    * Not resizing :(
-    * style="display: block; width: 100%;"
-    * Center it!
-* Blocks of Upcoming holidays/events
-* Search Calendar/Events
+## Event Details Page
+* Add to calendar button
 # EVENTS (maybe make this the dashboard)
 * New and upcoming attractions
 * If current month == month from range, display the holidays in the specified range.
@@ -90,11 +84,10 @@
 * donations
 * volunteer
 # Notes
+* **DO NOT MOVE ON WITHOUT FIXING ERRORS**
 * might make an img slider of cards
-* added a basic share button
-    * it doesn't work
+* added a fake share button
     * Extra credit: set it overlapping the image and text
-* 4 details buttons for some reason that was with the original app
 # Stackblitz Errors
 * Error in /turbo_modules/@angular/compiler@6.0.0/bundles/compiler.umd.js (301:17)
 * Template parse errors:
