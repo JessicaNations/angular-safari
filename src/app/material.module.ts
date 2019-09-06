@@ -1,89 +1,84 @@
 import { NgModule } from '@angular/core';
 import {
-  MatNativeDateModule,
-  MatSnackBarModule,
-  MatIconModule,
-  MatDialogModule,
   MatButtonModule,
-  MatTableModule,
-  MatPaginatorModule ,
-  MatSortModule,
-  MatTabsModule,
-  MatCheckboxModule,
-  MatToolbarModule,
-  MatCard,
+  // MatCard,
   MatCardModule,
+  MatCheckboxModule,
+  MatDialogModule,
   // MatFormField,
   // MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
   MatProgressSpinnerModule,
-  MatInputModule
+  MatSnackBarModule,
+  MatSortModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule
  } from '@angular/material';
-
+import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { MatChipsModule } from '@angular/material/chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatChipsModule} from '@angular/material/chips';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
-import {MatMenuModule} from '@angular/material/menu';
-
 @NgModule({
-
   imports: [
-    MatTabsModule,
-    MatDividerModule,
-    MatSliderModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatNativeDateModule,
-    MatDatepickerModule,
-    MatSnackBarModule,
-    MatIconModule,
-    MatDialogModule,
-    MatProgressSpinnerModule,
     MatButtonModule,
+    // MatCard,
+    MatCardModule,
+    MatCarouselModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    // MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSnackBarModule,
+    MatSliderModule,
     MatSortModule,
     MatTableModule,
     MatTabsModule,
-    MatCheckboxModule,
-    MatToolbarModule,
-    MatCardModule,
-    // MatFormFieldModule,
-    MatProgressSpinnerModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatChipsModule,
-    MatCarouselModule,
-    MatMenuModule
+    MatToolbarModule
   ],
   exports: [
-    MatTabsModule,
-    MatDividerModule,
-    MatSliderModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatNativeDateModule,
-    MatDatepickerModule,
-    MatSnackBarModule,
-    MatIconModule,
-    MatDialogModule,
-    MatProgressSpinnerModule,
     MatButtonModule,
-    MatSortModule,
-    MatCheckboxModule,
-    MatToolbarModule,
+    // MatCard,
     MatCardModule,
+    MatCarouselModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    // MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSnackBarModule,
+    MatSliderModule,
+    MatSortModule,
     MatTableModule,
     MatTabsModule,
-    // MatFormFieldModule,
-    MatProgressSpinnerModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatCarouselModule,
-    MatMenuModule
-  ],
-
+    MatToolbarModule
+  ]
 })
 export class MyMaterialModule { }
 

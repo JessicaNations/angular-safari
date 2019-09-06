@@ -99,6 +99,7 @@
 * ERROR CalendarDetailComponent
 mat-form-field class="example-full-width"
 input matInput [matDatepicker]="picker" placeholder
+* https://stackoverflow.com/questions/53900488/why-does-my-project-result-in-the-more-than-one-component-matched
 
 # Images:
 ## Dashboard:
