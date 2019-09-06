@@ -36,9 +36,7 @@ import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
       delay: 300,
       passThruUnknownUrl: true
     }),
-    MyMaterialModule,
-    MatDatepickerModule,
-    MatNativeDateModule
+    MyMaterialModule
   ],
   declarations: [
     AppComponent,
