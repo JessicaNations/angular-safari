@@ -30,5 +30,11 @@ export class AppComponent {
     const link = ['/calendars'];
     this.router.navigate(link);
   }
+
+  goVisit(): void {
+    const link = ['/visit'];
+    this.router.navigate(link);
+  }
+
 }
 

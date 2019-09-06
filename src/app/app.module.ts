@@ -22,6 +22,7 @@ import { VisitNavbarComponent } from './visit-navbar/visit-navbar.component';
 import { ParkMapComponent } from './park-map/park-map.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { AccessibilityComponent } from './accessibility/accessibility.component';
+import { HoursComponent } from './hours/hours.component';
 
 
 import { MyMaterialModule } from './material.module';
@@ -54,7 +55,8 @@ import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
     VisitNavbarComponent,
     ParkMapComponent,
     ParkPoliciesComponent,
-    AccessibilityComponent
+    AccessibilityComponent,
+    HoursComponent
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]

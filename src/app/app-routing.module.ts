@@ -6,6 +6,10 @@ import { CalendarDetailComponent } from './calendar-detail/calendar-detail.compo
 // import { CarouselComponent } from './carousel/carousel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitComponent } from './visit/visit.component';
+import { HoursComponent } from './hours/hours.component';
+import { ParkMapComponent } from './park-map/park-map.component';
+import { AccessibilityComponent } from './accessibility/accessibility.component';
+import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 
 
 const routes: Routes = [
@@ -15,7 +19,12 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: CalendarDetailComponent },
   { path: 'calendars', component: CalendarsComponent },
-  { path: 'visit', component: VisitComponent }
+  { path: 'visit', component: VisitComponent },
+  { path: 'hours', component: HoursComponent },
+  { path: 'park-map', component: ParkMapComponent },
+  { path: 'accessibility', component: AccessibilityComponent },
+  { path: 'park-policies', component: ParkPoliciesComponent }
+
 ];
 
 @NgModule({

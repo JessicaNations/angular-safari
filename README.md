@@ -92,6 +92,8 @@
     * it's currently a mess
     * routing or something needs to be figured out
     * made a service file, but idk what I'm doing
+# Errors
+* Uncaught Error: Component HoursComponent is not part of any NgModule or the module has not been imported into your module.
 # Images:
 ## Dashboard:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)
