@@ -47,9 +47,9 @@
 * Pony rides
 * Hayrides
 * Concessions
-# VISIT
+# VISIT -- with submenu
 * Hours
-* Monday: 10am - 5pm [format]
+    * Monday: 10am - 5pm [format]
 * Hide info until it's the relevant time of day/year? 
     * With a button to reveal it
     * Entrance to the park ends at 4:30
@@ -72,15 +72,15 @@
     * park security
     * no pets
     * no outside food
-# ABOUT
-* Historical blurb
+# ABOUT -- submenu
+* History
 * Meet the owners
 * Animals for your event
     * Modals and steppers
 * Meet our animals 
     * (tour of heroes table)
 * Hiring/”Careers”
-# SUPPORT
+# SUPPORT -- submenu
 * donations
 * volunteer
 # Notes

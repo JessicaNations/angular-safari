@@ -20,16 +20,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 import { MyMaterialModule } from './material.module';
-import {
-  MatToolbarModule,
-  MatIconModule,
-  MatSidenavModule,
-  MatListModule,
-  MatButtonModule
-} from '@angular/material';
-import { MatChipsModule } from '@angular/material/chips';
-import { MatCarouselModule } from '@ngmodule/material-carousel';
-import { MatMenuModule } from '@angular/material/menu';
+// import {
+//   MatToolbarModule,
+//   MatIconModule,
+//   MatSidenavModule,
+//   MatListModule,
+//   MatButtonModule
+// } from '@angular/material';
+// import { MatChipsModule } from '@angular/material/chips';
+// import { MatCarouselModule } from '@ngmodule/material-carousel';
+// import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -45,15 +45,15 @@ import { MatMenuModule } from '@angular/material/menu';
       delay: 300,
       passThruUnknownUrl: true
     }),
-    MatCarouselModule,
+    // MatCarouselModule,
     MyMaterialModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
-    MatIconModule,
-    MatChipsModule,
-    MatMenuModule
+    // MatToolbarModule,
+    // MatSidenavModule,
+    // MatListModule,
+    // MatButtonModule,
+    // MatIconModule,
+    // MatChipsModule,
+    // MatMenuModule
   ],
   declarations: [
     AppComponent,

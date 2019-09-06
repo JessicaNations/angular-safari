@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: 'app.component.html',
 })
 export class AppComponent {
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;  // check if this works
   title = 'Tour of Calendars';
   events: string[] = [];
   opened: boolean;
@@ -15,7 +16,6 @@ export class AppComponent {
     private router: Router
   ) {}
 
-  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
   triggerMethod() {
     this.trigger.openMenu();
