@@ -89,13 +89,13 @@
 # SUPPORT
 * donations
 * volunteer
-## Notes
+# Notes
 * might make an img slider of cards
 * added a basic share button
     * it doesn't work
     * Extra credit: set it overlapping the image and text
 * 4 details buttons for some reason that was with the original app
-## Stackblitz Errors
+# Stackblitz Errors
 * Error in /turbo_modules/@angular/compiler@6.0.0/bundles/compiler.umd.js (301:17)
 * Template parse errors:
     * More than one component matched on this element.
@@ -103,11 +103,16 @@
 * Conflicting components: MatFormField,MatFormField ("
 <div>
 <label>July 4th through the&nbsp;</label>{{calendar.id}}th</div>
-[ERROR ->]<mat-form-field class="example-full-width">
+* ERROR
+<mat-form-field class="example-full-width">
 <input matInput [matDatepicker]="picker" placeholder="): ng:///AppModule/CalendarDetailComponent.html@5:2
 
-## 9/6/19 Images:
+# Images:
+## Dashboard:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)
+## Dashboard Actions:
 ![Dashboard-Actions](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard-actions.png)
+## Calendars:
 ![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars.png)
-![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars-detail.png)
+## Calendars Detail:
+![Calendars-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars-detail.png)
