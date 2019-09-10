@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   selector: 'my-support',
   templateUrl: './support.component.html',
 })
-export class SupportComponent {}
+export class SupportComponent {
+  panelOpenState = false;
+}

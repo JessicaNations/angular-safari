@@ -76,12 +76,16 @@
 * no outside food
 # ABOUT -- submenu
 ## History
+* Blurb with pictures
+* What's coming soon
 ## Meet the owners
+* Pictures and blurbs
 ## Animals for your event
-    * Modals and steppers
+* Modals and steppers
 ## Meet our animals 
-    * (tour of heroes table)
+* (tour of heroes table)
 ## Hiring/”Careers”
+* steppers
 ## SUPPORT -- submenu
 * donations
 * volunteer

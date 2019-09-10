@@ -28,6 +28,7 @@ import { MatMenuModule } from '@angular/material/menu';
 // import { MatRadioModule } from '@angular/material/radio';
 // import { MatSelectModule } from '@angular/material/select';
 // import { MatSliderModule } from '@angular/material/slider';
+
 @NgModule({
   imports: [
     MatButtonModule,
@@ -55,7 +56,7 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatSortModule,
     // MatTableModule,
     MatTabsModule,
-    MatToolbarModule
+    MatToolbarModule,
   ],
   providers: [
     MatDatepickerModule,
@@ -86,7 +87,7 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatSortModule,
     // MatTableModule,
     MatTabsModule,
-    MatToolbarModule
+    MatToolbarModule,
   ]
 })
 export class MyMaterialModule { }
