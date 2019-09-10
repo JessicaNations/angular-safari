@@ -19,7 +19,7 @@ import { CalendarSearchComponent } from './calendar-search/calendar-search.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitComponent } from './visit/visit.component';
 import { VisitNavbarComponent } from './visit-navbar/visit-navbar.component';
-import { ParkMapComponent } from './park-map/park-map.component';
+import { DirectionsComponent } from './directions/directions.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { AccessibilityComponent } from './accessibility/accessibility.component';
 import { HoursComponent } from './hours/hours.component';
@@ -53,7 +53,7 @@ import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
     DashboardComponent,
     VisitComponent,
     VisitNavbarComponent,
-    ParkMapComponent,
+    DirectionsComponent,
     ParkPoliciesComponent,
     AccessibilityComponent,
     HoursComponent

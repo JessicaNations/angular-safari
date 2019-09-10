@@ -52,14 +52,20 @@
     * school tours
     * modals and steppers
 # VISIT -- with submenu
-* Hours
+* Hours TODO:
+    * Dynamic bold open hours
+    * Word "Open" next to today's hours
+    * Red "Closed" next to today's hours
+    * Subtext below today's bold hours: Tuesday hours
     * Monday: 10am - 5pm [format]
+    * Fix divider from extending out of bounds
+![Hours-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours-detail.png)
 * Hide info until it's the relevant time of day/year? 
     * With a button to reveal it
     * Entrance to the park ends at 4:30
     * Park closes at 5
     * Special holiday hours
-* Map
+* Directions
     * Easy and clear: either google link img
     * Or minimalist line drawing
     * Picture of the the park entrance
@@ -87,13 +93,8 @@
 * **DO NOT MOVE ON WITHOUT FIXING ERRORS**
 * might make an img slider of cards
 * added a fake share button
-    * Extra credit: set it overlapping the image and text
-* Added Plan Visit content
-    * it's currently a mess
-    * routing or something needs to be figured out
-    * made a service file, but idk what I'm doing
+    * Extra credit: set it overlapping the image and text     
 # Errors
-* Uncaught Error: Component HoursComponent is not part of any NgModule or the module has not been imported into your module.
 # Images:
 ## Dashboard:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)

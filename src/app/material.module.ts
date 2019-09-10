@@ -21,7 +21,9 @@ import {
  } from '@angular/material';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatChipsModule } from '@angular/material/chips';
-// import { MatDividerModule } from '@angular/material/divider';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 // import { MatRadioModule } from '@angular/material/radio';
 // import { MatSelectModule } from '@angular/material/select';
@@ -36,10 +38,12 @@ import { MatMenuModule } from '@angular/material/menu';
     MatChipsModule,
     MatDatepickerModule,
     // MatDialogModule,
-    // MatDividerModule,
+    MatDividerModule,
+    MatExpansionModule,
     // MatFormFieldModule,
     MatIconModule,
     MatInputModule,
+    MatListModule,
     MatMenuModule,
     MatNativeDateModule,
     // MatPaginatorModule,
@@ -65,10 +69,12 @@ import { MatMenuModule } from '@angular/material/menu';
     MatChipsModule,
     MatDatepickerModule,
     // MatDialogModule,
-    // MatDividerModule,
+    MatDividerModule,
+    MatExpansionModule,
     // MatFormFieldModule,
     MatIconModule,
     MatInputModule,
+    MatListModule,
     MatMenuModule,
     MatNativeDateModule,
     // MatPaginatorModule,

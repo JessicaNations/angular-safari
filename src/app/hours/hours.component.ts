@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   selector: 'my-hours',
   templateUrl: './hours.component.html',
 })
-export class HoursComponent {}
+export class HoursComponent {
+  panelOpenState = false;
+}
