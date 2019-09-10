@@ -54,7 +54,7 @@
 # VISIT -- with submenu
 * Hours
 * Directions
-* Park Policies
+* Policies
 ## Hours TODO:
 * Dynamic bold open hours
 * Word "Open" next to today's hours
@@ -81,7 +81,6 @@
 * History
 * Services
 * Hiring
-* Support
 ## Current Page
 ![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
 ## History
@@ -91,8 +90,8 @@
 ## Services (Animals for your event)
 * Modals and steppers
 ## Hiring/”Careers”
-* steppers
-## SUPPORT -- submenu
+* modals? steppers
+# SUPPORT
 * donations
 * volunteer
 # Notes
