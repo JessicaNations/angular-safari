@@ -8,12 +8,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitComponent } from './visit/visit.component';
 import { HoursComponent } from './hours/hours.component';
 import { DirectionsComponent } from './directions/directions.component';
-import { AccessibilityComponent } from './accessibility/accessibility.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { HistoryComponent } from './history/history.component';
 import { SupportComponent } from './support/support.component';
-import { MeetOwnersComponent } from './meet-owners/meet-owners.component';
-import { MeetAnimalsComponent } from './meet-animals/meet-animals.component';
 import { HiringComponent } from './hiring/hiring.component';
 import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
 import { AboutComponent } from './about/about.component';
@@ -29,12 +26,9 @@ const routes: Routes = [
   { path: 'visit', component: VisitComponent },
   { path: 'hours', component: HoursComponent },
   { path: 'directions', component: DirectionsComponent },
-  { path: 'accessibility', component: AccessibilityComponent },
   { path: 'park-policies', component: ParkPoliciesComponent },
   { path: 'history', component: HistoryComponent },
   { path: 'support', component: SupportComponent },
-  { path: 'meet-owners', component: MeetOwnersComponent },
-  { path: 'meet-animals', component: MeetAnimalsComponent },
   { path: 'hiring', component: HiringComponent },
   { path: 'rent-animals', component: RentAnimalsComponent },
   { path: 'about', component: AboutComponent },

@@ -41,5 +41,10 @@ export class AppComponent {
     this.router.navigate(link);
   }
 
+  goSupport(): void {
+    const link = ['/support'];
+    this.router.navigate(link);
+  }
+
 }
 

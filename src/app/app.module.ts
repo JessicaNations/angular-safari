@@ -21,12 +21,9 @@ import { VisitComponent } from './visit/visit.component';
 import { VisitNavbarComponent } from './visit-navbar/visit-navbar.component';
 import { DirectionsComponent } from './directions/directions.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
-import { AccessibilityComponent } from './accessibility/accessibility.component';
 import { HoursComponent } from './hours/hours.component';
 import { HistoryComponent } from './history/history.component';
 import { SupportComponent } from './support/support.component';
-import { MeetOwnersComponent } from './meet-owners/meet-owners.component';
-import { MeetAnimalsComponent } from './meet-animals/meet-animals.component';
 import { HiringComponent } from './hiring/hiring.component';
 import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
 import { AboutNavbarComponent } from './about-navbar/about-navbar.component';
@@ -62,11 +59,8 @@ import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
     VisitNavbarComponent,
     DirectionsComponent,
     ParkPoliciesComponent,
-    AccessibilityComponent,
     HoursComponent,
     HistoryComponent,
-    MeetOwnersComponent,
-    MeetAnimalsComponent,
     RentAnimalsComponent,
     HiringComponent,
     SupportComponent,

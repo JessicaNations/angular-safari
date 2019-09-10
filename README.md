@@ -52,6 +52,9 @@
     * school tours
     * modals and steppers
 # VISIT -- with submenu
+* Hours
+* Directions
+* Park Policies
 ## Hours TODO:
 * Dynamic bold open hours
 * Word "Open" next to today's hours
@@ -66,24 +69,25 @@
 * Or minimalist line drawing
 * Picture of the the park entrance
 * ?Picture of the street view in google maps?
-## Accessibility
-* wheel-chair access
-* Input box for access suggestions
 ## Park Policies
 * animal encounters
 * park security
 * no pets
 * no outside food
+* Accessibility
+    * wheel-chair access
+    * Input box for access suggestions
 # ABOUT -- submenu
+* History
+* Services
+* Hiring
+* Support
 ## History
-* Blurb with pictures
-* What's coming soon
-## Meet the owners
-* Pictures and blurbs
-## Animals for your event
+* Row About the Owners
+* Row History Blurb with pictures
+* Row Coming soon
+## Services (Animals for your event)
 * Modals and steppers
-## Meet our animals 
-* (tour of heroes table)
 ## Hiring/”Careers”
 * steppers
 ## SUPPORT -- submenu
