@@ -82,6 +82,8 @@
 * Services
 * Hiring
 * Support
+## Current Page
+![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
 ## History
 * Row About the Owners
 * Row History Blurb with pictures
