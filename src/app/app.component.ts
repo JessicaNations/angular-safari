@@ -36,5 +36,10 @@ export class AppComponent {
     this.router.navigate(link);
   }
 
+  goAbout(): void {
+    const link = ['/about'];
+    this.router.navigate(link);
+  }
+
 }
 

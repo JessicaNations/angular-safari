@@ -52,41 +52,37 @@
     * school tours
     * modals and steppers
 # VISIT -- with submenu
-* Hours TODO:
-    * Dynamic bold open hours
-    * Word "Open" next to today's hours
-    * Red "Closed" next to today's hours
-    * Subtext below today's bold hours: Tuesday hours
-    * Monday: 10am - 5pm [format]
-    * Fix divider from extending out of bounds
+## Hours TODO:
+* Dynamic bold open hours
+* Word "Open" next to today's hours
+* Red "Closed" next to today's hours
+* Subtext below today's bold hours: Tuesday hours
+* Monday: 10am - 5pm [format]
+* Fix divider from extending out of bounds
+## Current Hours Page
 ![Hours-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours-detail.png)
-* Hide info until it's the relevant time of day/year? 
-    * With a button to reveal it
-    * Entrance to the park ends at 4:30
-    * Park closes at 5
-    * Special holiday hours
-* Directions
-    * Easy and clear: either google link img
-    * Or minimalist line drawing
-    * Picture of the the park entrance
-    * ?Picture of the street view in google maps?
-* Accessibility
-    * wheel-chair access
-    * Input box for access suggestions
-* Park Policies
-    * animal encounters
-    * park security
-    * no pets
-    * no outside food
+## Directions
+* Easy and clear: either google link img
+* Or minimalist line drawing
+* Picture of the the park entrance
+* ?Picture of the street view in google maps?
+## Accessibility
+* wheel-chair access
+* Input box for access suggestions
+## Park Policies
+* animal encounters
+* park security
+* no pets
+* no outside food
 # ABOUT -- submenu
-* History
-* Meet the owners
-* Animals for your event
+## History
+## Meet the owners
+## Animals for your event
     * Modals and steppers
-* Meet our animals 
+## Meet our animals 
     * (tour of heroes table)
-* Hiring/”Careers”
-# SUPPORT -- submenu
+## Hiring/”Careers”
+## SUPPORT -- submenu
 * donations
 * volunteer
 # Notes

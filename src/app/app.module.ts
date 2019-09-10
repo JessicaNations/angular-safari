@@ -23,7 +23,14 @@ import { DirectionsComponent } from './directions/directions.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { AccessibilityComponent } from './accessibility/accessibility.component';
 import { HoursComponent } from './hours/hours.component';
-
+import { HistoryComponent } from './history/history.component';
+import { SupportComponent } from './support/support.component';
+import { MeetOwnersComponent } from './meet-owners/meet-owners.component';
+import { MeetAnimalsComponent } from './meet-animals/meet-animals.component';
+import { HiringComponent } from './hiring/hiring.component';
+import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
+import { AboutNavbarComponent } from './about-navbar/about-navbar.component';
+import { AboutComponent } from './about/about.component';
 
 import { MyMaterialModule } from './material.module';
 import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
@@ -56,7 +63,15 @@ import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
     DirectionsComponent,
     ParkPoliciesComponent,
     AccessibilityComponent,
-    HoursComponent
+    HoursComponent,
+    HistoryComponent,
+    MeetOwnersComponent,
+    MeetAnimalsComponent,
+    RentAnimalsComponent,
+    HiringComponent,
+    SupportComponent,
+    AboutNavbarComponent,
+    AboutComponent
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]
