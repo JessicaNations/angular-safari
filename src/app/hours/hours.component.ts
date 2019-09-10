@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'my-hours',
@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
 })
 export class HoursComponent {
   panelOpenState = false;
+
+// idk trying it out
+// And try this ng-template[matExpansionPanelContent]
+@Input()
+collapsedHeight: string
 }
