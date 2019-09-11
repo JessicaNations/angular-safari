@@ -1,7 +1,7 @@
 import { Component, ViewChild, AfterViewInit, Renderer2 } from '@angular/core';
 import { Moment } from 'moment';
 import { MatCalendar } from '@angular/material';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
 import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.component';
 
@@ -22,7 +22,9 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
       </mat-calendar>
     </div>
     <!-- <br/>
-    <button mat-raised-button (click)="openBottomSheet()">Share Calendar Details</button> -->
+    <button mat-raised-button
+    (click)="openBottomSheet()">
+    Share Calendar Details</button> -->
  `
 })
 export class CalendarsComponent implements AfterViewInit {
@@ -32,17 +34,13 @@ export class CalendarsComponent implements AfterViewInit {
   selectedDate: Moment;
 
   constructor(
-    private router: Router,
+    // private router: Router,
     private renderer: Renderer2,
     private _bottomSheet: MatBottomSheet) {}
 
   monthSelected(date) {
     alert(`Selected: ${date}`);
   }
-
-  // onSelect(calendar: Calendar): void {
-  //   this.selectedCalendar = calendar;
-  // }
 
   onDateChanged(date) {
     // alert(`Selected: ${date}`);
