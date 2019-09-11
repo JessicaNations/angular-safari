@@ -1,62 +1,40 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { Calendar } from '../calendar';
-import { CalendarService } from '../calendar.service';
+import { Component, ViewChild, AfterViewInit, Renderer2 } from '@angular/core';
+import { Moment } from 'moment';
+import { MatCalendar } from '@angular/material';
 
 @Component({
   selector: 'my-calendars',
   templateUrl: './calendars.component.html',
+  styleUrls: ['./calendars.component.css']
 })
-export class CalendarsComponent implements OnInit {
-  calendars: Calendar[];
-  selectedCalendar: Calendar;
-  addingCalendar = false;
-  error: any;
-  showNgFor = false;
+export class CalendarsComponent implements AfterViewInit {
 
-  constructor(private router: Router, private calendarService: CalendarService) {}
+  @ViewChild('calendar') calendar: MatCalendar<Moment>;
 
-  getCalendars(): void {
-    this.calendarService
-      .getCalendars()
-      .subscribe(
-        calendars => (this.calendars = calendars),
-        error => (this.error = error)
-      )
+  selectedDate: Moment;
+
+  constructor(private renderer: Renderer2) {
   }
 
-  addCalendar(): void {
-    this.addingCalendar = true;
-    this.selectedCalendar = null;
+  monthSelected(date) {
+    alert(`Selected: ${date}`);
   }
 
-  close(savedCalendar: Calendar): void {
-    this.addingCalendar = false;
-    if (savedCalendar) {
-      this.getCalendars();
+  onDateChanged(date) {
+    alert(`Selected: ${date}`);
+  }
+
+  ngAfterViewInit() {
+    // Find all arrow buttons in the calendar
+    const buttons = document.querySelectorAll('mat-calendar mat-calendar-header button');
+
+    if (buttons) {
+      // Listen for click event
+      Array.from(buttons).forEach(button => {
+        this.renderer.listen(button, 'click', () => {
+          alert('Arrow button clicked');
+        });
+      })
     }
-  }
-
-  deleteCalendar(calendar: Calendar, event: any): void {
-    event.stopPropagation();
-    this.calendarService.delete(calendar).subscribe(res => {
-      this.calendars = this.calendars.filter(h => h !== calendar);
-      if (this.selectedCalendar === calendar) {
-        this.selectedCalendar = null;
-      }
-    }, error => (this.error = error));
-  }
-
-  ngOnInit(): void {
-    this.getCalendars();
-  }
-
-  onSelect(calendar: Calendar): void {
-    this.selectedCalendar = calendar;
-    this.addingCalendar = false;
-  }
-
-  gotoDetail(): void {
-    this.router.navigate(['/detail', this.selectedCalendar.id]);
   }
 }

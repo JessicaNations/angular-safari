@@ -1,29 +1,3 @@
-<h2>Favorite Events</h2>
-
-<ul class="calendars">
-  <li *ngFor="let calendar of calendars" (click)="onSelect(calendar)" [class.selected]="calendar === selectedCalendar">
-    <span class="calendar-element">
-      <span class="badge">{{calendar.id}}</span> {{calendar.name}}
-    </span>
-  <mat-chip-list>
-    <mat-chip class="delete-button" (click)="deleteCalendar(calendar, $calendar)">Delete</mat-chip>
-  </mat-chip-list>
-  </li>
-</ul>
-
-<div class="error" *ngIf="error">{{error}}</div>
-<mat-chip-list>
-<mat-chip (click)="addCalendar()">Add New Date</mat-chip>
-</mat-chip-list>
-<div *ngIf="addingCalendar">
-  <my-calendar-detail (close)="close($calendar)"></my-calendar-detail>
-</div>
-
-<div *ngIf="selectedCalendar">
-  <h2>
-    {{selectedCalendar.name}} is my calendar
-  </h2>
-  <mat-chip-list>
-  <mat-chip (click)="gotoDetail()">View Details</mat-chip>
-</mat-chip-list>
+<div class="calendar-wrapper">
+  <mat-calendar #calendar [(selected)]="selectedDate" (monthSelected)="monthSelected($event)" (selectedChange)="onDateChanged($event)"></mat-calendar>
 </div>
