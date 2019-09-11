@@ -21,9 +21,8 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
         (selectedChange)="onDateChanged($event)">
       </mat-calendar>
     </div>
-    <br/>
-
-    <button mat-raised-button (click)="openBottomSheet()">Share Calendar Details</button>
+    <!-- <br/>
+    <button mat-raised-button (click)="openBottomSheet()">Share Calendar Details</button> -->
  `
 })
 export class CalendarsComponent implements AfterViewInit {
@@ -46,12 +45,13 @@ export class CalendarsComponent implements AfterViewInit {
   // }
 
   onDateChanged(date) {
-    alert(`Selected: ${date}`);
-  }
-
-  openBottomSheet(): void {
+    // alert(`Selected: ${date}`);
     this._bottomSheet.open(CalendarBottomComponent);
   }
+
+  // openBottomSheet(): void {
+  //   this._bottomSheet.open(CalendarBottomComponent);
+  // }
 
   // goDetail(): void {
   //   const link = ['/detail'];
