@@ -6,6 +6,11 @@
     * Visit
     * About
     * Support
+* might make an img slider of cards
+* share button
+    * Extra credit: set it overlapping the image and text
+# Events
+* Link to hours?
 * Event Cards (maybe carousel)
 * OR Animal gif/carousel
 * ?instagram carousel? do they moderate that?
@@ -36,11 +41,10 @@
     * moment().holidaysBetween(moment(‘10/1’ | ‘1/31’));
     * moment().holidaysBetween(moment(‘11/1’ | ‘2/28’));
 ## Event Details Page
-* Add to calendar button
+* Not sure what I'm gonna do with this
+* Some type of admission detail thing maybe
 # EVENTS TODO:
 * On date click show the details in bottom sheet modal
-* Bottom modal for sharing created
-    * just need to trigger it from clicking a date
 # ADMISSION (offer email subscription at ticket purchase)
 * Adults
 * Kids
@@ -59,19 +63,19 @@
 * Directions
 * Policies
 ## Hours TODO:
+* Connect to calendar?
 * Dynamic bold open hours
 * Word "Open" next to today's hours
 * Red "Closed" next to today's hours
 * Subtext below today's bold hours: Tuesday hours
 * Monday: 10am - 5pm [format]
-* Fix divider from extending out of bounds
 ## Current Hours Page
 ![Hours-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours-detail.png)
 ## Directions
 * Easy and clear: either google link img
 * Or minimalist line drawing
-* Picture of the the park entrance
-* ?Picture of the street view in google maps?
+* Picture of the park entrance
+* Picture of the front of the park
 ## Park Policies
 * animal encounters
 * park security
@@ -79,7 +83,7 @@
 * no outside food
 * Accessibility
     * wheel-chair access
-    * Input box for access suggestions
+    * strollers and such
 # ABOUT -- submenu
 * History
 * Services
@@ -89,6 +93,7 @@
 ## History
 * Row About the Owners
 * Row History Blurb with pictures
+    * timeline?
 * Row Coming soon
 ## Services (Animals for your event)
 * Modals and steppers
@@ -99,9 +104,7 @@
 * volunteer
 # Notes
 * **DO NOT MOVE ON WITHOUT FIXING ERRORS**
-* might make an img slider of cards
-* added a fake share button
-    * Extra credit: set it overlapping the image and text     
+     
 # Errors
 # Images:
 ## Dashboard:
