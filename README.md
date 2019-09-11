@@ -9,9 +9,6 @@
 * Event Cards (maybe carousel)
 * OR Animal gif/carousel
 * ?instagram carousel? do they moderate that?
-## Event Details Page
-* Add to calendar button
-# EVENTS (maybe make this the dashboard)
 * New and upcoming attractions
 * If current month == month from range, display the holidays in the specified range.
 ## Counts the number of upcoming holidays to fetch:
@@ -38,6 +35,10 @@
     * moment().holidaysBetween(moment(‘9/1’ | ‘12/31’));
     * moment().holidaysBetween(moment(‘10/1’ | ‘1/31’));
     * moment().holidaysBetween(moment(‘11/1’ | ‘2/28’));
+## Event Details Page
+* Add to calendar button
+# EVENTS TODO:
+* On date click show the details in bottom sheet modal
 # ADMISSION (offer email subscription at ticket purchase)
 * Adults
 * Kids
