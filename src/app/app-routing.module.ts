@@ -15,6 +15,7 @@ import { HiringComponent } from './hiring/hiring.component';
 import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
 import { AboutComponent } from './about/about.component';
 import { AdmissionComponent } from './admission/admission.component';
+import { CalendarBottomComponent } from './calendar-bottom/calendar-bottom.component';
 
 
 const routes: Routes = [
@@ -33,7 +34,8 @@ const routes: Routes = [
   { path: 'hiring', component: HiringComponent },
   { path: 'rent-animals', component: RentAnimalsComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'admission', component: AdmissionComponent }
+  { path: 'admission', component: AdmissionComponent },
+  { path: 'calendar-bottom', component: CalendarBottomComponent }
 
 ];
 

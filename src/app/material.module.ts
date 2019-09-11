@@ -19,6 +19,7 @@ import {
   MatTabsModule,
   MatToolbarModule
  } from '@angular/material';
+ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 // import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
@@ -31,6 +32,7 @@ import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   imports: [
+    MatBottomSheetModule,
     MatButtonModule,
     // MatCard,
     MatCardModule,
@@ -62,6 +64,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatDatepickerModule,
   ],
   exports: [
+    MatBottomSheetModule,
     MatButtonModule,
     // MatCard,
     MatCardModule,

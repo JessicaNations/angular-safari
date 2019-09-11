@@ -2,7 +2,9 @@ import { Component, ViewChild, AfterViewInit, Renderer2 } from '@angular/core';
 import { Moment } from 'moment';
 import { MatCalendar } from '@angular/material';
 import { Router } from '@angular/router';
-import { Calendar } from 'app/calendar';
+import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
+import { CalendarBottomComponent } from 'app/calendar-bottom/calendar-bottom.component';
+
 
 @Component({
   selector: 'my-calendars',
@@ -19,6 +21,9 @@ import { Calendar } from 'app/calendar';
         (selectedChange)="onDateChanged($event)">
       </mat-calendar>
     </div>
+    <br/>
+
+    <button mat-raised-button (click)="openBottomSheet()">Share Calendar Details</button>
  `
 })
 export class CalendarsComponent implements AfterViewInit {
@@ -28,8 +33,10 @@ export class CalendarsComponent implements AfterViewInit {
   selectedDate: Moment;
   // selectedCalendar: Calendar;
 
-  constructor(private router: Router, private renderer: Renderer2) {
-  }
+  constructor(
+    private router: Router,
+    private renderer: Renderer2,
+    private _bottomSheet: MatBottomSheet) {}
 
   monthSelected(date) {
     alert(`Selected: ${date}`);
@@ -41,8 +48,16 @@ export class CalendarsComponent implements AfterViewInit {
 
   onDateChanged(date) {
     alert(`Selected: ${date}`);
-    // this.router.navigate(['/detail', this.selectedCalendar]);
   }
+
+  openBottomSheet(): void {
+    this._bottomSheet.open(CalendarBottomComponent);
+  }
+
+  // goDetail(): void {
+  //   const link = ['/detail'];
+  //   this.router.navigate(link);
+  // }
 
   ngAfterViewInit() {
     // Find all arrow buttons in the calendar

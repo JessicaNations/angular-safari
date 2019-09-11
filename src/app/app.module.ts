@@ -29,6 +29,7 @@ import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
 import { AboutNavbarComponent } from './about-navbar/about-navbar.component';
 import { AboutComponent } from './about/about.component';
 import { AdmissionComponent } from './admission/admission.component';
+import { CalendarBottomComponent } from './calendar-bottom/calendar-bottom.component';
 
 import { MyMaterialModule } from './material.module';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
@@ -67,7 +68,8 @@ import { MyMaterialModule } from './material.module';
     SupportComponent,
     AboutNavbarComponent,
     AboutComponent,
-    AdmissionComponent
+    AdmissionComponent,
+    CalendarBottomComponent
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]
