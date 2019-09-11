@@ -39,6 +39,8 @@
 * Add to calendar button
 # EVENTS TODO:
 * On date click show the details in bottom sheet modal
+* Bottom modal for sharing created
+    * just need to trigger it from clicking a date
 # ADMISSION (offer email subscription at ticket purchase)
 * Adults
 * Kids

@@ -3,7 +3,7 @@ import { Moment } from 'moment';
 import { MatCalendar } from '@angular/material';
 import { Router } from '@angular/router';
 import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-sheet';
-import { CalendarBottomComponent } from 'app/calendar-bottom/calendar-bottom.component';
+import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.component';
 
 
 @Component({
@@ -31,7 +31,6 @@ export class CalendarsComponent implements AfterViewInit {
   @ViewChild('calendar') calendar: MatCalendar<Moment>;
 
   selectedDate: Moment;
-  // selectedCalendar: Calendar;
 
   constructor(
     private router: Router,
