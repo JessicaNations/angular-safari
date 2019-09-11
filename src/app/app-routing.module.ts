@@ -14,6 +14,7 @@ import { SupportComponent } from './support/support.component';
 import { HiringComponent } from './hiring/hiring.component';
 import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
 import { AboutComponent } from './about/about.component';
+import { AdmissionComponent } from './admission/admission.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'hiring', component: HiringComponent },
   { path: 'rent-animals', component: RentAnimalsComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'admission', component: AdmissionComponent }
 
 ];
 

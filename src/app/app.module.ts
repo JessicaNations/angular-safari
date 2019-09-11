@@ -28,6 +28,7 @@ import { HiringComponent } from './hiring/hiring.component';
 import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
 import { AboutNavbarComponent } from './about-navbar/about-navbar.component';
 import { AboutComponent } from './about/about.component';
+import { AdmissionComponent } from './admission/admission.component';
 
 import { MyMaterialModule } from './material.module';
 import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
@@ -65,7 +66,8 @@ import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
     HiringComponent,
     SupportComponent,
     AboutNavbarComponent,
-    AboutComponent
+    AboutComponent,
+    AdmissionComponent
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]
