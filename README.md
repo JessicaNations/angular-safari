@@ -86,7 +86,6 @@
     * strollers and such
 # ABOUT -- submenu
 * History
-* Animal services
 * Hiring
 ## Current Page
 ![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
@@ -103,8 +102,7 @@
 * donations
 * volunteer
 # Notes
-* **DO NOT MOVE ON WITHOUT FIXING ERRORS**
-     
+* **DO NOT MOVE ON WITHOUT FIXING ERRORS**    
 # Errors
 # Images:
 ## Dashboard:
