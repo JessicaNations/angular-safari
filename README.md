@@ -86,7 +86,7 @@
     * strollers and such
 # ABOUT -- submenu
 * History
-* Park Services
+* Animal services
 * Hiring
 ## Current Page
 ![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
@@ -95,7 +95,7 @@
 * Row History Blurb with pictures
     * timeline?
 * Row Coming soon
-## ParkServices (Animals for your event)
+## Animalservices (Animals for your event)
 * Modals and steppers
 ## Hiring/”Careers”
 * modals? steppers
@@ -106,6 +106,8 @@
 * **DO NOT MOVE ON WITHOUT FIXING ERRORS**
      
 # Errors
+* Began working on the admission component
+* put in a navbar and broke it somehow
 # Images:
 ## Dashboard:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)

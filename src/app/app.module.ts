@@ -25,11 +25,12 @@ import { HoursComponent } from './hours/hours.component';
 import { HistoryComponent } from './history/history.component';
 import { SupportComponent } from './support/support.component';
 import { HiringComponent } from './hiring/hiring.component';
-import { ParkServicesComponent } from './park-services/park-services.component';
+import { AnimalservicesComponent } from './animal-services/animal-services.component';
 import { AboutNavbarComponent } from './about-navbar/about-navbar.component';
 import { AboutComponent } from './about/about.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { CalendarBottomComponent } from './calendar-bottom/calendar-bottom.component';
+import { AdmissionNavbarComponent } from './admission-navbar/admission-navbar.component';
 
 import { MyMaterialModule } from './material.module';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
@@ -63,13 +64,14 @@ import { MyMaterialModule } from './material.module';
     ParkPoliciesComponent,
     HoursComponent,
     HistoryComponent,
-    ParkServicesComponent,
+    AnimalservicesComponent,
     HiringComponent,
     SupportComponent,
     AboutNavbarComponent,
     AboutComponent,
     AdmissionComponent,
-    CalendarBottomComponent
+    CalendarBottomComponent,
+    AdmissionNavbarComponent
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]

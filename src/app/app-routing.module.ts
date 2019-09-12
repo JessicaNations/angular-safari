@@ -12,7 +12,7 @@ import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { HistoryComponent } from './history/history.component';
 import { SupportComponent } from './support/support.component';
 import { HiringComponent } from './hiring/hiring.component';
-import { ParkServicesComponent } from './park-services/park-services.component';
+import { AnimalservicesComponent } from './animal-services/animal-services.component';
 import { AboutComponent } from './about/about.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { CalendarBottomComponent } from './calendar-bottom/calendar-bottom.component';
@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: 'history', component: HistoryComponent },
   { path: 'support', component: SupportComponent },
   { path: 'hiring', component: HiringComponent },
-  { path: 'park-services', component: ParkServicesComponent },
+  { path: 'animal-services', component: AnimalservicesComponent },
   { path: 'about', component: AboutComponent },
   { path: 'admission', component: AdmissionComponent },
   { path: 'calendar-bottom', component: CalendarBottomComponent }
