@@ -11,7 +11,7 @@ export class CalendarSearchService {
 
   search(term: string): Observable<Calendar[]> {
     return this.http
-      .get<Calendar[]>(`app/calendars/?name=${term}`)
+      .get<Calendar[]>(`./calendars/?name=${term}`)
       .pipe(catchError(this.handleError));
   }
 
