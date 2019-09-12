@@ -7,12 +7,12 @@ import { CalendarDetailComponent } from './calendar-detail/calendar-detail.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitComponent } from './visit/visit.component';
 import { HoursComponent } from './hours/hours.component';
-import { DirectionsComponent } from './directions/directions.component';
+import { FaqComponent } from './faq/faq.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { HistoryComponent } from './history/history.component';
 import { SupportComponent } from './support/support.component';
 import { HiringComponent } from './hiring/hiring.component';
-import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
+import { ParkServicesComponent } from './park-services/park-services.component';
 import { AboutComponent } from './about/about.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { CalendarBottomComponent } from './calendar-bottom/calendar-bottom.component';
@@ -27,12 +27,12 @@ const routes: Routes = [
   { path: 'calendars', component: CalendarsComponent },
   { path: 'visit', component: VisitComponent },
   { path: 'hours', component: HoursComponent },
-  { path: 'directions', component: DirectionsComponent },
+  { path: 'faq', component: FaqComponent },
   { path: 'park-policies', component: ParkPoliciesComponent },
   { path: 'history', component: HistoryComponent },
   { path: 'support', component: SupportComponent },
   { path: 'hiring', component: HiringComponent },
-  { path: 'rent-animals', component: RentAnimalsComponent },
+  { path: 'park-services', component: ParkServicesComponent },
   { path: 'about', component: AboutComponent },
   { path: 'admission', component: AdmissionComponent },
   { path: 'calendar-bottom', component: CalendarBottomComponent }

@@ -19,13 +19,13 @@ import { CalendarSearchComponent } from './calendar-search/calendar-search.compo
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitComponent } from './visit/visit.component';
 import { VisitNavbarComponent } from './visit-navbar/visit-navbar.component';
-import { DirectionsComponent } from './directions/directions.component';
+import { FaqComponent } from './faq/faq.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { HoursComponent } from './hours/hours.component';
 import { HistoryComponent } from './history/history.component';
 import { SupportComponent } from './support/support.component';
 import { HiringComponent } from './hiring/hiring.component';
-import { RentAnimalsComponent } from './rent-animals/rent-animals.component';
+import { ParkServicesComponent } from './park-services/park-services.component';
 import { AboutNavbarComponent } from './about-navbar/about-navbar.component';
 import { AboutComponent } from './about/about.component';
 import { AdmissionComponent } from './admission/admission.component';
@@ -59,11 +59,11 @@ import { MyMaterialModule } from './material.module';
     DashboardComponent,
     VisitComponent,
     VisitNavbarComponent,
-    DirectionsComponent,
+    FaqComponent,
     ParkPoliciesComponent,
     HoursComponent,
     HistoryComponent,
-    RentAnimalsComponent,
+    ParkServicesComponent,
     HiringComponent,
     SupportComponent,
     AboutNavbarComponent,

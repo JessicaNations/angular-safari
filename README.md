@@ -71,7 +71,7 @@
 * Monday: 10am - 5pm [format]
 ## Current Hours Page
 ![Hours-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours-detail.png)
-## Directions
+## Faq
 * Easy and clear: either google link img
 * Or minimalist line drawing
 * Picture of the park entrance
@@ -86,7 +86,7 @@
     * strollers and such
 # ABOUT -- submenu
 * History
-* Services
+* Park Services
 * Hiring
 ## Current Page
 ![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
@@ -95,7 +95,7 @@
 * Row History Blurb with pictures
     * timeline?
 * Row Coming soon
-## Services (Animals for your event)
+## ParkServices (Animals for your event)
 * Modals and steppers
 ## Hiring/”Careers”
 * modals? steppers

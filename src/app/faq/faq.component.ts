@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'my-directions',
-  templateUrl: './directions.component.html',
+  selector: 'my-faq',
+  templateUrl: './faq.component.html',
 })
-export class DirectionsComponent {
+export class FaqComponent {
 
 // constructor() {
 //   type MatExpansionPanelState = 'collapsed';
