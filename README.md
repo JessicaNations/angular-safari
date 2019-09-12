@@ -60,7 +60,7 @@
     * modals and steppers
 # VISIT -- with submenu
 * Hours
-* Directions
+* FAQs
 * Policies
 ## Hours TODO:
 * Connect to calendar?

@@ -5,7 +5,6 @@ import { Component, Input } from '@angular/core';
   templateUrl: './hours.component.html',
 })
 export class HoursComponent {
-  panelOpenState = false;
 
 // idk trying it out
 // And try this ng-template[matExpansionPanelContent]

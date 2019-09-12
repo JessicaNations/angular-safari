@@ -2,25 +2,11 @@
   <mat-card-content>
     <mat-accordion>
       <mat-expansion-panel>
-        <mat-expansion-panel-header><b>
-            Average visit length?
-          </b></mat-expansion-panel-header>
-        <mat-list>
-          <mat-list-item>
-            The average visit is approximately an hour.
-          </mat-list-item>
-        </mat-list>
-      </mat-expansion-panel>
-    </mat-accordion>
-  </mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-content>
-    <mat-accordion>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header><b>
+        <mat-expansion-panel-header>
+          <mat-panel-title><b>
             Best age to visit?
-          </b></mat-expansion-panel-header>
+          </b></mat-panel-title>
+        </mat-expansion-panel-header>
         <mat-list>
           <mat-list-item>
             Animal lovers of all ages are welcome.
@@ -33,7 +19,9 @@
 <mat-card>
   <mat-card-content>
     <mat-accordion>
-      <mat-expansion-panel>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
         <mat-expansion-panel-header><b>
             Is the park wheelchair accessible?
           </b></mat-expansion-panel-header>
@@ -51,7 +39,9 @@
 <mat-card>
   <mat-card-content>
     <mat-accordion>
-      <mat-expansion-panel>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
         <mat-expansion-panel-header><b>Which animals can be touched and fed?</b></mat-expansion-panel-header>
         <mat-list>
           <mat-list-item>
@@ -80,7 +70,9 @@
 <mat-card>
   <mat-card-content>
     <mat-accordion>
-      <mat-expansion-panel>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
         <mat-expansion-panel-header><b>
             Are reservations required for large groups?
           </b></mat-expansion-panel-header>

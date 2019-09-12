@@ -1,16 +1,13 @@
 <mat-card class="dashboard-card">
   <mat-card-content>
-    <p><b>No admittance ends 15 minutes prior to closing.</b></p>
+    <p><b>Last available entery is 30 minutes prior to closing.</b></p>
+    <p><b>Average journey through the park is 1 hour.</b></p>
     <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
             9AM-5PM
           </mat-panel-title>
-          <mat-panel-description>
-            {{panelOpenState ? 'Open' : 'Closed'}}
-          </mat-panel-description>
         </mat-expansion-panel-header>
         <mat-list>
           <mat-list-item>Friday: 9AM-5PM</mat-list-item>
