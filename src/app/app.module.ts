@@ -31,6 +31,8 @@ import { AboutComponent } from './about/about.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { CalendarBottomComponent } from './calendar-bottom/calendar-bottom.component';
 import { AdmissionNavbarComponent } from './admission-navbar/admission-navbar.component';
+import { GeneralAdmissionComponent } from './general-admission/general-admission.component';
+import { GroupRatesComponent } from './group-rates/group-rates.component';
 
 import { MyMaterialModule } from './material.module';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
@@ -71,7 +73,9 @@ import { MyMaterialModule } from './material.module';
     AboutComponent,
     AdmissionComponent,
     CalendarBottomComponent,
-    AdmissionNavbarComponent
+    AdmissionNavbarComponent,
+    GeneralAdmissionComponent,
+    GroupRatesComponent
   ],
   providers: [CalendarService],
   bootstrap: [AppComponent]

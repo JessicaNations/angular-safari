@@ -106,8 +106,6 @@
 * **DO NOT MOVE ON WITHOUT FIXING ERRORS**
      
 # Errors
-* Began working on the admission component
-* put in a navbar and broke it somehow
 # Images:
 ## Dashboard:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)

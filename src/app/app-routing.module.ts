@@ -16,6 +16,8 @@ import { AnimalservicesComponent } from './animal-services/animal-services.compo
 import { AboutComponent } from './about/about.component';
 import { AdmissionComponent } from './admission/admission.component';
 import { CalendarBottomComponent } from './calendar-bottom/calendar-bottom.component';
+import { GeneralAdmissionComponent } from './general-admission/general-admission.component';
+import { GroupRatesComponent } from './group-rates/group-rates.component';
 
 
 const routes: Routes = [
@@ -35,7 +37,9 @@ const routes: Routes = [
   { path: 'animal-services', component: AnimalservicesComponent },
   { path: 'about', component: AboutComponent },
   { path: 'admission', component: AdmissionComponent },
-  { path: 'calendar-bottom', component: CalendarBottomComponent }
+  { path: 'calendar-bottom', component: CalendarBottomComponent },
+  { path: 'general-admission', component: GeneralAdmissionComponent },
+  { path: 'group-rates', component: GroupRatesComponent }
 
 ];
 
