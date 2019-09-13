@@ -1,16 +1,10 @@
-# Safari
-# DASHBOARD
-* Tabs:
-    * Dashboard
-    * Calendar
-    * Admission
-    * Visit
-    * About
-    * Support (Charity?)
+# Safari TODOs
+# DASHBOARD TODOs
 * might make an img slider of event cards
 * share button (with bottom modal) on each event card
     * Extra credit: set it overlapping the image and text
-# Events
+# CALENDAR TODOs
+* On date click show the details in bottom sheet modal
 * Link to event cards
 * Event Cards (maybe carousel)
 * OR Animal gif/carousel
@@ -44,43 +38,32 @@
 ## Event Details Page
 * Not sure what I'm gonna do with this
 * Some type of admission detail thing maybe
-# EVENTS TODO:
-* On date click show the details in bottom sheet modal
-# ADMISSION (offer email subscription at ticket purchase)
-* Done except:
-    * school tours
-    * modals and steppers
-    * animal services
-# VISIT -- with submenu
-* Hours
-* FAQs 
-* Policies
+# ADMISSION TODOs
+* school tours
+* modals and steppers
+* animal services
 ## Hours TODO:
 * Dynamic bold open hours
 * Word "Open" next to today's hours
 * Red "Closed" next to today's hours
 * Subtext below today's bold hours: Tuesday hours
 * Monday: 10am - 5pm [format]
-## Current Hours Page
-![Hours-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours-detail.png)
-# ABOUT -- submenu
-* History
-## Current Page
-![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
-## History
+
+## History TODOs
 * Row About the Owners
 * Row History Blurb with pictures
     * timeline?
 * Row Coming soon
-## Animalservices (Animals for your event)
+## Animalservices (Animals for your event) TODOs
 * Modals and steppers
-# SUPPORT (charity?)
+# SUPPORT (charity?) TODOs
 * donations
 * volunteer
-# Notes
-* **DO NOT MOVE ON WITHOUT FIXING ERRORS**    
-# Errors
 # Images:
+## Current Hours Page
+![Hours-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours-detail.png)
+## Current About Page
+![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
 ## Dashboard:
 ![Dashboard](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/dashboard.png)
 ## Dashboard Actions:
