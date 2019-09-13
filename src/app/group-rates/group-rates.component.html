@@ -1,88 +1,70 @@
 <mat-card class="dashboard-card">
   <mat-card-content>
-  <p><b>Birthday Parties</b></p>
-  <p>
-    Looking for a cool and fun place to have a birthday party?
-    Big Joel's Safari is the place for a truly unique day!
-  </p>
-  <p><b>
-    What's included in our Safari Birthday Package
-  </b></p>
-  <ul>
-    <li>Admission for 10 kids and 10 adults.</li>
-    <li>Additional guests must pay the standard park entrance fee.</li>
-    <li>Free admission for the birthday child's parents and up to four Grandparents.</li>
-    <li>Each kids will recieve a small souvenir feed cup with animal feed for the animals.</li>
-    <li>Party guests have private access to the Safari Party Room for 2 hours, with 30 additional minutes for prep-time
-      beforehand.</li>
-    <li>The party room has Safari themed decorations and is climate controlled.</li>
-    <li>Basic cups, plates, napkins, and utensils are provided.</li>
+    <p><b>Birthday Parties</b></p>
+    <p>
+      Looking for a cool and fun place to have a birthday party?
+    </p>
+    <p>
+      Big Joel's Safari is the place for a truly unique day!
+    </p>
+    <p><b>
+        What's included in the Safari Birthday Package
+      </b></p>
+    <ul>
+      <li>Admission for 10 kids and 10 adults.</li>
+      <li>Additional guests must pay the standard park entrance fee.</li>
+      <li>Free admission for the birthday child's guardians and up to four additional family members.</li>
+      <li>Each kid will recieve a small souvenir feed cup with animal feed for the animals.</li>
+      <li>Party guests have private access to the Safari Party Room for 2 hours, with 30 additional minutes for
+        prep-time
+        beforehand.</li>
+      <li>The party room has Safari themed decorations and is climate controlled.</li>
+      <li>Basic cups, plates, napkins, and utensils are provided.</li>
     </ul>
   </mat-card-content>
 </mat-card>
 <mat-card>
   <mat-card-content>
     <p><b>
-      Party Rules
-    </b></p>
-    <p><b>We encourage our guests to go over the park's policies before their event.</b></p>
+        Party Rules
+      </b></p>
+    <p><b>Guests are encouraged to go over the park's policies before their event.</b></p>
     <ul>
       <li>All guests must check-in at the front desk before entering the park.</li>
       <li>Guests are permitted to bring food and drink into the party room.</li>
       <li>Alchohol is prohibited.</li>
-      <li>All food and drink must stay in the party room for the safety of our animals.</li>
+      <li>All food and drink must stay in the party room for the safety of the animals.</li>
       <li>Guests are permitted to bring balloons and other party decorations.</li>
       <li>Balloons and party favors, such as whistles are to stay in the party room.</li>
-      </ul>
+    </ul>
   </mat-card-content>
 </mat-card>
 <mat-card>
   <mat-card-content>
-      <p><b>
+    <p><b>
         Venue Rental Pricing
       </b></p>
-      <p><b>$100 deposit is required to reserve your event</b></p>
-    </mat-card-content>
-  </mat-card>
-  <mat-card>
-    <mat-card-content>
-      <!-- <table>
-        <thead>
-          <tr>
-            <th>Number of Guests</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>0-49</td>
-            <td>$350</td>
-          </tr>
-          <tr>
-            <td>50-100</td>
-            <td>$500</td>
-          </tr>
-          <tr>
-            <td>101-150</td>
-            <td>$800</td>
-          </tr>
-          <tr>
-            <td>151-200</td>
-            <td>$,1050</td>
-          </tr>
-          <tr>
-            <td>201-250</td>
-            <td>$1,250</td>
-          </tr>
-          <tr>
-            <td>251-300</td>
-            <td>$1,500</td>
-          </tr>
-          <tr>
-            <td>300+</td>
-            <td>Contact the main office</td>
-          </tr>
-        </tbody>
-      </table> -->
-      </mat-card-content>
+    <p><b>$100 deposit is required to for all event reservations</b></p>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+      <mat-table [dataSource]="dataSource" class="group-rates">
+
+          <ng-container matColumnDef="guests">
+              <mat-header-cell *matHeaderCellDef>Number of Guests</mat-header-cell>
+              <mat-cell *matCellDef="let guests">{{group.guests}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="price">
+              <mat-header-cell *matHeaderCellDef>Price</mat-header-cell>
+              <mat-cell *matCellDef="let price">{{group.price}}</mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+
+          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+
+      </mat-table>
+  </mat-card-content>
 </mat-card>

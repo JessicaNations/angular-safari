@@ -15,7 +15,7 @@ import {
   // MatProgressSpinnerModule,
   // MatSnackBarModule,
   // MatSortModule,
-  // MatTableModule,
+  MatTableModule,
   MatTabsModule,
   MatToolbarModule
  } from '@angular/material';
@@ -56,7 +56,7 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatSnackBarModule,
     // MatSliderModule,
     // MatSortModule,
-    // MatTableModule,
+    MatTableModule,
     MatTabsModule,
     MatToolbarModule,
   ],
@@ -88,7 +88,7 @@ import { MatMenuModule } from '@angular/material/menu';
     // MatSnackBarModule,
     // MatSliderModule,
     // MatSortModule,
-    // MatTableModule,
+    MatTableModule,
     MatTabsModule,
     MatToolbarModule,
   ]
