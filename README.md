@@ -42,7 +42,7 @@
 * school tours
 * modals and steppers
 * animal services
-## Hours TODO:
+## Hours TODOs
 * Dynamic bold open hours
 * Word "Open" next to today's hours
 * Red "Closed" next to today's hours
@@ -61,7 +61,7 @@
 * volunteer
 # Images:
 ## Current Hours Page
-![Hours-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours-detail.png)
+![Hours](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours.png)
 ## Current About Page
 ![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
 ## Dashboard:
@@ -72,3 +72,9 @@
 ![Calendars](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars.png)
 ## Calendars Detail:
 ![Calendars-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/calendars-detail.png)
+## Party Table
+![PartyTable](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/partytable.png)
+## Admission
+![Admission](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/admission.png)
+
+
