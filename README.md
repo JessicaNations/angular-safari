@@ -46,18 +46,10 @@
 # EVENTS TODO:
 * On date click show the details in bottom sheet modal
 # ADMISSION (offer email subscription at ticket purchase)
-* Adults
-* Kids
-* Feed cups
-* Bird feed sticks
-* Deer enclosure
-* Pony rides
-* Hayrides
-* Concessions
-* Groups
-    * parties
+* Done except:
     * school tours
     * modals and steppers
+    * animal services
 # VISIT -- with submenu
 * Hours
 * FAQs
