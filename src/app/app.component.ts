@@ -1,21 +1,33 @@
-import { Component, ViewChild, Input } from '@angular/core';
-import { MatMenuTrigger, ThemePalette } from '@angular/material';
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material';
 import { Router } from '@angular/router';
+import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+
 
 
 @Component({
   selector: 'my-root',
   templateUrl: 'app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;  // check if this works
   title = 'Tour of Calendars';
   events: string[] = [];
   opened: boolean;
   constructor(
-    private router: Router
+    private router: Router,
+    public breakpointObserver: BreakpointObserver
   ) {}
 
+  ngOnInit() {
+    this.breakpointObserver
+      .observe(['(min-width: 500px)'])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches) {
+        } else {
+        }
+      });
+  }
 
   triggerMethod() {
     this.trigger.openMenu();

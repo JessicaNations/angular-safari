@@ -44,21 +44,21 @@
     <p><b>
         Venue Rental Pricing
       </b></p>
-    <p><b>$100 deposit is required to for all event reservations</b></p>
+    <p><b>$100 deposit is required for all event reservations.</b></p>
     <p>For parties of 300 or more, contact us at (636) 745-3031 for more information.</p>
   </mat-card-content>
 </mat-card>
 <mat-card>
   <mat-card-content>
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 align">
 
           <ng-container matColumnDef="guests">
-              <th mat-header-cell *matHeaderCellDef>Number of Guests</th>
+              <th mat-header-cell *matHeaderCellDef><b>Party</b></th>
               <td mat-cell *matCellDef="let group"> {{group.guests}} <td>
           </ng-container>
 
           <ng-container matColumnDef="price">
-              <th mat-header-cell *matHeaderCellDef>Price</th>
+              <th mat-header-cell *matHeaderCellDef><b>Price</b></th>
               <td mat-cell *matCellDef="let group"> {{group.price}} </td>
           </ng-container>
 
