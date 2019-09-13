@@ -29,6 +29,8 @@ import { MatMenuModule } from '@angular/material/menu';
 // import { MatRadioModule } from '@angular/material/radio';
 // import { MatSelectModule } from '@angular/material/select';
 // import { MatSliderModule } from '@angular/material/slider';
+import { CdkTableModule } from '@angular/cdk/table';
+
 
 @NgModule({
   imports: [
@@ -59,6 +61,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
+    CdkTableModule
   ],
   providers: [
     MatDatepickerModule,
@@ -91,6 +94,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
+    CdkTableModule
   ]
 })
 export class MyMaterialModule { }
