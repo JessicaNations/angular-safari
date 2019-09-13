@@ -1,16 +1,17 @@
 # Safari
 # DASHBOARD
 * Tabs:
-    * Events
+    * Dashboard
+    * Calendar
     * Admission
     * Visit
     * About
-    * Support
-* might make an img slider of cards
-* share button
+    * Support (Charity?)
+* might make an img slider of event cards
+* share button (with bottom modal) on each event card
     * Extra credit: set it overlapping the image and text
 # Events
-* Link to hours?
+* Link to event cards
 * Event Cards (maybe carousel)
 * OR Animal gif/carousel
 * ?instagram carousel? do they moderate that?
@@ -52,10 +53,9 @@
     * animal services
 # VISIT -- with submenu
 * Hours
-* FAQs
+* FAQs 
 * Policies
 ## Hours TODO:
-* Connect to calendar?
 * Dynamic bold open hours
 * Word "Open" next to today's hours
 * Red "Closed" next to today's hours
@@ -63,22 +63,8 @@
 * Monday: 10am - 5pm [format]
 ## Current Hours Page
 ![Hours-Detail](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours-detail.png)
-## Faq
-* Easy and clear: either google link img
-* Or minimalist line drawing
-* Picture of the park entrance
-* Picture of the front of the park
-## Park Policies
-* animal encounters
-* park security
-* no pets
-* no outside food
-* Accessibility
-    * wheel-chair access
-    * strollers and such
 # ABOUT -- submenu
 * History
-* Hiring
 ## Current Page
 ![About](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/about.png)
 ## History
@@ -88,9 +74,7 @@
 * Row Coming soon
 ## Animalservices (Animals for your event)
 * Modals and steppers
-## Hiring/”Careers”
-* modals? steppers
-# SUPPORT
+# SUPPORT (charity?)
 * donations
 * volunteer
 # Notes
