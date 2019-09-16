@@ -24,7 +24,6 @@ import { FaqComponent } from './faq/faq.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { HoursComponent } from './hours/hours.component';
 import { HistoryComponent } from './history/history.component';
-import { SupportComponent } from './support/support.component';
 import { HiringComponent } from './hiring/hiring.component';
 import { AnimalservicesComponent } from './animal-services/animal-services.component';
 import { AboutNavbarComponent } from './about-navbar/about-navbar.component';

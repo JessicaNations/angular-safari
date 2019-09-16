@@ -53,11 +53,6 @@ export class AppComponent implements OnInit {
     this.router.navigate(link);
   }
 
-  goSupport(): void {
-    const link = ['/support'];
-    this.router.navigate(link);
-  }
-
   goAdmission(): void {
     const link = ['/admission'];
     this.router.navigate(link);

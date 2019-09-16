@@ -52,9 +52,6 @@
 * Row Coming soon
 ## Animalservices (Animals for your event) TODOs
 * Modals and steppers
-# SUPPORT (charity?) TODOs
-* donations
-* volunteer
 # Images:
 ## Current Hours Page
 ![Hours](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours.png)

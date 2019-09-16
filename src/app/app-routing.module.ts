@@ -10,7 +10,6 @@ import { HoursComponent } from './hours/hours.component';
 import { FaqComponent } from './faq/faq.component';
 import { ParkPoliciesComponent } from './park-policies/park-policies.component';
 import { HistoryComponent } from './history/history.component';
-import { SupportComponent } from './support/support.component';
 import { HiringComponent } from './hiring/hiring.component';
 import { AnimalservicesComponent } from './animal-services/animal-services.component';
 import { AboutComponent } from './about/about.component';
@@ -34,7 +33,6 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'park-policies', component: ParkPoliciesComponent },
   { path: 'history', component: HistoryComponent },
-  { path: 'support', component: SupportComponent },
   { path: 'hiring', component: HiringComponent },
   { path: 'animal-services', component: AnimalservicesComponent },
   { path: 'about', component: AboutComponent },
