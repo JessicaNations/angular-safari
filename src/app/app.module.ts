@@ -71,7 +71,6 @@ import { MyMaterialModule } from './material.module';
     HistoryComponent,
     AnimalservicesComponent,
     HiringComponent,
-    SupportComponent,
     AboutNavbarComponent,
     AboutComponent,
     AdmissionComponent,
