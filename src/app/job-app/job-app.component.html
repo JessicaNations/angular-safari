@@ -1,12 +1,12 @@
 <div>
     <form [formGroup]="options">
-      <mat-checkbox formControlName="hideRequired">Hide required marker</mat-checkbox>
+      <mat-checkbox formControlName="hideRequired">18 or older</mat-checkbox>
       <div>
-        <label>Float label: </label>
+        <label>Position Choice: </label>
         <mat-radio-group formControlName="floatLabel">
-          <mat-radio-button value="auto">Auto</mat-radio-button>
-          <mat-radio-button value="always">Always</mat-radio-button>
-          <mat-radio-button value="never">Never</mat-radio-button>
+          <mat-radio-button value="auto">Safari Ambassador</mat-radio-button>
+          <mat-radio-button value="always">Safari Team Member</mat-radio-button>
+          <mat-radio-button value="never">Lead Safari Team Member</mat-radio-button>
         </mat-radio-group>
       </div>
     </form>
@@ -14,11 +14,11 @@
     <mat-form-field
         [hideRequiredMarker]="options.value.hideRequired"
         [floatLabel]="options.value.floatLabel">
-      <input matInput placeholder="Simple placeholder" required>
+      <input matInput placeholder="Reference Name" required>
     </mat-form-field>
 
     <mat-form-field [floatLabel]="options.value.floatLabel">
-      <mat-label>Both a label and a placeholder</mat-label>
+      <mat-label>Reference phone number</mat-label>
       <input matInput placeholder="Simple placeholder">
     </mat-form-field>
 
