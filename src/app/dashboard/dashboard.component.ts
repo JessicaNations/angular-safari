@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   selector: 'my-dashboard',
   templateUrl: './dashboard.component.html',
 })
-export class DashboardComponent{    // implements OnInit
+export class DashboardComponent {    // implements OnInit
   public pageTitle = 'Safari';
   // calendars: Calendar[] = [];
 
