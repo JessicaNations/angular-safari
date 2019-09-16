@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import {
   MatButtonModule,
-  // MatCard,
   MatCardModule,
   MatCheckboxModule,
   // MatDialogModule,
   MatFormFieldModule,
   MatIconModule,
-  // MatInputModule,
   MatNativeDateModule,
   MatDatepickerModule,
   // MatPaginatorModule,
@@ -35,7 +33,6 @@ import { CdkTableModule } from '@angular/cdk/table';
   imports: [
     MatBottomSheetModule,
     MatButtonModule,
-    // MatCard,
     MatCardModule,
     // MatCarouselModule,
     MatCheckboxModule,
@@ -46,7 +43,6 @@ import { CdkTableModule } from '@angular/cdk/table';
     MatExpansionModule,
     MatFormFieldModule,
     MatIconModule,
-    // MatInputModule,
     MatListModule,
     MatMenuModule,
     MatNativeDateModule,
@@ -68,7 +64,6 @@ import { CdkTableModule } from '@angular/cdk/table';
   exports: [
     MatBottomSheetModule,
     MatButtonModule,
-    // MatCard,
     MatCardModule,
     // MatCarouselModule,
     MatCheckboxModule,
@@ -79,7 +74,6 @@ import { CdkTableModule } from '@angular/cdk/table';
     MatExpansionModule,
     MatFormFieldModule,
     MatIconModule,
-    // MatInputModule,
     MatListModule,
     MatMenuModule,
     MatNativeDateModule,

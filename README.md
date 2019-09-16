@@ -35,9 +35,6 @@
     * moment().holidaysBetween(moment(‘9/1’ | ‘12/31’));
     * moment().holidaysBetween(moment(‘10/1’ | ‘1/31’));
     * moment().holidaysBetween(moment(‘11/1’ | ‘2/28’));
-## Event Details Page (maybe delete)
-* Not sure what I'm gonna do with this
-* Some type of admission detail thing maybe
 # ADMISSION TODOs
 * modals and steppers
 ## Hours TODOs
