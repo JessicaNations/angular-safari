@@ -18,6 +18,7 @@ import { AdmissionComponent } from './admission/admission.component';
 import { CalendarBottomComponent } from './calendar-bottom/calendar-bottom.component';
 import { GeneralAdmissionComponent } from './general-admission/general-admission.component';
 import { GroupRatesComponent } from './group-rates/group-rates.component';
+import { FieldTripsComponent } from './field-trips/field-trips.component';
 
 
 const routes: Routes = [
@@ -39,7 +40,8 @@ const routes: Routes = [
   { path: 'admission', component: AdmissionComponent },
   { path: 'calendar-bottom', component: CalendarBottomComponent },
   { path: 'general-admission', component: GeneralAdmissionComponent },
-  { path: 'group-rates', component: GroupRatesComponent }
+  { path: 'group-rates', component: GroupRatesComponent },
+  { path: 'field-trips', component: FieldTripsComponent }
 
 ];
 
