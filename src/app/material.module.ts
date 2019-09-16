@@ -3,10 +3,10 @@ import {
   MatButtonModule,
   // MatCard,
   MatCardModule,
-  // MatCheckboxModule,
+  MatCheckboxModule,
   // MatDialogModule,
   // MatFormField,
-  // MatFormFieldModule,
+  MatFormFieldModule,
   MatIconModule,
   MatInputModule,
   MatNativeDateModule,
@@ -26,8 +26,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
-// import { MatRadioModule } from '@angular/material/radio';
-// import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
 // import { MatSliderModule } from '@angular/material/slider';
 import { CdkTableModule } from '@angular/cdk/table';
 
@@ -39,13 +39,13 @@ import { CdkTableModule } from '@angular/cdk/table';
     // MatCard,
     MatCardModule,
     // MatCarouselModule,
-    // MatCheckboxModule,
+    MatCheckboxModule,
     MatChipsModule,
     MatDatepickerModule,
     // MatDialogModule,
     MatDividerModule,
     MatExpansionModule,
-    // MatFormFieldModule,
+    MatFormFieldModule,
     MatIconModule,
     MatInputModule,
     MatListModule,
@@ -53,8 +53,8 @@ import { CdkTableModule } from '@angular/cdk/table';
     MatNativeDateModule,
     // MatPaginatorModule,
     // MatProgressSpinnerModule,
-    // MatRadioModule,
-    // MatSelectModule,
+    MatRadioModule,
+    MatSelectModule,
     // MatSnackBarModule,
     // MatSliderModule,
     // MatSortModule,
@@ -72,13 +72,13 @@ import { CdkTableModule } from '@angular/cdk/table';
     // MatCard,
     MatCardModule,
     // MatCarouselModule,
-    // MatCheckboxModule,
+    MatCheckboxModule,
     MatChipsModule,
     MatDatepickerModule,
     // MatDialogModule,
     MatDividerModule,
     MatExpansionModule,
-    // MatFormFieldModule,
+    MatFormFieldModule,
     MatIconModule,
     MatInputModule,
     MatListModule,
@@ -86,8 +86,8 @@ import { CdkTableModule } from '@angular/cdk/table';
     MatNativeDateModule,
     // MatPaginatorModule,
     // MatProgressSpinnerModule,
-    // MatRadioModule,
-    // MatSelectModule,
+    MatRadioModule,
+    MatSelectModule,
     // MatSnackBarModule,
     // MatSliderModule,
     // MatSortModule,
