@@ -1,9 +1,10 @@
 <mat-card class="dashboard-card">
   <mat-card-content>
+    <h1>Big Joel's Safari Job Application</h1>
     <form [formGroup]="options">
       <mat-checkbox formControlName="hideRequired">18 or older</mat-checkbox>
       <div>
-        <label><b>Position Choice: &nbsp</b></label>
+        <label><b>Position Choice:</b></label><br/>
         <mat-radio-group formControlName="floatLabel">
           <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br/>
           <mat-radio-button value="always">Safari Team Member</mat-radio-button><br/>
