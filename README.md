@@ -4,6 +4,8 @@
 * share button (with bottom modal) on each event card
     * Extra credit: set it overlapping the image and text
 # CALENDAR TODOs
+* calendar month scroll like google calendars
+    * finger swipe in the middle of the calendar (along with the arrows)
 * On date click show the details in bottom sheet modal
 * Link to event cards
 * Event Cards (maybe carousel)
@@ -42,6 +44,8 @@
 * Word "Open" next to today's hours
 * Red "Closed" next to today's hours
 * Subtext below today's bold hours: Tuesday hours
+## Job APP
+* everything
 ## History TODOs
 * Row About the Owners
 * Row History Blurb with pictures
