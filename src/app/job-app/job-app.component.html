@@ -1,11 +1,12 @@
-<div class="container">
+<mat-card class="dashboard-card">
+  <mat-card-content>
     <form [formGroup]="options">
       <mat-checkbox formControlName="hideRequired">18 or older</mat-checkbox>
       <div>
-        <label>Position Choice: </label>
+        <label><b>Position Choice: &nbsp</b></label>
         <mat-radio-group formControlName="floatLabel">
-          <mat-radio-button value="auto">Safari Ambassador</mat-radio-button>
-          <mat-radio-button value="always">Safari Team Member</mat-radio-button>
+          <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br/>
+          <mat-radio-button value="always">Safari Team Member</mat-radio-button><br/>
           <mat-radio-button value="never">Lead Safari Team Member</mat-radio-button>
         </mat-radio-group>
       </div>
@@ -31,4 +32,5 @@
       </mat-select>
       <mat-label><mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i></mat-label>
     </mat-form-field>
-  </div>
+  </mat-card-content>
+</mat-card>
