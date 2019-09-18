@@ -19,7 +19,7 @@ import { GeneralAdmissionComponent } from './general-admission/general-admission
 import { GroupRatesComponent } from './group-rates/group-rates.component';
 import { FieldTripsComponent } from './field-trips/field-trips.component';
 import { JobAppComponent } from './job-app/job-app.component';
-import { ExperimentJobAppComponent } from './experiment-job-app.component';
+import { ExperimentJobAppComponent } from './experiment-job-app/experiment-job-app.component';
 
 
 const routes: Routes = [
