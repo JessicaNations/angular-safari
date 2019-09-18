@@ -46,6 +46,7 @@
 * Subtext below today's bold hours: Tuesday hours
 ## Job APP
 * everything
+* does anyone still use google forms?
 ## History TODOs
 * Row About the Owners
 * Row History Blurb with pictures
