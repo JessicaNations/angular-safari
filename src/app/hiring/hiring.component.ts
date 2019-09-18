@@ -13,12 +13,6 @@ export class HiringComponent {
     const link = ['/job-app'];
     this.router.navigate(link);
   }
-
-  goExperimentJobApp(): void {
-    const link = ['/experiment-job-app'];
-    this.router.navigate(link);
-  }
-
 }
 
 
