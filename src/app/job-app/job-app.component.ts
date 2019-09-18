@@ -14,7 +14,12 @@ import {
 export class JobAppComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {}
+
+  constructor(private formBuilder: FormBuilder) {
+    this.form = formBuilder.group({
+    floatLabel: 'auto',
+    });
+  }
 
   ngOnInit() {
     this.form = this.formBuilder.group({
