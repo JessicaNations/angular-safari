@@ -4,35 +4,38 @@
     <form [formGroup]="options">
       <mat-checkbox formControlName="hideRequired">18 or older</mat-checkbox>
       <div>
-        <label><b>Position Choice:</b></label><br/>
+        <label><b>Position Choice:</b></label><br />
         <mat-radio-group formControlName="floatLabel">
-          <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br/>
-          <mat-radio-button value="always">Safari Team Member</mat-radio-button><br/>
+          <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br />
+          <mat-radio-button value="always">Safari Team Member</mat-radio-button><br />
           <mat-radio-button value="never">Lead Safari Team Member</mat-radio-button>
         </mat-radio-group>
       </div>
     </form>
 
-    <mat-form-field
-        [hideRequiredMarker]="options.value.hideRequired"
-        [floatLabel]="options.value.floatLabel">
+    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
       <input matInput placeholder="Reference Name" required>
-    </mat-form-field>
+    </mat-form-field><br />
 
     <mat-form-field [floatLabel]="options.value.floatLabel">
       <mat-label>Reference phone number</mat-label>
       <input matInput placeholder="Simple placeholder">
-    </mat-form-field>
+    </mat-form-field><br />
 
-    <mat-form-field
-        [hideRequiredMarker]="options.value.hideRequired"
-        [floatLabel]="options.value.floatLabel">
+    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
       <mat-select required>
         <mat-option>-- None --</mat-option>
         <mat-option value="option">Option</mat-option>
       </mat-select>
-      <mat-label><mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i></mat-label>
-      <!-- submit button -->
-    </mat-form-field>
+      <mat-label>
+        <mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i>
+      </mat-label>
+    </mat-form-field><br />
+
+    <mat-form-field>
+      <input matInput placeholder="Enter your email" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field><br />
+    <button mat-flat-button>Submit</button>
   </mat-card-content>
 </mat-card>
