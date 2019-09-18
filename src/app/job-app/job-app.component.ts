@@ -4,7 +4,6 @@ import { FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'my-job-app',
   templateUrl: './job-app.component.html',
-  styleUrls: ['./job-app.component.css']
 
 })
 export class JobAppComponent {
