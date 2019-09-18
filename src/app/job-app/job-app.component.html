@@ -23,7 +23,18 @@
         <div class="col-sm-12">
           <label for="name" class="control-label required">Name</label>
           <input type="text" id="name" class="form-control" formControlName="name">
-          <my-field-error-display [displayError]="isFieldValid('name')" errorMsg="Please enter your name">
+          <my-field-error-display [displayError]="isFieldValid('name')" errorMsg="Please enter your full name">
+          </my-field-error-display>
+        </div>
+      </div>
+
+      <div class="form-group" [ngClass]="displayFieldCss('birthDate')">
+        <div class="col-sm-12">
+          <label for="birthDate" class="control-label required">Birth Date</label>
+          <input id="birthDate" class="form-control" formControlName="birthDate" [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <my-field-error-display [displayError]="isFieldValid('birth Date')" errorMsg="Please enter your birth date">
           </my-field-error-display>
         </div>
       </div>
@@ -94,39 +105,54 @@
       <div formGroupName="education">
         <div class="form-group">
           <label><b><i>Education History</i></b></label><br />
-          <div class="col-md-4" [ngClass]="displayFieldCss('address.country')">
-              <label for="country" class="control-label required">Country</label>
-              <input type="text" id="country" class="form-control" formControlName="country">
-              <my-field-error-display [displayError]="isFieldValid('address.country')"
-                errorMsg="Please enter your country">
-              </my-field-error-display>
-            </div>
-        </div>
-      </div>
 
-      <div formGroupName="generalInfo">
-        <div class="form-group">
-          <label><b><i>General Information</i></b></label><br />
-          <div class="col-md-4" [ngClass]="displayFieldCss('address.country')">
-              <label for="country" class="control-label required">Country</label>
-              <input type="text" id="country" class="form-control" formControlName="country">
-              <my-field-error-display [displayError]="isFieldValid('address.country')"
-                errorMsg="Please enter your country">
+          <div class="col-md-4" [ngClass]="displayFieldCss('education.highschool')">
+            <label for="highschool" class="control-label required">High School</label>
+            <input type="text" id="highschool" class="form-control" formControlName="highschool">
+            <my-field-error-display [displayError]="isFieldValid('education.highschool')"
+              errorMsg="Please enter your high school">
+            </my-field-error-display>
+          </div>
+
+          <div class="col-md-4" [ngClass]="displayFieldCss('education.college')">
+              <label for="college" class="control-label required">College</label>
+              <input type="text" id="college" class="form-control" formControlName="college">
+              <my-field-error-display [displayError]="isFieldValid('education.college')"
+                errorMsg="Please enter your college">
               </my-field-error-display>
             </div>
+
+            <div class="col-md-4" [ngClass]="displayFieldCss('education.training')">
+                <label for="training" class="control-label required">Certificate or other Training</label>
+                <input type="text" id="training" class="form-control" formControlName="training">
+                <my-field-error-display [displayError]="isFieldValid('education.training')"
+                  errorMsg="Please enter your high school">
+                </my-field-error-display>
+              </div>
+
         </div>
       </div>
 
       <div formGroupName="formerEmployment">
         <div class="form-group">
           <label><b><i>Former Employers</i></b></label><br />
-          <div class="col-md-4" [ngClass]="displayFieldCss('address.country')">
-              <label for="country" class="control-label required">Country</label>
-              <input type="text" id="country" class="form-control" formControlName="country">
-              <my-field-error-display [displayError]="isFieldValid('address.country')"
-                errorMsg="Please enter your country">
+
+          <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.employer')">
+            <label for="employer" class="control-label required">Name of Employer</label>
+            <input type="text" id="employer" class="form-control" formControlName="employer">
+            <my-field-error-display [displayError]="isFieldValid('formerEmployment.employer')"
+              errorMsg="Please enter the name of your employer">
+            </my-field-error-display>
+          </div>
+
+          <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.job')">
+              <label for="job" class="control-label required">Position</label>
+              <input type="text" id="job" class="form-control" formControlName="job">
+              <my-field-error-display [displayError]="isFieldValid('formerEmployment.job')"
+                errorMsg="Please enter the name of your position">
               </my-field-error-display>
             </div>
+
         </div>
       </div>
 
