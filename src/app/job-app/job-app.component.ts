@@ -9,7 +9,6 @@ import {
 @Component({
   selector: 'my-job-app',
   templateUrl: './job-app.component.html',
-  
 })
 export class JobAppComponent implements OnInit {
   form: FormGroup;
