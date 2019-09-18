@@ -47,6 +47,18 @@
 ## Job APP
 * everything
 * does anyone still use google forms?
+## ERROR
+JobAppComponent.html:103 ERROR Error: A MatDatepicker can only be associated with a single input.
+    at MatDatepicker.push../node_modules/@angular/material/esm5/datepicker.es5.js.MatDatepicker._registerInput (datepicker.es5.js:2271)
+    at MatDatepickerInput.set [as matDatepicker] (datepicker.es5.js:2661)
+    at updateProp (core.js:10311)
+    at checkAndUpdateDirectiveInline (core.js:10062)
+    at checkAndUpdateNodeInline (core.js:11371)
+    at checkAndUpdateNode (core.js:11333)
+    at debugCheckAndUpdateNode (core.js:11970)
+    at debugCheckDirectivesFn (core.js:11930)
+    at Object.eval [as updateDirectives] (JobAppComponent.html:105)
+    at Object.debugUpdateDirectives [as updateDirectives] (core.js:1
 ## History TODOs
 * Row About the Owners
 * Row History Blurb with pictures
