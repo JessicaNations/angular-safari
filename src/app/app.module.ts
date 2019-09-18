@@ -35,8 +35,6 @@ import { GeneralAdmissionComponent } from './general-admission/general-admission
 import { GroupRatesComponent } from './group-rates/group-rates.component';
 import { FieldTripsComponent } from './field-trips/field-trips.component';
 import { JobAppComponent } from './job-app/job-app.component';
-import { FieldErrorDisplayComponent } from './job-app/field-error-display.component';
-import { ExperimentJobAppComponent } from './experiment-job-app/experiment-job-app.component';
 
 import { MyMaterialModule } from './material.module';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
@@ -83,8 +81,6 @@ import { MyMaterialModule } from './material.module';
     GroupRatesComponent,
     FieldTripsComponent,
     JobAppComponent,
-    FieldErrorDisplayComponent,
-    ExperimentJobAppComponent
   ],
   // providers: [CalendarService],
   bootstrap: [AppComponent]

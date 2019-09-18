@@ -1,174 +1,115 @@
-<mat-card class="app-container">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>
-      <h2><b><i>Application for Employment</i></b></h2>
-    </mat-card-title>
-    <mat-card-subtitle><i>Equal Opportunity Employer</i></mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <form class="form-horizontal" [formGroup]="form">
+<mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>
+        <h2><b><i>Application for Employment</i></b></h2>
+      </mat-card-title>
+      <mat-card-subtitle><i>Equal Opportunity Employer</i></mat-card-subtitle>
+    </mat-card-header><br />
+    <mat-card-content>
 
-      <div>
-        <label><b><i>Employment Desired</i></b></label><br />
-        <mat-radio-group formControlName="floatLabel">
-          <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br />
-          <mat-radio-button value="always">Safari Team Member</mat-radio-button><br />
-          <mat-radio-button value="never">Lead Safari Team Member</mat-radio-button><br />
-        </mat-radio-group>
-      </div>
+      <label><b><i>Employment Desired</i></b></label><br />
+      <mat-radio-group formControlName="floatLabel">
+        <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br />
+        <mat-radio-button value="always">Safari Team Member</mat-radio-button><br />
+        <mat-radio-button value="never">Lead Safari Team Member</mat-radio-button><br />
+      </mat-radio-group><br />
 
-      <label><b><i>Personal Information</i></b></label><br />
-      <div class="form-group" [ngClass]="displayFieldCss('name')">
-        <div class="col-sm-12">
-          <label for="name" class="control-label required">Name</label>
-          <input type="text" id="name" class="form-control" formControlName="name">
-          <my-field-error-display [displayError]="isFieldValid('name')" errorMsg="Please enter your full name">
-          </my-field-error-display>
-        </div>
-      </div>
+      <p>
+        <label><b><i>Personal Information</i></b></label><br />
 
-      <div class="form-group" [ngClass]="displayFieldCss('birthDate')">
-        <div class="col-sm-12">
-          <label for="birthDate" class="control-label required">Birth Date</label>
-          <input id="birthDate" class="form-control" formControlName="birthDate" [matDatepicker]="picker">
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Full Name">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Birth Date</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Birth Date">
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
-          <my-field-error-display [displayError]="isFieldValid('birth Date')" errorMsg="Please enter your birth date">
-          </my-field-error-display>
-        </div>
-      </div>
+        </mat-form-field>
 
-      <div class="form-group" [ngClass]="displayFieldCss('email')">
-        <div class="col-sm-12">
-          <label for="email" class="control-label required">Email</label>
-          <input type="text" id="email" class="form-control" formControlName="email">
-          <my-field-error-display [displayError]="isFieldValid('email')" errorMsg="Please enter a valid email">
-          </my-field-error-display>
-        </div>
-      </div>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
 
-      <div formGroupName="address">
+        <mat-form-field appearance="outline">
+          <mat-label>Address</mat-label>
+          <input matInput placeholder="Address">
+        </mat-form-field>
 
-        <div class="form-group">
+        <mat-form-field appearance="outline">
+          <mat-label>Address 2</mat-label>
+          <input matInput placeholder="Address 2">
+        </mat-form-field>
 
-          <div class="col-md-6" [ngClass]="displayFieldCss('address.street')">
-            <label for="street" class="control-label required">Address</label>
-            <input type="text" id="street" class="form-control" formControlName="street">
-            <my-field-error-display [displayError]="isFieldValid('address.street')"
-              errorMsg="Please enter your address">
-            </my-field-error-display>
-          </div>
+        <mat-form-field appearance="outline">
+          <mat-label>Zip Code</mat-label>
+          <input matInput placeholder="Zip Code">
+        </mat-form-field>
 
-          <div class="col-md-3">
-            <label for="street2" class="control-label">Address 2</label>
-            <input type="text" id="street2" class="form-control" formControlName="street2">
-          </div>
+        <mat-form-field appearance="outline">
+          <mat-label>City</mat-label>
+          <input matInput placeholder="City">
+        </mat-form-field>
 
-          <div class="col-md-3" [ngClass]="displayFieldCss('address.zipCode')">
-            <label for="zipCode" class="control-label required">Zip Code</label>
-            <input type="text" id="zipCode" class="form-control" formControlName="zipCode">
-            <my-field-error-display [displayError]="isFieldValid('address.zipCode')"
-              errorMsg="Please enter your zipCode">
-            </my-field-error-display>
-          </div>
+        <mat-form-field appearance="outline">
+          <mat-label>State</mat-label>
+          <input matInput placeholder="State">
+        </mat-form-field>
 
-        </div>
+        <mat-form-field appearance="outline">
+          <mat-label>Country</mat-label>
+          <input matInput placeholder="Country">
+        </mat-form-field>
 
-        <div class="form-group">
+      </p>
 
-          <div class="col-md-4" [ngClass]="displayFieldCss('address.city')">
-            <label for="city" class="control-label required">City</label>
-            <input type="text" id="city" class="form-control" formControlName="city">
-            <my-field-error-display [displayError]="isFieldValid('address.city')" errorMsg="Please enter your city">
-            </my-field-error-display>
-          </div>
+      <p>
+        <label><b><i>Education History</i></b></label><br />
 
-          <div class="col-md-4" [ngClass]="displayFieldCss('address.state')">
-            <label for="state" class="control-label required">State / Province / Region</label>
-            <input type="text" id="state" class="form-control" formControlName="state">
-            <my-field-error-display [displayError]="isFieldValid('address.state')" errorMsg="Please enter your state">
-            </my-field-error-display>
-          </div>
+        <mat-form-field appearance="outline">
+          <mat-label>High School</mat-label>
+          <input matInput placeholder="High School">
+        </mat-form-field>
 
-          <div class="col-md-4" [ngClass]="displayFieldCss('address.country')">
-            <label for="country" class="control-label required">Country</label>
-            <input type="text" id="country" class="form-control" formControlName="country">
-            <my-field-error-display [displayError]="isFieldValid('address.country')"
-              errorMsg="Please enter your country">
-            </my-field-error-display>
-          </div>
+        <mat-form-field appearance="outline">
+          <mat-label>College</mat-label>
+          <input matInput placeholder="College">
+        </mat-form-field>
 
-        </div>
-      </div>
+        <mat-form-field appearance="outline">
+          <mat-label>Other Training</mat-label>
+          <input matInput placeholder="Other Training">
+        </mat-form-field>
+      </p>
 
-      <div formGroupName="education">
-        <div class="form-group">
-          <label><b><i>Education History</i></b></label><br />
+      <p>
+        <label><b><i>Former Employers</i></b></label><br />
 
-          <div class="col-md-4" [ngClass]="displayFieldCss('education.highschool')">
-            <label for="highschool" class="control-label required">High School</label>
-            <input type="text" id="highschool" class="form-control" formControlName="highschool">
-            <my-field-error-display [displayError]="isFieldValid('education.highschool')"
-              errorMsg="Please enter your high school">
-            </my-field-error-display>
-          </div>
+        <mat-form-field appearance="outline">
+          <mat-label>Name of Employer</mat-label>
+          <input matInput placeholder="Name of Employer">
+        </mat-form-field>
 
-          <div class="col-md-4" [ngClass]="displayFieldCss('education.college')">
-            <label for="college" class="control-label required">College</label>
-            <input type="text" id="college" class="form-control" formControlName="college">
-            <my-field-error-display [displayError]="isFieldValid('education.college')"
-              errorMsg="Please enter your college">
-            </my-field-error-display>
-          </div>
+        <mat-form-field appearance="outline">
+          <mat-label>Position</mat-label>
+          <input matInput placeholder="Position">
+        </mat-form-field>
 
-          <div class="col-md-4" [ngClass]="displayFieldCss('education.training')">
-            <label for="training" class="control-label required">Certificate or other Training</label>
-            <input type="text" id="training" class="form-control" formControlName="training">
-            <my-field-error-display [displayError]="isFieldValid('education.training')"
-              errorMsg="Please enter your high school">
-            </my-field-error-display>
-          </div>
-
-        </div>
-      </div>
-
-      <div formGroupName="formerEmployment">
-        <div class="form-group">
-          <label><b><i>Former Employers</i></b></label><br />
-
-          <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.employer')">
-            <label for="employer" class="control-label required">Name of Employer</label>
-            <input type="text" id="employer" class="form-control" formControlName="employer">
-            <my-field-error-display [displayError]="isFieldValid('formerEmployment.employer')"
-              errorMsg="Please enter the name of your employer">
-            </my-field-error-display>
-          </div>
-
-          <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.job')">
-            <label for="job" class="control-label required">Position</label>
-            <input type="text" id="job" class="form-control" formControlName="job">
-            <my-field-error-display [displayError]="isFieldValid('formerEmployment.job')"
-              errorMsg="Please enter the name of your position">
-            </my-field-error-display>
-          </div>
-
-          <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.employedDate')">
-            <label for="employedDate" class="control-label required">Date of Employemnt</label>
-            <input type="text" id="employedDate" class="form-control" formControlName="employedDate">
-            <my-field-error-display [displayError]="isFieldValid('formerEmployment.employedDate')"
-              errorMsg="Please enter your date of employment">
-            </my-field-error-display>
-          </div>
-
-        </div>
-      </div>
+        <mat-form-field appearance="outline">
+          <mat-label>Date of Employment</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Date of Employment">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </p>
 
 
-      <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
-      <button class="btn" (click)="reset()">Reset</button>
+      <button mat-flat-button (click)="onSubmit">Submit</button>
 
-    </form>
-  </mat-card-content>
-
-</mat-card>
+    </mat-card-content>
+  </mat-card>
