@@ -1,21 +1,24 @@
 <mat-card class="container">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title><h2><b><i>Application for Employment</i></b></h2></mat-card-title>
+    <mat-card-title>
+      <h2><b><i>Application for Employment</i></b></h2>
+    </mat-card-title>
     <mat-card-subtitle><i>Equal Opportunity Employer</i></mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <form class="form-horizontal" [formGroup]="form">
 
-        <div>
-            <label>Float label: </label>
-            <mat-radio-group formControlName="floatLabel">
-              <mat-radio-button value="auto">Auto</mat-radio-button>
-              <mat-radio-button value="always">Always</mat-radio-button>
-              <mat-radio-button value="never">Never</mat-radio-button>
-            </mat-radio-group>
-          </div>
+      <div>
+        <label><b><i>Employment Desired</i></b></label><br />
+        <mat-radio-group formControlName="floatLabel">
+          <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br />
+          <mat-radio-button value="always">Safari Team Member</mat-radio-button><br />
+          <mat-radio-button value="never">Lead Safari Team Member</mat-radio-button><br />
+        </mat-radio-group>
+      </div>
 
+      <label><b><i>Personal Information</i></b></label><br />
       <div class="form-group" [ngClass]="displayFieldCss('name')">
         <div class="col-sm-12">
           <label for="name" class="control-label required">Name</label>
