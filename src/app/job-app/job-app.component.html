@@ -3,24 +3,62 @@
     <h1><b><i>Application for Employment</i></b></h1><br />
     <h4><b><i>PRE-EMPLOYMENT QUESTIONNAIRE<br />
           EQUAL OPPORTUNITY EMPLOYER</i></b></h4>
+
+        <label><b><i>Personal Information</i></b></label><br />
+        <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+            <input matInput placeholder="First and Last Name" required>
+            <input matInput placeholder="Social Security Number" required>
+            <input matInput placeholder="Date of Birth" required>
+            <input matInput placeholder="Permanent Address" required>
+            <input matInput placeholder="Phone Number" required>
+          </mat-form-field><br />
+      </div>
+    </form>
+
     <form [formGroup]="options">
-      <label><b><i>Personal Information</i></b></label><br />
-      <!--NAME (LAST NAME FIRST)__SOCIAL SECURITY NO.-->
-      <!--STREET ADDRESS___STATE___ZIP-CODE-->
-      <!--PHONE NO.___DATE OF BIRTH-->
       <div>
-        <label><b><i>Employment Desired</i></b></label>
+        <label><b><i>Employment Desired</i></b></label><br />
         <mat-radio-group formControlName="floatLabel">
           <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br />
           <mat-radio-button value="always">Safari Team Member</mat-radio-button><br />
           <mat-radio-button value="never">Lead Safari Team Member</mat-radio-button>
-        </mat-radio-group>
-        <!--ARE YOU CURRENTLY EMPLOYED? YES  NO CHECKBOX___IF SO, MAY WE CONTACT YOUR CURRENT EMPLOYER YES  NO CHECKBOX-->
-        <!--EVER APPLIED TO THIS COMPANY BEFORE  YES  NO CHECKBOX___WHEN-->
+        </mat-radio-group><br/>
+
+        <label><b><i>Are you currently employed?</i></b></label><br />
+        <mat-checkbox formControlName="hideRequired">Yes</mat-checkbox>
+        <mat-checkbox formControlName="hideRequired">No</mat-checkbox><br/>
+
+        <input matInput placeholder="If yes, may we contact your employer?">
+        <mat-checkbox formControlName="hideRequired">Yes</mat-checkbox>
+        <mat-checkbox formControlName="hideRequired">No</mat-checkbox><br/>
+
+
+        <label><b><i>Ever applied to this company before?</i></b></label><br />
+        <mat-checkbox formControlName="hideRequired">Yes</mat-checkbox>
+      <input matInput placeholder="If yes, when?">
+        <mat-checkbox formControlName="hideRequired">No</mat-checkbox>
       </div>
     </form><br /><br />
 
-    <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
+    <form>  <!-- [formGroup]=""-->
+        <div>
+          <label><b><i>Education History</i></b></label><br />
+        </div>
+    </form>
+
+    <form>  <!-- [formGroup]=""-->
+        <div>
+          <label><b><i>General Information</i></b></label><br />
+        </div>
+    </form>
+
+    <form>  <!-- [formGroup]=""-->
+        <div>
+          <label><b><i>Former Employers</i></b></label><br />
+        </div>
+    </form>
+
+    <!-- <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
       <input matInput placeholder="Reference Name" required>
     </mat-form-field><br />
 
@@ -42,7 +80,8 @@
     <mat-form-field>
       <input matInput placeholder="Enter your email" [formControl]="email" required>
       <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field><br /><br />
+    </mat-form-field><br /><br /> -->
+
     <button mat-flat-button>Submit</button>
   </mat-card-content>
 </mat-card>
