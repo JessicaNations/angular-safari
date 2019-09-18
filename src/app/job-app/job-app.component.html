@@ -153,6 +153,16 @@
               </my-field-error-display>
             </div>
 
+            <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.employedDate')">
+                <label for="employedDate" class="control-label required">Date of Employemnt</label>
+                <input [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <my-field-error-display [displayError]="isFieldValid('formerEmployment.employedDate')"
+                errorMsg="Please enter your date of employment">
+                </my-field-error-display>
+              </div>
+
         </div>
       </div>
 
