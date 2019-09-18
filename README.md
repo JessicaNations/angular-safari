@@ -48,17 +48,31 @@
 * everything
 * does anyone still use google forms?
 ## ERROR
-JobAppComponent.html:103 ERROR Error: A MatDatepicker can only be associated with a single input.
-    at MatDatepicker.push../node_modules/@angular/material/esm5/datepicker.es5.js.MatDatepicker._registerInput (datepicker.es5.js:2271)
-    at MatDatepickerInput.set [as matDatepicker] (datepicker.es5.js:2661)
-    at updateProp (core.js:10311)
-    at checkAndUpdateDirectiveInline (core.js:10062)
+JobAppComponent.html:12 ERROR Error: formControlName must be used with a parent formGroup directive.  You'll want to add a formGroup
+       directive and pass it an existing FormGroup instance (you can create one in your class).
+
+      Example:
+
+      
+    <div [formGroup]="myGroup">
+      <input formControlName="firstName">
+    </div>
+
+    In your class:
+
+    this.myGroup = new FormGroup({
+       firstName: new FormControl()
+    });
+    at Function.push../node_modules/@angular/forms/fesm5/forms.js.ReactiveErrors.controlParentException (forms.js:1177)
+    at FormControlName.push../node_modules/@angular/forms/fesm5/forms.js.FormControlName._checkParentType (forms.js:5631)
+    at FormControlName.push../node_modules/@angular/forms/fesm5/forms.js.FormControlName._setUpControl (forms.js:5635)
+    at FormControlName.push../node_modules/@angular/forms/fesm5/forms.js.FormControlName.ngOnChanges (forms.js:5586)
+    at checkAndUpdateDirectiveInline (core.js:10101)
     at checkAndUpdateNodeInline (core.js:11371)
     at checkAndUpdateNode (core.js:11333)
     at debugCheckAndUpdateNode (core.js:11970)
     at debugCheckDirectivesFn (core.js:11930)
-    at Object.eval [as updateDirectives] (JobAppComponent.html:105)
-    at Object.debugUpdateDirectives [as updateDirectives] (core.js:1
+    at Object.eval [as updateDirectives] (JobAppComponent.html:12)
 ## History TODOs
 * Row About the Owners
 * Row History Blurb with pictures
