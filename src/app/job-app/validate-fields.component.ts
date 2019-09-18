@@ -9,7 +9,6 @@ import {
 @Component({
   selector: 'my-validate-fields',
   templateUrl: './validate-fields.component.html',
-  styles: []
 })
 export class ValidateFieldsComponent implements OnInit {
   form: FormGroup;
@@ -63,7 +62,7 @@ export class ValidateFieldsComponent implements OnInit {
     });
   }
 
-  reset(){
+  reset() {
     this.form.reset();
   }
 }
