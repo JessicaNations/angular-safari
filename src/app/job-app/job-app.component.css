@@ -1,0 +1,17 @@
+.email-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-container > * {
+  width: 100%;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}

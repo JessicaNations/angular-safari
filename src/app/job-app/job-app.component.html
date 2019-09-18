@@ -1,4 +1,4 @@
-<mat-card class="container">
+<mat-card class="app-container">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>
@@ -115,20 +115,20 @@
           </div>
 
           <div class="col-md-4" [ngClass]="displayFieldCss('education.college')">
-              <label for="college" class="control-label required">College</label>
-              <input type="text" id="college" class="form-control" formControlName="college">
-              <my-field-error-display [displayError]="isFieldValid('education.college')"
-                errorMsg="Please enter your college">
-              </my-field-error-display>
-            </div>
+            <label for="college" class="control-label required">College</label>
+            <input type="text" id="college" class="form-control" formControlName="college">
+            <my-field-error-display [displayError]="isFieldValid('education.college')"
+              errorMsg="Please enter your college">
+            </my-field-error-display>
+          </div>
 
-            <div class="col-md-4" [ngClass]="displayFieldCss('education.training')">
-                <label for="training" class="control-label required">Certificate or other Training</label>
-                <input type="text" id="training" class="form-control" formControlName="training">
-                <my-field-error-display [displayError]="isFieldValid('education.training')"
-                  errorMsg="Please enter your high school">
-                </my-field-error-display>
-              </div>
+          <div class="col-md-4" [ngClass]="displayFieldCss('education.training')">
+            <label for="training" class="control-label required">Certificate or other Training</label>
+            <input type="text" id="training" class="form-control" formControlName="training">
+            <my-field-error-display [displayError]="isFieldValid('education.training')"
+              errorMsg="Please enter your high school">
+            </my-field-error-display>
+          </div>
 
         </div>
       </div>
@@ -146,22 +146,20 @@
           </div>
 
           <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.job')">
-              <label for="job" class="control-label required">Position</label>
-              <input type="text" id="job" class="form-control" formControlName="job">
-              <my-field-error-display [displayError]="isFieldValid('formerEmployment.job')"
-                errorMsg="Please enter the name of your position">
-              </my-field-error-display>
-            </div>
+            <label for="job" class="control-label required">Position</label>
+            <input type="text" id="job" class="form-control" formControlName="job">
+            <my-field-error-display [displayError]="isFieldValid('formerEmployment.job')"
+              errorMsg="Please enter the name of your position">
+            </my-field-error-display>
+          </div>
 
-            <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.employedDate')">
-                <label for="employedDate" class="control-label required">Date of Employemnt</label>
-                <input [matDatepicker]="picker">
-                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
-                <my-field-error-display [displayError]="isFieldValid('formerEmployment.employedDate')"
-                errorMsg="Please enter your date of employment">
-                </my-field-error-display>
-              </div>
+          <div class="col-md-4" [ngClass]="displayFieldCss('formerEmployment.employedDate')">
+            <label for="employedDate" class="control-label required">Date of Employemnt</label>
+            <input type="text" id="employedDate" class="form-control" formControlName="employedDate">
+            <my-field-error-display [displayError]="isFieldValid('formerEmployment.employedDate')"
+              errorMsg="Please enter your date of employment">
+            </my-field-error-display>
+          </div>
 
         </div>
       </div>
@@ -172,4 +170,5 @@
 
     </form>
   </mat-card-content>
+
 </mat-card>

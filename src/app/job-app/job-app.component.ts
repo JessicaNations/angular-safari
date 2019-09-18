@@ -9,9 +9,12 @@ import {
 @Component({
   selector: 'my-job-app',
   templateUrl: './job-app.component.html',
+  styleUrls: ['./job-app.component.css']
+
 })
 export class JobAppComponent implements OnInit {
   form: FormGroup;
+  email = new FormControl('', [Validators.required, Validators.email]);
 
 
   constructor(private formBuilder: FormBuilder) {
@@ -35,6 +38,12 @@ export class JobAppComponent implements OnInit {
     });
   }
 
+
+  getErrorMessage() {
+    return this.email.hasError('required') ? 'You must enter a value' :
+        this.email.hasError('email') ? 'Not a valid email' :
+            '';
+  }
 
   isFieldValid(field: string) {
     return !this.form.get(field).valid && this.form.get(field).touched;
