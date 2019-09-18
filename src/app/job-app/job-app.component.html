@@ -1,17 +1,24 @@
 <mat-card class="dashboard-card">
   <mat-card-content>
-    <h1>Big Joel's Safari Job Application</h1>
+    <h1><b><i>Application for Employment</i></b></h1><br />
+    <h4><b><i>PRE-EMPLOYMENT QUESTIONNAIRE<br />
+          EQUAL OPPORTUNITY EMPLOYER</i></b></h4>
     <form [formGroup]="options">
-      <mat-checkbox formControlName="hideRequired">18 or older</mat-checkbox>
+      <label><b><i>Personal Information</i></b></label><br />
+      <!--NAME (LAST NAME FIRST)__SOCIAL SECURITY NO.-->
+      <!--STREET ADDRESS___STATE___ZIP-CODE-->
+      <!--PHONE NO.___DATE OF BIRTH-->
       <div>
-        <label><b>Position Choice:</b></label><br />
+        <label><b><i>Employment Desired</i></b></label>
         <mat-radio-group formControlName="floatLabel">
           <mat-radio-button value="auto">Safari Ambassador</mat-radio-button><br />
           <mat-radio-button value="always">Safari Team Member</mat-radio-button><br />
           <mat-radio-button value="never">Lead Safari Team Member</mat-radio-button>
         </mat-radio-group>
+        <!--ARE YOU CURRENTLY EMPLOYED? YES  NO CHECKBOX___IF SO, MAY WE CONTACT YOUR CURRENT EMPLOYER YES  NO CHECKBOX-->
+        <!--EVER APPLIED TO THIS COMPANY BEFORE  YES  NO CHECKBOX___WHEN-->
       </div>
-    </form>
+    </form><br /><br />
 
     <mat-form-field [hideRequiredMarker]="options.value.hideRequired" [floatLabel]="options.value.floatLabel">
       <input matInput placeholder="Reference Name" required>
@@ -35,7 +42,7 @@
     <mat-form-field>
       <input matInput placeholder="Enter your email" [formControl]="email" required>
       <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field><br />
+    </mat-form-field><br /><br />
     <button mat-flat-button>Submit</button>
   </mat-card-content>
 </mat-card>
