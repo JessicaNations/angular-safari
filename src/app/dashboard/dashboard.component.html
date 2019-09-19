@@ -3,8 +3,12 @@
     <div mat-card-avatar class="example-header-image"
       style="background-size:cover; background-image:url('https://material.angular.io/assets/img/examples/shiba1.jpg')">
     </div>
-    <mat-card-title><h1>Big Joel's Safari</h1></mat-card-title>
-    <mat-card-subtitle>Zoo and Educational Park</mat-card-subtitle>
+    <mat-card-title>
+      <h2>Big Joel's Safari</h2>
+    </mat-card-title>
+    <mat-card-subtitle>
+      <h5>Zoo and Educational Park</h5>
+    </mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
   <mat-card-content>
@@ -24,12 +28,13 @@
       <p><b>Address: </b>13187 State Hwy M, Wright City, MO 63390</p>
     </button> -->
 
+    <mat-list>
       <mat-accordion>
-        <mat-expansion-panel style="width:233px" class="mat-elevation-z0">
+        <mat-expansion-panel style="width:227px" class="mat-elevation-z0">
           <mat-expansion-panel-header>
-            <mat-panel-title style="font-weight: bold; font-size: 16px">
-              Hours: {{panelOpenState ? 'Open' : 'Closed'}}
-              <!--Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
+            <mat-panel-title style="font-size: 16px;">
+              <b style="padding-right: 4px;">Hours:</b>{{panelOpenState ? 'Open' : 'Closed'}}
+              <!--font-weight: bold; Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
             </mat-panel-title>
           </mat-expansion-panel-header>
           <mat-list>
@@ -42,41 +47,32 @@
             <mat-list-item>Sunday: 11AM-5PM</mat-list-item>
           </mat-list>
         </mat-expansion-panel>
-        <mat-expansion-panel hideToggle style="width:233px" class="mat-elevation-z0" disabled>
-          <mat-expansion-panel-header>
-            <mat-panel-title style="font-size: 16px">
-              Phone: (636) 745-3031</mat-panel-title>
-          </mat-expansion-panel-header>
-        </mat-expansion-panel>
-        <mat-expansion-panel hideToggle style="width:350px" class="mat-elevation-z0" disabled>
-          <mat-expansion-panel-header>
-            <mat-panel-title style="font-size: 16px">
-              Email: <a href="bigjoelsafari@bigjoelsafaricom"> bigjoelsafari@bigjoelsafari.com</a></mat-panel-title>
-          </mat-expansion-panel-header>
-        </mat-expansion-panel>
       </mat-accordion>
-
-      <!-- <mat-list-item>
-        <p><b>Certified: </b>USDA Licensed and Insured Facility,
-          members of the ZAA (Zoological Association of America),
-          and other organizations to help improve the animal's care</p>
-      </mat-list-item> -->
+      <mat-list-item style="padding:7px">
+        <p><b>Phone: </b>(636) 745-3031</p>
+      </mat-list-item>
+      <mat-list-item style="padding:7px;">
+        <p><b>Email: </b><a href="bigjoelsafari@bigjoelsafaricom"> bigjoelsafari@bigjoelsafari.com</a></p>
+      </mat-list-item>
+    </mat-list>
 
   </mat-card-content>
 </mat-card>
+
 <mat-card>
   <mat-card-content>
     <h4>Events</h4>
     <!--Divider List-->
   </mat-card-content>
 </mat-card>
+
 <mat-card>
   <mat-card-content>
     <h4>Profiles</h4>
     <!--Twitter  Pinterest  Instagram  Facebook  Youtube?-->
     <!--Disclaimer? Feedback?-->
   </mat-card-content>
-
+</mat-card>
 
   <!-- <mat-card-actions>
     <my-calendar-search></my-calendar-search>
@@ -90,4 +86,4 @@
       <mat-chip *ngFor="let calendar of calendars" (click)="gotoDetail(calendar)">{{calendar.id}}th Details</mat-chip>
     </mat-chip-list>
   </mat-card-actions> -->
-</mat-card>
+
