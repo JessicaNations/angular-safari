@@ -1,4 +1,6 @@
 # Safari TODOs
+# copying 
+![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
 * might make an img slider of event cards
 * share button (with bottom modal) on each event card
