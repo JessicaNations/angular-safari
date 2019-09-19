@@ -38,6 +38,14 @@
               <b style="padding-right: 4px;">Hours:</b>{{ now | date:'EEEE: h:mma'}}
               <!--Hours: Open(small dot between) - Closes 5PM -->
 
+
+
+
+  <!-- i made this, but it isn't done...
+                <div *ngFor="let hour of my hours">
+                <div *ngIf="now >= open && now <= close; else elseBlock">Open - Closes 5PM</div>
+                <ng-template #elseBlock>Closed - Opens 9AM</ng-template> -->
+
             </mat-panel-title>
           </mat-expansion-panel-header>
           <mat-list>
@@ -75,10 +83,6 @@
       </ng-template>
 
 
-  <!-- i made this, but it isn't done...
-                <div *ngFor="let hour of my hours">
-                <div *ngIf="currentDate >= open && currentDate <= close; else elseBlock">Open - Closes 5PM</div>
-                <ng-template #elseBlock>Closed - Opens 9AM</ng-template> -->
 
 
 </mat-card>
