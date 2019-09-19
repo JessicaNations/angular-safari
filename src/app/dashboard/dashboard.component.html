@@ -1,32 +1,72 @@
 <mat-card class="dashboard-card">
-    <mat-card-header>
-        <div mat-card-avatar class="example-header-image" style="background-size:cover; background-image:url('https://material.angular.io/assets/img/examples/shiba1.jpg')"></div>
-        <mat-card-title>Big Joel's Safari</mat-card-title>
-        <mat-card-subtitle>Zoo and Educational Park</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"
+      style="background-size:cover; background-image:url('https://material.angular.io/assets/img/examples/shiba1.jpg')">
+    </div>
+    <mat-card-title>Big Joel's Safari</mat-card-title>
+    <mat-card-subtitle>Zoo and Educational Park</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
     <p>
       Big Joel's is a family-owned farm and seasonal attraction.
       The farm is home to well over 60 different animal species,
       both big and small, mild and wild. View all animals up close
       with the opportunity to touch and feed our barnyard companions.
     </p>
-      </mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-content>
-    <p><b>Hours:</b></p> <!--Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
-    <p><b>Address:</b>13187 State Hwy M, Wright City, MO 63390</p>
-    <p><b>Phone:</b>(636)745-3031</p>
-    <p><b>Email:</b></p>
-    <p><b>Certified:</b></p>
   </mat-card-content>
 </mat-card>
 <mat-card>
   <mat-card-content>
-<h4>Events</h4>
-<!--Divider List-->
+    <!--spacing-->
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <p><b>Hours: </b></p>
+            <!--Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
+          </mat-panel-title>
+          <mat-panel-description>
+            Type your name and age
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+          <input matInput placeholder="First name">
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Age">
+        </mat-form-field>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Self aware panel
+          </mat-panel-title>
+          <mat-panel-description>
+            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <button mat-button
+      (click)="https://www.google.com/maps/dir/38.579536,-89.9720122/Big+Joel's+Safari+Petting+Zoo+%26+Educational+Park,+13187+State+Hwy+M,+Wright+City,+MO+63390/@38.7031252,-91.0603322,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x87deb05c0f473b67:0x52376955a2ecd4f7!2m2!1d-91.02146!2d38.7898121">
+      <p><b>Address: </b>13187 State Hwy M, Wright City, MO 63390</p>
+    </button>
+
+
+    <p><b>Phone: </b>(636)745-3031</p>
+    <p><b>Email: </b></p>
+    <p><b>Certified: </b></p>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <h4>Events</h4>
+    <!--Divider List-->
   </mat-card-content>
 </mat-card>
 <mat-card>
