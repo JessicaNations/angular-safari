@@ -23,13 +23,9 @@
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <p><b>Hours: </b></p>
+            <p><b>Hours: {{panelOpenState ? 'open' : 'closed'}}</b></p>
             <!--Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
           </mat-panel-title>
-        </mat-expansion-panel-header>
-          <mat-panel-description>
-            Currently {{panelOpenState ? 'open' : 'closed'}}
-          </mat-panel-description>
         </mat-expansion-panel-header>
         <p>Monday: Closed</p>
         <p>Tuesday: Closed</p>
