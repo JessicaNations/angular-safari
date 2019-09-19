@@ -19,34 +19,32 @@
 <mat-card>
   <mat-card-content>
 
-
     <!-- <button mat-button
       (click)="https://www.google.com/maps/dir/38.579536,-89.9720122/Big+Joel's+Safari+Petting+Zoo+%26+Educational+Park,+13187+State+Hwy+M,+Wright+City,+MO+63390/@38.7031252,-91.0603322,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x87deb05c0f473b67:0x52376955a2ecd4f7!2m2!1d-91.02146!2d38.7898121">
       <p><b>Address: </b>13187 State Hwy M, Wright City, MO 63390</p>
     </button> -->
 
-
     <mat-list>
-      <mat-list-item>
       <mat-accordion>
-            <mat-expansion-panel>
-              <mat-expansion-panel-header>
-                <mat-panel-title style="font-weight: bold; font-size: 17px">
-                  Hours: {{panelOpenState ? 'Open' : 'Closed'}}
-                  <!--Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <mat-list>
-              <mat-list-item>Monday: Closed</mat-list-item>
-              <mat-list-item>Tuesday: Closed</mat-list-item>
-              <mat-list-item>Wednesday: Closed</mat-list-item>
-              <mat-list-item>Thursday: 9AM-5PM</mat-list-item>
-              <mat-list-item>Friday: 9AM-5PM</mat-list-item>
-              <mat-list-item>Saturday: 9AM-5PM</mat-list-item>
-              <mat-list-item>Sunday: 11AM-5PM</mat-list-item>
-            </mat-list>
-            </mat-expansion-panel>
-          </mat-accordion></mat-list-item>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title style="font-weight: bold; font-size: 17px">
+              Hours: {{panelOpenState ? 'Open' : 'Closed'}}
+              <!--Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-list>
+            <mat-list-item>Monday: Closed</mat-list-item>
+            <mat-list-item>Tuesday: Closed</mat-list-item>
+            <mat-list-item>Wednesday: Closed</mat-list-item>
+            <mat-list-item>Thursday: 9AM-5PM</mat-list-item>
+            <mat-list-item>Friday: 9AM-5PM</mat-list-item>
+            <mat-list-item>Saturday: 9AM-5PM</mat-list-item>
+            <mat-list-item>Sunday: 11AM-5PM</mat-list-item>
+          </mat-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+      <br />
       <mat-list-item>
         <p><b>Phone: </b>(636) 745-3031</p>
       </mat-list-item>
