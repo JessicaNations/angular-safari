@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component} from '@angular/core';
 
 // import { Calendar } from '../calendar';
 // import { CalendarService } from '../calendar.service';
@@ -11,10 +10,13 @@ export class DashboardComponent {    // implements OnInit
   public pageTitle = 'Safari';
   // calendars: Calendar[] = [];
 
-  constructor(
-    private router: Router,
-    // private calendarService: CalendarService
-  ) {}
+
+
+
+
+
+
+
 
   // ngOnInit(): void {
   //   this.calendarService.getCalendars()
