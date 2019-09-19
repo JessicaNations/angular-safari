@@ -26,9 +26,9 @@
 
     <mat-list>
       <mat-accordion>
-        <mat-expansion-panel>
+        <mat-expansion-panel style="width:182px" class="mat-elevation-z0">
           <mat-expansion-panel-header>
-            <mat-panel-title style="font-weight: bold; font-size: 17px">
+            <mat-panel-title style="font-weight: bold; font-size: 16px">
               Hours: {{panelOpenState ? 'Open' : 'Closed'}}
               <!--Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
             </mat-panel-title>
@@ -43,20 +43,26 @@
             <mat-list-item>Sunday: 11AM-5PM</mat-list-item>
           </mat-list>
         </mat-expansion-panel>
+        <mat-expansion-panel hideToggle style="width:233px" class="mat-elevation-z0" disabled>
+          <mat-expansion-panel-header>
+            <mat-panel-title style="font-size: 16px">
+              Phone: (636) 745-3031</mat-panel-title>
+          </mat-expansion-panel-header>
+        </mat-expansion-panel>
+        <mat-expansion-panel hideToggle style="width:350px" class="mat-elevation-z0" disabled>
+          <mat-expansion-panel-header>
+            <mat-panel-title style="font-size: 16px">
+              Email: <a href="bigjoelsafari@bigjoelsafaricom"> bigjoelsafari@bigjoelsafari.com</a></mat-panel-title>
+          </mat-expansion-panel-header>
+        </mat-expansion-panel>
       </mat-accordion>
-      <br />
-      <mat-list-item>
-        <p><b>Phone: </b>(636) 745-3031</p>
-      </mat-list-item>
-      <mat-list-item>
-        <p><b>Email: </b><a href="bigjoelsafari@bigjoelsafaricom">bigjoelsafari@bigjoelsafaricom</a></p>
-      </mat-list-item>
-      <!-- <mat-list-item>
+    </mat-list>
+    <!-- <mat-list-item>
         <p><b>Certified: </b>USDA Licensed and Insured Facility,
           members of the ZAA (Zoological Association of America),
           and other organizations to help improve the animal's care</p>
       </mat-list-item> -->
-    </mat-list>
+
   </mat-card-content>
 </mat-card>
 <mat-card>
@@ -70,9 +76,9 @@
     <h4>Profiles</h4>
     <!--Twitter  Pinterest  Instagram  Facebook  Youtube?-->
     <!--Disclaimer? Feedback?-->
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
   </mat-card-content>
+
+
   <!-- <mat-card-actions>
     <my-calendar-search></my-calendar-search>
     <mat-form-field>

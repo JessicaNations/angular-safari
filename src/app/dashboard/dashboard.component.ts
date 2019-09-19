@@ -1,7 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 // import { Calendar } from '../calendar';
 // import { CalendarService } from '../calendar.service';
+
+
 @Component({
   selector: 'my-dashboard',
   templateUrl: './dashboard.component.html'
@@ -9,13 +11,6 @@ import {Component} from '@angular/core';
 export class DashboardComponent {    // implements OnInit
   public pageTitle = 'Safari';
   // calendars: Calendar[] = [];
-
-
-
-
-
-
-
 
 
   // ngOnInit(): void {
