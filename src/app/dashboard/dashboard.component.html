@@ -30,11 +30,21 @@
 
     <mat-list>
       <mat-accordion>
-        <mat-expansion-panel style="width:227px" class="mat-elevation-z0">
+        <mat-expansion-panel style="width:280px" class="mat-elevation-z0">
           <mat-expansion-panel-header>
             <mat-panel-title style="font-size: 16px;">
-              <b style="padding-right: 4px;">Hours:</b>{{panelOpenState ? 'Open' : 'Closed'}}
-              <!--font-weight: bold; Hours: Open(small dot between) - Closes 5PM (drop down arrow more hours)-->
+              <b style="padding-right: 4px;">Hours:</b>{{ now | date:'EEEE: h:mma'}}
+              <!--Hours: Open(small dot between) - Closes 5PM -->
+
+              <!-- i made this, but it isn't done...  <div *ngFor="let hour of my hours">
+                <div *ngIf="currentDate >= open && currentDate <= close; else elseBlock">Open - Closes 5PM</div>
+                <ng-template #elseBlock>Closed - Opens 9AM</ng-template> -->
+
+                <!-- idk what i'm doing (ngIf today?)... <div *ngIf="(post?.date | date:'EEEE d MMMM') == (today | date:'EEEE d MMMM');
+                then isToday else notToday"></div>
+                {{ post?.date | date:'EEEE d MMMM'}}
+                {{ today | date:'EEEE d MMMM'}} -->
+
             </mat-panel-title>
           </mat-expansion-panel-header>
           <mat-list>
@@ -74,7 +84,7 @@
   </mat-card-content>
 </mat-card>
 
-  <!-- <mat-card-actions>
+<!-- <mat-card-actions>
     <my-calendar-search></my-calendar-search>
     <mat-form-field>
         <input matInput [matDatepicker]="picker" placeholder="Or choose a date">
@@ -86,4 +96,3 @@
       <mat-chip *ngFor="let calendar of calendars" (click)="gotoDetail(calendar)">{{calendar.id}}th Details</mat-chip>
     </mat-chip-list>
   </mat-card-actions> -->
-

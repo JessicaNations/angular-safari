@@ -10,6 +10,16 @@ import {Component, Input} from '@angular/core';
 })
 export class DashboardComponent {    // implements OnInit
   public pageTitle = 'Safari';
+
+  now: number;
+
+  constructor() {
+    setInterval(() => {
+      this.now = Date.now();
+    }, 1);
+  }
+
+
   // calendars: Calendar[] = [];
 
 
