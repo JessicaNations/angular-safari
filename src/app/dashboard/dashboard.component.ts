@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 // import { CalendarService } from '../calendar.service';
 @Component({
   selector: 'my-dashboard',
-  templateUrl: './dashboard.component.html',
+  templateUrl: './dashboard.component.html'
 })
 export class DashboardComponent {    // implements OnInit
   public pageTitle = 'Safari';
