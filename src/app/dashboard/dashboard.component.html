@@ -18,6 +18,7 @@
       both big and small, mild and wild. View all animals up close
       with the opportunity to touch and feed our barnyard companions.
     </p>
+
   </mat-card-content>
 </mat-card>
 <mat-card>
@@ -27,6 +28,7 @@
       (click)="https://www.google.com/maps/dir/38.579536,-89.9720122/Big+Joel's+Safari+Petting+Zoo+%26+Educational+Park,+13187+State+Hwy+M,+Wright+City,+MO+63390/@38.7031252,-91.0603322,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x87deb05c0f473b67:0x52376955a2ecd4f7!2m2!1d-91.02146!2d38.7898121">
       <p><b>Address: </b>13187 State Hwy M, Wright City, MO 63390</p>
     </button> -->
+    <!-- idk what i'm doing (ngIf today?)... -->
 
     <mat-list>
       <mat-accordion>
@@ -35,15 +37,6 @@
             <mat-panel-title style="font-size: 16px;">
               <b style="padding-right: 4px;">Hours:</b>{{ now | date:'EEEE: h:mma'}}
               <!--Hours: Open(small dot between) - Closes 5PM -->
-
-              <!-- i made this, but it isn't done...  <div *ngFor="let hour of my hours">
-                <div *ngIf="currentDate >= open && currentDate <= close; else elseBlock">Open - Closes 5PM</div>
-                <ng-template #elseBlock>Closed - Opens 9AM</ng-template> -->
-
-                <!-- idk what i'm doing (ngIf today?)... <div *ngIf="(post?.date | date:'EEEE d MMMM') == (today | date:'EEEE d MMMM');
-                then isToday else notToday"></div>
-                {{ post?.date | date:'EEEE d MMMM'}}
-                {{ today | date:'EEEE d MMMM'}} -->
 
             </mat-panel-title>
           </mat-expansion-panel-header>
@@ -67,6 +60,27 @@
     </mat-list>
 
   </mat-card-content>
+</mat-card>
+
+<mat-card>
+    <div *ngIf="(post?.date | date:'EEEE d MMMM')
+    == (today | date:'EEEE d MMMM');
+    then isToday else notToday"></div>
+    <ng-template #isToday>
+      <span class="date">{{ post?.date | date:'EEEE d MMMM'}}</span>
+      Today</ng-template>
+      <ng-template #notToday>
+        <span class="date">{{ today | date:'EEEE d MMMM'}}</span>
+        not today
+      </ng-template>
+
+
+  <!-- i made this, but it isn't done...
+                <div *ngFor="let hour of my hours">
+                <div *ngIf="currentDate >= open && currentDate <= close; else elseBlock">Open - Closes 5PM</div>
+                <ng-template #elseBlock>Closed - Opens 9AM</ng-template> -->
+
+
 </mat-card>
 
 <mat-card>
