@@ -29,10 +29,22 @@
           <mat-expansion-panel-header>
             <mat-panel-title style="font-size: 16px;">
               <b style="padding-right: 4px;">Hours:</b>
-              <div *ngIf="now >= 8 && now <= 17; else elseBlock">{{ now | date:'EEEE: '}}<br/>
-                <b>Open</b> &middot; Closes 5PM</div>
-              <ng-template #elseBlock>{{ now | date:'EEEE: '}}<br/>
-                <b> Closed</b> &middot; Opens 9AM</ng-template>
+
+              <!-- <div *ngIf="isOpen(); else elseBlock">{{ now | date:'EEEE: '}}
+                    Open</div> -->
+
+                <!-- <ng-template [ngIf]="opened">{{ now | date:'EEEE: '}}
+                    Open</ng-template> -->
+
+                  <div *ngIf="opened; else elseBlock">{{ now | date:'EEEE: '}}
+                      Open</div>
+
+                    <ng-template #elseBlock>{{ now | date:'EEEE: '}}
+                        Closed &middot; Opens 9AM</ng-template>
+
+                <!-- <div *ngIf="closingSoon">{{ now | date:'EEEE: '}}
+                    Open &middot; Closes 5PM</div> -->
+
 
 
 
