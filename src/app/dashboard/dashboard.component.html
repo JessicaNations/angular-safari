@@ -29,26 +29,34 @@
           <mat-expansion-panel-header>
             <mat-panel-title style="font-size: 16px;">
               <b style="padding-right: 4px;">Hours:</b>
-
+              <div *ngIf="dates.inRange(now,opened,closed)">{{ now.closed | date:'EEEE: '}}
+              Open</div>
+              <ng-template>{{ now | date:'EEEE: '}}
+                  Closed &middot; Opens 9AM</ng-template>
               <!-- <div *ngIf="isOpen(); else elseBlock">{{ now | date:'EEEE: '}}
                     Open</div> -->
 
-                <!-- <ng-template [ngIf]="opened">{{ now | date:'EEEE: '}}
+              <!-- <ng-template [ngIf]="opened">{{ now | date:'EEEE: '}}
                     Open</ng-template> -->
 
-                  <!-- <div *ngIf="this.now >= 9 && this.now &lt; 17; else elseBlock">{{ now | date:'EEEE: '}}
+              <!-- <div *ngIf="this.now >= 9 && this.now &lt; 17; else elseBlock">{{ now | date:'EEEE: '}}
                       Open</div>
 
                     <ng-template #elseBlock>{{ now | date:'EEEE: '}}
                         Closed &middot; Opens 9AM</ng-template> -->
 
-                <div *ngIf="opened">{{ now | date:'EEEE: '}}
+              <!-- <div *ngIf="opened">{{ now | date:'EEEE: '}}
                     Open</div>
 
                     <ng-template>{{ now | date:'EEEE: '}}
-                        Closed &middot; Opens 9AM</ng-template>
+                        Closed &middot; Opens 9AM</ng-template> -->
 
-
+              <!-- <div [ngSwitch]="true">
+                <ng-template [ngSwitchCase]="opened">{{ now.opened | date:'EEEE: '}}
+                  Open</ng-template>
+                <ng-template ngSwitchDefault>{{ now | date:'EEEE: '}}
+                  Closed &middot; Opens 9AM</ng-template>
+              </div> -->
 
 
 
@@ -109,10 +117,10 @@
   </mat-card-actions> -->
 
 
-  <mat-card>
-      <mat-card-content>
-        <h4>Profiles</h4>
-        <!--Twitter  Pinterest  Instagram  Facebook  Youtube?-->
-        <!--Disclaimer? Feedback?-->
-      </mat-card-content>
-    </mat-card>
+<mat-card>
+  <mat-card-content>
+    <h4>Profiles</h4>
+    <!--Twitter  Pinterest  Instagram  Facebook  Youtube?-->
+    <!--Disclaimer? Feedback?-->
+  </mat-card-content>
+</mat-card>

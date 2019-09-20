@@ -17,15 +17,18 @@ export class DashboardComponent {    // implements OnInit
   opened = this.now >= 9 && this.now < 17;
 
 
-  // closingSoon = this.now >= 16 && this.now < 17;
+  closingSoon = this.now >= 16 && this.now < 17;
 
- // closed = this.now >= 17 && this.now <= 9;
+
+
+ closed = this.now >= 17 && this.now <= 9;
 
   constructor() {
     setInterval(() => {
       this.now = Date.now();
     }, 1);
   }
+
 
 
   // calendars: Calendar[] = [];
