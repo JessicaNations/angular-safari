@@ -14,12 +14,12 @@ export class DashboardComponent {    // implements OnInit
   now: number;
 
 
-  opened = this.now >= 9 && this.now < 16;
+  opened = this.now >= 9 && this.now < 17;
 
 
   // closingSoon = this.now >= 16 && this.now < 17;
 
- closed = this.now >= 17;
+ // closed = this.now >= 17 && this.now <= 9;
 
   constructor() {
     setInterval(() => {

@@ -36,14 +36,19 @@
                 <!-- <ng-template [ngIf]="opened">{{ now | date:'EEEE: '}}
                     Open</ng-template> -->
 
-                  <div *ngIf="opened; else elseBlock">{{ now | date:'EEEE: '}}
+                  <!-- <div *ngIf="this.now >= 9 && this.now &lt; 17; else elseBlock">{{ now | date:'EEEE: '}}
                       Open</div>
 
                     <ng-template #elseBlock>{{ now | date:'EEEE: '}}
+                        Closed &middot; Opens 9AM</ng-template> -->
+
+                <div *ngIf="opened">{{ now | date:'EEEE: '}}
+                    Open</div>
+
+                    <ng-template>{{ now | date:'EEEE: '}}
                         Closed &middot; Opens 9AM</ng-template>
 
-                <!-- <div *ngIf="closingSoon">{{ now | date:'EEEE: '}}
-                    Open &middot; Closes 5PM</div> -->
+
 
 
 
