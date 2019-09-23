@@ -25,6 +25,15 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
     <button mat-raised-button
     (click)="openBottomSheet()">
     Share Calendar Details</button> -->
+
+
+    <!-- <mat-card-actions>
+    <my-calendar-search></my-calendar-search>
+    <mat-chip-list>
+      <label>Or select one of the available dates:</label>
+      <mat-chip *ngFor="let calendar of calendars" (click)="gotoDetail(calendar)">{{calendar.id}}th Details</mat-chip>
+    </mat-chip-list>
+  </mat-card-actions> -->
  `
 })
 export class CalendarsComponent implements AfterViewInit {
