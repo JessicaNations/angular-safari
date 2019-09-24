@@ -3,8 +3,6 @@
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
 * might make an img slider of event cards
-* share button (with bottom modal) on each event card
-    * Extra credit: set it the button as overlapping the image and text
 * OR Animal gif/carousel
 * ?instagram carousel? do they moderate that?
 * New and upcoming attractions
