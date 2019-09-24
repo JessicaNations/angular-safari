@@ -4,7 +4,6 @@ import { NgImageSliderModule, NgImageSliderComponent } from 'ng-image-slider';
 @Component({
     selector: 'my-dash-slider',
     templateUrl: './dash-slider.component.html',
-    // styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class DashSliderComponent {

@@ -37,6 +37,8 @@ import { FieldTripsComponent } from './field-trips/field-trips.component';
 import { JobAppComponent } from './job-app/job-app.component';
 import { DashSliderComponent } from './dash-slider/dash-slider.component';
 
+
+import { NgImageSliderModule } from './ng-image-slider.module';
 import { MyMaterialModule } from './material.module';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
@@ -56,7 +58,8 @@ import { MyMaterialModule } from './material.module';
     //   passThruUnknownUrl: true
     // }),
     MyMaterialModule,
-    LayoutModule
+    LayoutModule,
+    NgImageSliderModule
   ],
   declarations: [
     AppComponent,
@@ -83,6 +86,7 @@ import { MyMaterialModule } from './material.module';
     FieldTripsComponent,
     JobAppComponent,
     DashSliderComponent
+
   ],
   // providers: [CalendarService],
   bootstrap: [AppComponent]
