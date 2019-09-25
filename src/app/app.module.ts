@@ -37,7 +37,7 @@ import { FieldTripsComponent } from './field-trips/field-trips.component';
 import { JobAppComponent } from './job-app/job-app.component';
 
 
-import { NgImageSliderModule } from './ng-image-slider.module';
+import { NgImageSliderModule } from 'ng-image-slider';
 import { AppMaterialModule } from './material.module';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 

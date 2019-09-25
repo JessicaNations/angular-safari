@@ -1,5 +1,5 @@
-import {Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
-import { NgImageSliderModule, NgImageSliderComponent } from 'ng-image-slider';
+import {Component, ViewChild } from '@angular/core';
+import { NgImageSliderComponent } from 'ng-image-slider';
 
 // import { Calendar } from '../calendar';
 // import { CalendarService } from '../calendar.service';
@@ -7,10 +7,11 @@ import { NgImageSliderModule, NgImageSliderComponent } from 'ng-image-slider';
 
 @Component({
   selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html'
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css'],
   // encapsulation: ViewEncapsulation.None
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
   now: number;
   @ViewChild('nav') ds: NgImageSliderComponent;  // , {static: false}
   showSlider = true;
@@ -37,8 +38,6 @@ export class DashboardComponent implements OnInit {
       this.now = Date.now();
     }, 1);
   }
-
-  ngOnInit() {}
 
     onChangeHandler() {
         this.setImageObject();
@@ -82,18 +81,6 @@ export class DashboardComponent implements OnInit {
             thumbImage: 'assets/img/slider/9_min.jpeg',
             title: 'Image nine title'
         }];
-    }
-
-    imageOnClick(index) {
-        console.log('index', index);
-    }
-
-    arrowOnClick(event) {
-        console.log('arrow click event', event);
-    }
-
-    lightboxArrowClick(event) {
-        console.log('popup arrow click', event);
     }
 
     prevImageClick() {
