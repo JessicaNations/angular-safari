@@ -1,4 +1,4 @@
-<!-- <mat-card class="dashboard-card">
+<mat-card class="dashboard-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"
       style="background-size:cover; background-image:url('https://material.angular.io/assets/img/examples/shiba1.jpg')">
@@ -21,10 +21,10 @@
   </mat-card-content>
 </mat-card>
 <mat-card>
-  <mat-card-content> -->
+  <mat-card-content>
       <div class="margin-auto demo-div box-shadow"
       [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
-          <app-ng-image-slider *ngIf="showSlider" #nav
+          <ng-image-slider *ngIf="showSlider" #nav
             [images]="imageObject"
             [infinite]="sliderInfinite"
             [imagePopup]="sliderImagePopup"
@@ -32,9 +32,9 @@
             [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}"
             [autoSlide]="sliderAutoSlide ? 1 : 0"
             [slideImage]="sliderSlideImage"
-            [animationSpeed]="sliderAnimationSpeed"></app-ng-image-slider>
+            [animationSpeed]="sliderAnimationSpeed"></ng-image-slider>
         </div>
-  <!-- </mat-card-content>
+  </mat-card-content>
 </mat-card>
 <mat-card>
   <mat-card-content>
@@ -56,7 +56,7 @@
         <mat-expansion-panel style="width:233px" class="mat-elevation-z0">
           <mat-expansion-panel-header>
             <mat-panel-title style="font-size: 16px;">
-              <b style="padding-right: 4px;">Hours:</b>{{ now | date:'EEEE: '}}Open -->
+              <b style="padding-right: 4px;">Hours:</b>{{ now | date:'EEEE: '}}Open
               <!-- <div *ngIf="dates.inRange(now,opened,closed)">{{ now.closed | date:'EEEE: '}}
               Open</div>
               <ng-template>{{ now | date:'EEEE: '}}
@@ -89,7 +89,7 @@
 
 
 
-            <!-- </mat-panel-title>
+            </mat-panel-title>
           </mat-expansion-panel-header>
           <mat-list>
             <mat-list-item>Monday: Closed</mat-list-item>
@@ -125,4 +125,4 @@
 </mat-card>
 
 
- -->
+
