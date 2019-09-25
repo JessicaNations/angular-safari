@@ -50,30 +50,30 @@ export class DashboardComponent implements OnInit {
 
     setImageObject() {
         this.imageObject = [{
-        //     video: 'https://youtu.be/tYa6OLQHrEc',
-        //     title: 'Youtube example one with title.',
-        //     alt: 'youtube video'
-        // }, {
-        //     video: 'https://youtu.be/6pxRHBw-k8M',
-        //     alt: 'youtube video'
-        // }, {
-        //     video: 'assets/video/movie2.mp4',
-        //     posterImage: 'assets/img/slider/11.jpg',
-        //     title: 'MP4 Video exmaple two with Poster-Image.',
-        //     alt: 'alt MP4 Video exmaple two with Poster-Image.'
-        // }, {
+            video: 'https://youtu.be/tYa6OLQHrEc',
+            title: 'Youtube example one with title.',
+            alt: 'youtube video'
+        }, {
+            video: 'https://youtu.be/6pxRHBw-k8M',
+            alt: 'youtube video'
+        }, {
+            video: 'assets/video/movie2.mp4',
+            posterImage: 'assets/img/slider/11.jpg',
+            title: 'MP4 Video exmaple two with Poster-Image.',
+            alt: 'alt MP4 Video exmaple two with Poster-Image.'
+        }, {
             image: 'assets/img/slider/calf.jpg',
             thumbImage: 'assets/img/slider/calf.jpeg',
-            title: 'image five'
+            title: 'calf'
         }, {
             image: 'assets/img/slider/zebra.jpg',
             thumbImage: 'assets/img/slider/zebra.jpeg',
-            alt: 'image six'
+            alt: 'zebra'
         }, {
             image: 'assets/img/slider/peacock.jpg',
             thumbImage: 'assets/img/slider/peacock.jpeg',
-            alt: 'alt of image seven',
-            title: 'title of image seven'
+            alt: 'peacock',
+            title: 'peacock'
         }, {
             image: 'assets/img/slider/8.jpg',
             thumbImage: 'assets/img/slider/8_min.jpeg'
