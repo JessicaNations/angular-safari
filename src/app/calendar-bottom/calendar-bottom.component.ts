@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet';
 
 @Component({
-  selector: 'my-calendar-bottom',
+  selector: 'app-calendar-bottom',
   templateUrl: './calendar-bottom.component.html'
 })
 export class CalendarBottomComponent {

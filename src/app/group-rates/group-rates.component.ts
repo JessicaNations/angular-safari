@@ -15,7 +15,7 @@ const ELEMENT_DATA: GroupRates[] = [
 ];
 
 @Component({
-  selector: 'my-group-rates',
+  selector: 'app-group-rates',
   templateUrl: './group-rates.component.html'
 })
 export class GroupRatesComponent {

@@ -17,7 +17,7 @@ const youtubeRegExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|\?v=)([
   validVideoExtensions = ['mp4'];
 
 @Component({
-  selector: 'my-slider-lightbox',
+  selector: 'app-slider-lightbox',
   templateUrl: './slider-lightbox.component.html'
 })
 export class SliderLightboxComponent implements OnInit, AfterViewInit, OnDestroy {

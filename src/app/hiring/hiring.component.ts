@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'my-hiring',
+  selector: 'app-hiring',
   templateUrl: './hiring.component.html',
 })
 export class HiringComponent {

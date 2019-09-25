@@ -120,11 +120,11 @@
   "defaultProject": "tour-of-heroes",
   "schematics": {
     "@schematics/angular:component": {
-      "prefix": "my",
+      "prefix": "app",
       "styleext": "css"
     },
     "@schematics/angular:directive": {
-      "prefix": "my"
+      "prefix": "app"
     }
   }
 }

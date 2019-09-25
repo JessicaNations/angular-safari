@@ -6,7 +6,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 
 
 @Component({
-  selector: 'my-root',
+  selector: 'app-root',
   templateUrl: 'app.component.html',
 })
 export class AppComponent implements OnInit {

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'my-faq',
+  selector: 'app-faq',
   templateUrl: './faq.component.html',
 })
 export class FaqComponent {

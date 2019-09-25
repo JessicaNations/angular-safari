@@ -12,7 +12,7 @@ const youtubeRegExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=|\?v=)([
   validVideoExtensions = ['mp4'];
 
 @Component({
-  selector: 'my-custom-img',
+  selector: 'app-custom-img',
   templateUrl: './slider-custom-image.component.html'
 })
 export class SliderCustomImageComponent implements OnInit, AfterViewInit, OnDestroy {

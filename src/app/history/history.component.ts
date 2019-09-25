@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-history',
+  selector: 'app-history',
   templateUrl: './history.component.html',
 })
 export class HistoryComponent {}

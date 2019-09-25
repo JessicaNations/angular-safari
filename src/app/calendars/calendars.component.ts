@@ -7,7 +7,7 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
 
 
 @Component({
-  selector: 'my-calendars',
+  selector: 'app-calendars',
   template: `
     <!-- <style>
       .calendar-wrapper{
@@ -28,7 +28,7 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
 
 
     <!-- <mat-card-actions>
-    <my-calendar-search></my-calendar-search>
+    <app-calendar-search></app-calendar-search>
     <mat-chip-list>
       <label>Or select one of the available dates:</label>
       <mat-chip *ngFor="let calendar of calendars" (click)="gotoDetail(calendar)">{{calendar.id}}th Details</mat-chip>

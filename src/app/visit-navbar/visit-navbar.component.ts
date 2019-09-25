@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatTabChangeEvent } from '@angular/material';
 
 @Component({
-  selector: 'my-visit-navbar',
+  selector: 'app-visit-navbar',
   templateUrl: './visit-navbar.component.html',
 })
 export class VisitNavbarComponent implements OnInit {

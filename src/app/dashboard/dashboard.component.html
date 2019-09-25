@@ -23,7 +23,7 @@
 <mat-card>
   <mat-card-content>
       <div class="margin-auto demo-div box-shadow" [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
-          <my-ng-image-slider *ngIf="showSlider" #nav
+          <app-ng-image-slider *ngIf="showSlider" #nav
             [images]="imageObject"
             [infinite]="sliderInfinite"
             [imagePopup]="sliderImagePopup"
@@ -34,7 +34,7 @@
             [animationSpeed]="sliderAnimationSpeed"
             (imageClick)="imageOnClick($event)"
             (arrowClick)="arrowOnClick($event)"
-            (lightboxArrowClick)="lightboxArrowClick($event)"></my-ng-image-slider>
+            (lightboxArrowClick)="lightboxArrowClick($event)"></app-ng-image-slider>
         </div>
   </mat-card-content>
 </mat-card>

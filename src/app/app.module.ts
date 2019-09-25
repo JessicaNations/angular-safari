@@ -38,7 +38,7 @@ import { JobAppComponent } from './job-app/job-app.component';
 
 
 import { NgImageSliderModule } from './ng-image-slider.module';
-import { MyMaterialModule } from './material.module';
+import { AppMaterialModule } from './material.module';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 
@@ -56,7 +56,7 @@ import { MyMaterialModule } from './material.module';
     //   delay: 300,
     //   passThruUnknownUrl: true
     // }),
-    MyMaterialModule,
+    AppMaterialModule,
     LayoutModule,
     NgImageSliderModule
   ],

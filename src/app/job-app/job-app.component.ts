@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'my-job-app',
+  selector: 'app-job-app',
   templateUrl: './job-app.component.html',
 
 })

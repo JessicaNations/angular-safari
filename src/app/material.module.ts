@@ -87,4 +87,4 @@ import {MatTreeModule} from '@angular/material/tree';
     // ScrollingModule,
   ]
 })
-export class MyMaterialModule { }
+export class AppMaterialModule { }

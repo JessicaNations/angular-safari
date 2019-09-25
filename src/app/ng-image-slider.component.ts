@@ -30,7 +30,7 @@ const NEXT_ARROW_CLICK_MESSAGE = 'next',
   validVideoExtensions = ['mp4'];
 
 @Component({
-  selector: 'my-ng-image-slider',
+  selector: 'app-ng-image-slider',
   templateUrl: './ng-image-slider.component.html',
   // styleUrls: ['./ng-image-slider.component.scss'],
   encapsulation: ViewEncapsulation.None

@@ -3,7 +3,7 @@
 // import { MatCarouselSlideComponent } from '@ngmodule/material-carousel';  // Orientation
 
 // @Component({
-//   selector: 'my-carousel',
+//   selector: 'app-carousel',
 //   templateUrl: './carousel.component.html',
 // })
 // export class CarouselComponent {   // implements OnInit

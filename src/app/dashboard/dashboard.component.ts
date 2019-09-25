@@ -6,7 +6,7 @@ import { NgImageSliderModule, NgImageSliderComponent } from 'ng-image-slider';
 
 
 @Component({
-  selector: 'my-dashboard',
+  selector: 'app-dashboard',
   templateUrl: './dashboard.component.html'
   // encapsulation: ViewEncapsulation.None
 })

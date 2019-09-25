@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-visit',
+  selector: 'app-visit',
   templateUrl: './visit.component.html',
 })
 export class VisitComponent {}
