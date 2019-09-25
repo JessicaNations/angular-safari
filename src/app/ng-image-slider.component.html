@@ -45,7 +45,7 @@
       </div>
   </div>
 </div>
-<slider-lightbox *ngIf="ligthboxShow"
+<my-slider-lightbox *ngIf="ligthboxShow"
   [currentImageSrc]="currentImageSrc"
   [currentImageTitle]="currentImageTitle"
   [showImage]="showImage"
@@ -56,4 +56,4 @@
   (close)="close()"
   (prevImage)="prevImage()"
   (nextImage)="nextImage()">
-</slider-lightbox>
+</my-slider-lightbox>

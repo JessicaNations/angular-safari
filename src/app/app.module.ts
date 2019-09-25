@@ -39,7 +39,7 @@ import { JobAppComponent } from './job-app/job-app.component';
 
 import { NgImageSliderModule } from './ng-image-slider.module';
 import { MyMaterialModule } from './material.module';
-// import { SliderMainComponent } from './slider-main/slider-main.component';
+import { SliderMainComponent } from './slider-main/slider-main.component';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 
@@ -85,7 +85,7 @@ import { MyMaterialModule } from './material.module';
     GroupRatesComponent,
     FieldTripsComponent,
     JobAppComponent,
-    // SliderMainComponent
+    SliderMainComponent
 
   ],
   // providers: [CalendarService],

@@ -1,7 +1,7 @@
 <div class="bg">
 
   <div class="margin-auto demo-div box-shadow" [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
-      <ng-image-slider *ngIf="showSlider" #nav
+      <my-ng-image-slider *ngIf="showSlider" #nav
           [images]="imageObject"
           [infinite]="sliderInfinite"
           [imagePopup]="sliderImagePopup"
@@ -12,7 +12,6 @@
           [animationSpeed]="sliderAnimationSpeed"
           (imageClick)="imageOnClick($event)"
           (arrowClick)="arrowOnClick($event)"
-          (lightboxArrowClick)="lightboxArrowClick($event)"></ng-image-slider>
+          (lightboxArrowClick)="lightboxArrowClick($event)"></my-ng-image-slider>
   </div>
 
-  
