@@ -1,13 +1,13 @@
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { NgImageSliderModule, NgImageSliderComponent } from 'ng-image-slider';
 
 @Component({
-    selector: 'my-dash-slider',
-    templateUrl: './dash-slider.component.html',
+    selector: 'my-slider-main',
+    templateUrl: './slider-main.component.html',
     encapsulation: ViewEncapsulation.None
 })
-export class DashSliderComponent {
-    @ViewChild('nav') ds: NgImageSliderComponent;
+export class SliderMainComponent implements OnInit {
+    @ViewChild('nav') ds: NgImageSliderComponent;  // , {static: false}
     showSlider = true;
 
     sliderWidth: Number = 940;
@@ -24,6 +24,8 @@ export class DashSliderComponent {
     constructor() {
         this.setImageObject();
     }
+
+    ngOnInit() {}
 
     onChangeHandler() {
         this.setImageObject();

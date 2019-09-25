@@ -35,11 +35,11 @@ import { GeneralAdmissionComponent } from './general-admission/general-admission
 import { GroupRatesComponent } from './group-rates/group-rates.component';
 import { FieldTripsComponent } from './field-trips/field-trips.component';
 import { JobAppComponent } from './job-app/job-app.component';
-import { DashSliderComponent } from './dash-slider/dash-slider.component';
 
 
 import { NgImageSliderModule } from './ng-image-slider.module';
 import { MyMaterialModule } from './material.module';
+// import { SliderMainComponent } from './slider-main/slider-main.component';
 // import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 
@@ -85,7 +85,7 @@ import { MyMaterialModule } from './material.module';
     GroupRatesComponent,
     FieldTripsComponent,
     JobAppComponent,
-    DashSliderComponent
+    // SliderMainComponent
 
   ],
   // providers: [CalendarService],
