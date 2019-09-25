@@ -22,21 +22,37 @@
 </mat-card>
 <mat-card>
   <mat-card-content>
-    <my-slider-main mat-card-image></my-slider-main>
+      <div class="margin-auto demo-div box-shadow" [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
+          <my-ng-image-slider *ngIf="showSlider" #nav
+            [images]="imageObject"
+            [infinite]="sliderInfinite"
+            [imagePopup]="sliderImagePopup"
+            [showArrow]="sliderArrowShow"
+            [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}"
+            [autoSlide]="sliderAutoSlide ? 1 : 0"
+            [slideImage]="sliderSlideImage"
+            [animationSpeed]="sliderAnimationSpeed"
+            (imageClick)="imageOnClick($event)"
+            (arrowClick)="arrowOnClick($event)"
+            (lightboxArrowClick)="lightboxArrowClick($event)"></my-ng-image-slider>
+        </div>
   </mat-card-content>
 </mat-card>
 <mat-card>
   <mat-card-content>
     <mat-list>
         <mat-list-item style="padding:7px; margin-top:15px">
-            <p><b>Address: </b><a href="https://www.google.com/maps/dir/38.579536,-89.9720122/Big+Joel's
-          +Safari+Petting+Zoo+%26+Educational+Park,+13187+State+Hwy+M,+Wright+City,
-          +MO+63390/@38.7031252,-91.0603322,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1
-          !1s0x87deb05c0f473b67:0x52376955a2ecd4f7!2m2!1d-91.02146!2d38.7898121">
+            <p><b>Address: </b>
+              <a href="https://www.google.com/maps/dir/38.579536,-89.9720122/Big+Joel's
+                +Safari+Petting+Zoo+%26+Educational+Park,+13187+State+Hwy+M,+Wright+City,
+                +MO+63390/@38.7031252,-91.0603322,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1
+                !1s0x87deb05c0f473b67:0x52376955a2ecd4f7!2m2!1d-91.02146!2d38.7898121">
                 13187 State Hwy M, <br />
-                <div style="margin-left:77px;">Wright City, MO 63390
+                <div style="margin-left:77px;">
+                  Wright City, MO 63390
                 </div>
-              </a></p>
+              </a>
+            </p>
           </mat-list-item>
       <mat-accordion>
         <mat-expansion-panel style="width:233px" class="mat-elevation-z0">

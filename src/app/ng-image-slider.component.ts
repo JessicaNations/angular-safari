@@ -37,7 +37,7 @@ const NEXT_ARROW_CLICK_MESSAGE = 'next',
 })
 export class NgImageSliderComponent implements OnChanges, OnInit, AfterViewInit, OnDestroy {
   // for slider
-  sliderMainDivWidth = 0;
+  dashboardDivWidth = 0;
   imageParentDivWidth = 0;
   imageObj: Array<object> = [];
   leftPos = 0;
@@ -58,7 +58,7 @@ export class NgImageSliderComponent implements OnChanges, OnInit, AfterViewInit,
   private swipeCoord?: [number, number];
   private swipeTime?: number;
 
-  @ViewChild('sliderMain') sliderMain;  // , {static: false}
+  @ViewChild('dashboard') dashboard;  // , {static: false}
   @ViewChild('imageDiv') imageDiv;   // , {static: false}
 
   // @inputs
@@ -208,8 +208,8 @@ export class NgImageSliderComponent implements OnChanges, OnInit, AfterViewInit,
           this.imageParentDivWidth = this.imageObj.length * this.sliderImageSizeWithPadding;
           this.leftPos = this.infinite ? -1 * this.sliderImageSizeWithPadding * this.slideImageCount : 0;
       }
-      if (this.sliderMain && this.sliderMain.nativeElement && this.sliderMain.nativeElement.offsetWidth) {
-          this.sliderMainDivWidth = this.sliderMain.nativeElement.offsetWidth;
+      if (this.dashboard && this.dashboard.nativeElement && this.dashboard.nativeElement.offsetWidth) {
+          this.dashboardDivWidth = this.dashboard.nativeElement.offsetWidth;
       }
       this.nextPrevSliderButtonDisable();
   }
@@ -271,10 +271,10 @@ export class NgImageSliderComponent implements OnChanges, OnInit, AfterViewInit,
   }
 
   nextImg() {
-      if ((this.imageParentDivWidth + this.leftPos) - this.sliderMainDivWidth > this.sliderImageSizeWithPadding * this.slideImageCount) {
+      if ((this.imageParentDivWidth + this.leftPos) - this.dashboardDivWidth > this.sliderImageSizeWithPadding * this.slideImageCount) {
           this.leftPos -= this.sliderImageSizeWithPadding * this.slideImageCount;
-      } else if ((this.imageParentDivWidth + this.leftPos) - this.sliderMainDivWidth > 0) {
-          this.leftPos -= (this.imageParentDivWidth + this.leftPos) - this.sliderMainDivWidth;
+      } else if ((this.imageParentDivWidth + this.leftPos) - this.dashboardDivWidth > 0) {
+          this.leftPos -= (this.imageParentDivWidth + this.leftPos) - this.dashboardDivWidth;
       }
   }
 
@@ -320,7 +320,7 @@ export class NgImageSliderComponent implements OnChanges, OnInit, AfterViewInit,
       this.sliderNextDisable = false;
       this.sliderPrevDisable = false;
       if (!this.infinite) {
-          if (this.imageParentDivWidth + this.leftPos <= this.sliderMainDivWidth) {
+          if (this.imageParentDivWidth + this.leftPos <= this.dashboardDivWidth) {
               this.sliderNextDisable = true;
           }
 
