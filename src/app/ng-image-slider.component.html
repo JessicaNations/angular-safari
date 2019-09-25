@@ -16,7 +16,6 @@
                   (mouseenter)="imageMouseEnterHandler()"
                   (mouseleave)="imageAutoSlide()"
                   #imageDiv>
-                  <!--my-custom-img?-->
                   <my-custom-img [imageUrl]="img.thumbImage || img.posterImage || img.video"
                       [isVideo]="!!(img.posterImage || img.video)"
                       [alt]="img.alt || img.title || ''"
