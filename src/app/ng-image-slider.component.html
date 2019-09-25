@@ -5,7 +5,8 @@
           #dashboard>
           <div class="main-inner"
               *ngIf="imageObj.length"
-              [ngStyle]="{'margin-left':leftPos+'px', 'width':imageParentDivWidth+'px', 'transition': effectStyle}"
+              [ngStyle]="{'margin-left':leftPos+'px',
+              'width':imageParentDivWidth+'px', 'transition': effectStyle}"
               (touchstart)="swipe($event, 'start')"
               (touchend)="swipe($event, 'end')">
               <div [ngClass]="{'image-popup': imagePopup}"

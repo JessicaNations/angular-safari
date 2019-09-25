@@ -22,7 +22,8 @@
 </mat-card>
 <mat-card>
   <mat-card-content>
-      <div class="margin-auto demo-div box-shadow" [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
+      <div class="margin-auto demo-div box-shadow"
+      [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
           <app-ng-image-slider *ngIf="showSlider" #nav
             [images]="imageObject"
             [infinite]="sliderInfinite"

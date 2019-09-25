@@ -2,26 +2,26 @@
 # copying 
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
-* might make an img slider of event cards
-* OR Animal gif/carousel
-* ?instagram carousel? do they moderate that?
-* New and upcoming attractions
+* instagram img slider
+* Events section like google
+    * click to show details page
+* maybe a New and upcoming attractions section
 # CALENDAR TODOs
-* calendar month scroll like google calendars
-    * finger swipe in the middle of the calendar (along with the arrows)
+* calendar month middle swipe like google calendars
 * On date click show the details in bottom sheet modal
 * Or Link to event cards
+* gray-out closed days?
 # Hours TODOs
 * Red "Closed" next to today's hours
 # History
 * Row About the Owners
 * Row History Blurb with pictures
-    * timeline?
-* Coming soon!
+* Coming soon! maybe on top?
 # Outside tools
 * ADMISSION: ecommerce thing
 * JOB APP: switch over to google forms
 * ANIMAL SERVICES: google form/ecommerce
+* PARTY/FIELD TRIP: google form/ecommerce
 # Images:
 ## Current Hours Page
 ![Hours](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/hours.png)

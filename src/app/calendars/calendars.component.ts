@@ -19,6 +19,12 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
         [(selected)]="selectedDate"
         (monthSelected)="monthSelected($event)"
         (selectedChange)="onDateChanged($event)">
+        <!--<div class="main-inner"
+              *ngIf="imageObj.length"
+              [ngStyle]="{'margin-left':leftPos+'px',
+              'width':imageParentDivWidth+'px', 'transition': effectStyle}"
+              (touchstart)="swipe($event, 'start')"
+              (touchend)="swipe($event, 'end')">-->
       </mat-calendar>
     </div>
     <!-- <br/>

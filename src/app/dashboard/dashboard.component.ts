@@ -50,28 +50,28 @@ export class DashboardComponent implements OnInit {
 
     setImageObject() {
         this.imageObject = [{
-            video: 'https://youtu.be/tYa6OLQHrEc',
-            title: 'Youtube example one with title.',
-            alt: 'youtube video'
-        }, {
-            video: 'https://youtu.be/6pxRHBw-k8M',
-            alt: 'youtube video'
-        }, {
-            video: 'assets/video/movie2.mp4',
-            posterImage: 'assets/img/slider/11.jpg',
-            title: 'MP4 Video exmaple two with Poster-Image.',
-            alt: 'alt MP4 Video exmaple two with Poster-Image.'
-        }, {
-            image: 'assets/img/slider/5.jpg',
-            thumbImage: 'assets/img/slider/5_min.jpeg',
+        //     video: 'https://youtu.be/tYa6OLQHrEc',
+        //     title: 'Youtube example one with title.',
+        //     alt: 'youtube video'
+        // }, {
+        //     video: 'https://youtu.be/6pxRHBw-k8M',
+        //     alt: 'youtube video'
+        // }, {
+        //     video: 'assets/video/movie2.mp4',
+        //     posterImage: 'assets/img/slider/11.jpg',
+        //     title: 'MP4 Video exmaple two with Poster-Image.',
+        //     alt: 'alt MP4 Video exmaple two with Poster-Image.'
+        // }, {
+            image: 'assets/img/slider/calf.jpg',
+            thumbImage: 'assets/img/slider/calf.jpeg',
             title: 'image five'
         }, {
-            image: 'assets/img/slider/6.jpg',
-            thumbImage: 'assets/img/slider/6_min.jpeg',
+            image: 'assets/img/slider/zebra.jpg',
+            thumbImage: 'assets/img/slider/zebra.jpeg',
             alt: 'image six'
         }, {
-            image: 'assets/img/slider/7.jpg',
-            thumbImage: 'assets/img/slider/7_min.jpeg',
+            image: 'assets/img/slider/peacock.jpg',
+            thumbImage: 'assets/img/slider/peacock.jpeg',
             alt: 'alt of image seven',
             title: 'title of image seven'
         }, {
