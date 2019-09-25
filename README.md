@@ -2,7 +2,6 @@
 # copying 
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
-* FIX: slider should be horizontal :(
 * instagram img slider
 * Events section like google
     * click to show details page
