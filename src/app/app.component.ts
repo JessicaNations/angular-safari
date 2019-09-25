@@ -11,7 +11,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 })
 export class AppComponent implements OnInit {
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;  // check if this works
-  title = 'Tour of Calendars';
+  title = 'Big Joel\'s Safari';
   events: string[] = [];
   opened: boolean;
   constructor(

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tour-of-heroes": {
+    "big-joels-safari-heroes": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -49,18 +49,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tour-of-heroes:build"
+            "browserTarget": "big-joels-safari-heroes:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tour-of-heroes:build:production"
+              "browserTarget": "big-joels-safari-heroes:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tour-of-heroes:build"
+            "browserTarget": "big-joels-safari-heroes:build"
           }
         },
         "test": {
@@ -93,7 +93,7 @@
         }
       }
     },
-    "tour-of-heroes-e2e": {
+    "big-joels-safari-heroes-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -102,7 +102,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "tour-of-heroes:serve"
+            "devServerTarget": "big-joels-safari-heroes:serve"
           }
         },
         "lint": {
@@ -117,7 +117,7 @@
       }
     }
   },
-  "defaultProject": "tour-of-heroes",
+  "defaultProject": "big-joels-safari-heroes",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
