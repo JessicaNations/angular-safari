@@ -9,7 +9,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  // encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
   @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;  // check if this works
