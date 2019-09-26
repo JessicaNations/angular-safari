@@ -36,8 +36,7 @@ export class DashboardComponent {
   // closingSoon = this.now >= 16 && this.now < 17;
   // closed = this.now >= 17 && this.now <= 9;
 
-  constructor(private httpClient: HttpClient
-  ) {
+  constructor(private httpClient: HttpClient) {
     this.setImageObject();
     setInterval(() => {
       this.now = Date.now();

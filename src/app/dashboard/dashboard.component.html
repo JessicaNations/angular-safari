@@ -12,10 +12,16 @@
   </mat-card-header>
   <div class="margin-auto demo-div box-shadow"
     [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
-    <ng-image-slider *ngIf="showSlider" #nav [images]="imageObject" [infinite]="sliderInfinite"
-      [imagePopup]="sliderImagePopup" [showArrow]="sliderArrowShow"
-      [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}" [autoSlide]="sliderAutoSlide ? 1 : 0"
-      [slideImage]="sliderSlideImage" [animationSpeed]="sliderAnimationSpeed"></ng-image-slider>
+    <ng-image-slider *ngIf="showSlider" #nav
+      [images]="imageObject"
+      [infinite]="sliderInfinite"
+      [imagePopup]="sliderImagePopup"
+      [showArrow]="sliderArrowShow"
+      [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}"
+      [autoSlide]="sliderAutoSlide ? 1 : 0"
+      [slideImage]="sliderSlideImage"
+      [animationSpeed]="sliderAnimationSpeed">
+    </ng-image-slider>
   </div>
   <mat-card-content>
     <p>
@@ -105,11 +111,23 @@
 <mat-card>
   <mat-card-content>
     <h4>Coming Soon!</h4>
-    <!-- <input type="text" [attr.value]="jwtToken" (change)="setJwtToken($event.target.value)" /> -->
-    <ul>
+    <div class="margin-auto demo-div box-shadow"
+    [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
+    <ng-image-slider *ngIf="showSlider" #nav
+      [images]="images$"
+      [infinite]="sliderInfinite"
+      [imagePopup]="sliderImagePopup"
+      [showArrow]="sliderArrowShow"
+      [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}"
+      [autoSlide]="sliderAutoSlide ? 1 : 0"
+      [slideImage]="sliderSlideImage"
+      [animationSpeed]="sliderAnimationSpeed">
+    </ng-image-slider>
+  </div>  
+    <!-- <ul>
       <li *ngFor="let image of images$|async">
-        <secured-image [src]="image.images.original.url"></secured-image>
+        <app-secured-image src="image.images.original.url"></app-secured-image>
       </li>
-    </ul>
+    </ul> -->
   </mat-card-content>
 </mat-card>
