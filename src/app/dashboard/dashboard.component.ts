@@ -55,28 +55,29 @@ export class DashboardComponent {
         }, {
             video: 'https://youtu.be/6pxRHBw-k8M',
             alt: 'youtube video'
-        }, {
-            video: 'assets/video/movie2.mp4',
-            posterImage: 'assets/img/slider/11.jpg',
-            title: 'MP4 Video exmaple two with Poster-Image.',
-            alt: 'alt MP4 Video exmaple two with Poster-Image.'
-        }, {
+         }, {
+            image: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/9820928.jpg',
+            thumbImage: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/9820928.jpg',
+            title: 'Zebra'
+        },
+        {
             image: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/4821874_orig.jpg',
             thumbImage: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/4821874_orig.jpg',
             title: 'Newborn calf'
         }, {
-            image: 'assets/images/slider/zebra.jpg',
-            thumbImage: 'assets/images/slider/zebra.jpeg',
-            alt: 'zebra'
-        }, {
-            image: 'assets/images/slider/peacock.jpg',
-            thumbImage: 'assets/images/slider/peacock.jpeg',
-            alt: 'peacock',
+            image: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/4152886.jpg',
+            thumbImage: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/4152886.jpg',
+            alt: 'Peacock',
             title: 'Peacock'
         }, {
-            image: 'assets/images/slider/8.jpg',
-            thumbImage: 'assets/images/slider/8_min.jpeg',
-            title: 'Empty seventh slide'
+            image: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/7283907.jpg',
+            thumbImage: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/7283907.jpg',
+            alt: 'Camel',
+            title: 'Camel'
+        }, {
+            image: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/9557704.jpg',
+            thumbImage: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/9557704.jpg',
+            title: 'Snake'
         }, {
             image: 'assets/images/slider/9.jpg',
             thumbImage: 'assets/images/slider/9_min.jpeg',
