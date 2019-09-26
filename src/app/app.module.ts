@@ -36,14 +36,8 @@ import { GroupRatesComponent } from './group-rates/group-rates.component';
 import { FieldTripsComponent } from './field-trips/field-trips.component';
 import { JobAppComponent } from './job-app/job-app.component';
 
-
 import { NgImageSliderModule } from 'ng-image-slider';
 import { AppMaterialModule } from './material.module';
-
-import { SecuredImageComponent } from './dashboard/secured-image.component';
-import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
-
 
 @NgModule({
   imports: [
@@ -81,12 +75,8 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
     GroupRatesComponent,
     FieldTripsComponent,
     JobAppComponent,
-    SecuredImageComponent
 
   ],
-  providers: [{
-    provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true
-  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgImageSliderComponent } from 'ng-image-slider';
-import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,11 +9,6 @@ import { map } from 'rxjs/operators';
 })
 export class DashboardComponent {
   now: number;
-
-  jwtToken = window.localStorage.getItem('jwtToken');
-  images$ = this.httpClient
-    .get(`https://api.giphy.com/v1/gifs/search?q=dogs&imit=10&api_key=dc6zaTOxFJmzC`)
-    .pipe(map((resp: any) => resp.data));
 
   @ViewChild('nav') ds: NgImageSliderComponent;  // , {static: false}
   showSlider = true;
@@ -36,7 +29,7 @@ export class DashboardComponent {
   // closingSoon = this.now >= 16 && this.now < 17;
   // closed = this.now >= 17 && this.now <= 9;
 
-  constructor(private httpClient: HttpClient) {
+  constructor() {
     this.setImageObject();
     setInterval(() => {
       this.now = Date.now();

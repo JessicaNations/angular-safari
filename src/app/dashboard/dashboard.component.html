@@ -111,21 +111,5 @@
 <mat-card>
   <mat-card-content>
     <h4>Coming Soon!</h4>
-    <div class="margin-auto demo-div box-shadow"
-    [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
-    <ng-image-slider *ngIf="showSlider" #nav
-      [images]="images$"
-      [infinite]="sliderInfinite"
-      [imagePopup]="sliderImagePopup"
-      [showArrow]="sliderArrowShow"
-      [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}"
-      [autoSlide]="sliderAutoSlide ? 1 : 0"
-      [slideImage]="sliderSlideImage"
-      [animationSpeed]="sliderAnimationSpeed">
-    </ng-image-slider>
-  </div>
-    <!--<div *ngFor="let image of images$|async">
-        <app-secured-image src="image.images.original.url"></app-secured-image>
-      </div>-->
   </mat-card-content>
 </mat-card>
