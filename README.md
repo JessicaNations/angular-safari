@@ -1,3 +1,6 @@
+# Thoughts:
+At this point, I might create a second app to test out the hours and calendar stuff.
+Everything is working nicely and I don't want to break it lol.
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
 * Events section like facebook
