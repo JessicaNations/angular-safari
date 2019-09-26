@@ -39,7 +39,10 @@ import { JobAppComponent } from './job-app/job-app.component';
 
 import { NgImageSliderModule } from 'ng-image-slider';
 import { AppMaterialModule } from './material.module';
-// import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+
+import { SecuredImageComponent } from './dashboard/secured-image.component';
+import { MyHttpInterceptor } from './dashboard/my-http.interceptor';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
 @NgModule({
@@ -50,12 +53,6 @@ import { AppMaterialModule } from './material.module';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    // HttpClientInMemoryWebApiModule.forRoot(
-    //   InMemoryDataService, {
-    //   dataEncapsulation: false,
-    //   delay: 300,
-    //   passThruUnknownUrl: true
-    // }),
     AppMaterialModule,
     LayoutModule,
     NgImageSliderModule
@@ -84,9 +81,12 @@ import { AppMaterialModule } from './material.module';
     GroupRatesComponent,
     FieldTripsComponent,
     JobAppComponent,
+    SecuredImageComponent
 
   ],
-  // providers: [CalendarService],
+  providers: [{
+    provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

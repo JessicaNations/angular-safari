@@ -7,6 +7,7 @@
 //   templateUrl: './carousel.component.html',
 // })
 // export class CarouselComponent {   // implements OnInit
+
 //   public slidesList = new Array<never>(3);
 //   // public slidesList: Array<object> = [
 //   //   {image: 'assets/images/calf.jpg'},
@@ -36,8 +37,7 @@
 //     MatCarouselSlideComponent
 //   >;
 
-//   constructor(
-//   ) {}
+//   constructor() {}
 
 //   // ngOnInit() {
 //   //     this.slidesList = [

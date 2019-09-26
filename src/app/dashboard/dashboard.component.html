@@ -105,5 +105,11 @@
 <mat-card>
   <mat-card-content>
     <h4>Coming Soon!</h4>
+    <input type="text" [attr.value]="jwtToken" (change)="setJwtToken($event.target.value)" />
+    <ul>
+      <li *ngFor="let image of images$|async">
+        <secured-image [src]="image.images.original.url"></secured-image>
+      </li>
+    </ul>
   </mat-card-content>
 </mat-card>
