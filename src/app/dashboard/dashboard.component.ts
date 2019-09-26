@@ -51,6 +51,7 @@ export class DashboardComponent {
         this.imageObject = [{
           image: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/2650386.jpg',
           thumbImage: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/2650386.jpg',
+          alt: 'logo'
         }, {
             video: 'https://youtu.be/tYa6OLQHrEc',
             title: 'Youtube example one with title.',
