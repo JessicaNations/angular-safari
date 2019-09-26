@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
   selector: 'app-field-trips',
   templateUrl: './field-trips.component.html',
 })
-export class FieldTripsComponent {
-
-}
+export class FieldTripsComponent {}

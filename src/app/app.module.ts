@@ -6,17 +6,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-// import { HttpClientInMemoryWebApiModule, InMemoryDbService } from 'angular-in-memory-web-api';
-// import { InMemoryDataService } from './in-memory-data.service';
-// import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-// import { CalendarService } from './calendar.service';
 import { CalendarsComponent } from './calendars/calendars.component';
-// import { CalendarDetailComponent } from './calendar-detail/calendar-detail.component';
-// import { CalendarSearchComponent } from './calendar-search/calendar-search.component';
-// import { CarouselComponent } from './carousel/carousel.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitComponent } from './visit/visit.component';
 import { VisitNavbarComponent } from './visit-navbar/visit-navbar.component';
@@ -53,10 +45,7 @@ import { AppMaterialModule } from './material.module';
   ],
   declarations: [
     AppComponent,
-    // CalendarSearchComponent,
     CalendarsComponent,
-    // CalendarDetailComponent,
-    // CarouselComponent
     DashboardComponent,
     VisitComponent,
     VisitNavbarComponent,
