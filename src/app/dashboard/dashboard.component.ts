@@ -61,7 +61,7 @@ export class DashboardComponent {
             title: 'MP4 Video exmaple two with Poster-Image.',
             alt: 'alt MP4 Video exmaple two with Poster-Image.'
         }, {
-            image: 'assets/images/slider/calf.jpg',
+            image: 'https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/slider/calf.png',
             thumbImage: 'assets/images/slider/calf.jpeg',
             title: 'Newborn calf'
         }, {
@@ -75,11 +75,12 @@ export class DashboardComponent {
             title: 'Peacock'
         }, {
             image: 'assets/images/slider/8.jpg',
-            thumbImage: 'assets/images/slider/8_min.jpeg'
+            thumbImage: 'assets/images/slider/8_min.jpeg',
+            title: 'Empty seventh slide'
         }, {
             image: 'assets/images/slider/9.jpg',
             thumbImage: 'assets/images/slider/9_min.jpeg',
-            title: 'Image nine title'
+            title: 'Empty eighth slide'
         }];
     }
 
