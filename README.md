@@ -1,18 +1,16 @@
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
 * Events section like google
-    * click to show details page
-* maybe a New and upcoming attractions section
+    * two soonest events
+    * click to show details modal
 # CALENDAR TODOs
+* https://onthecode.co.uk/angular-material-calendar-component/
+    * On date click show the details in bottom sheet modal
+    * gray-out closed days?
 * calendar month middle swipe like google calendars
     * https://stackblitz.com/github/sanjayV/ng-image-slider
-* On date click show the details in bottom sheet modal
-* Or Link to event cards
-* gray-out closed days?
 # Hours TODOs
 * Red "Closed" next to today's hours
-# History
-* pictures
 # Outside tools
 * instagram img slider (needs an API)
 * ADMISSION: ecommerce thing
