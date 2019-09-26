@@ -3,14 +3,12 @@ import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class MyHttpInterceptor implements HttpInterceptor {
+export class MyHttpInterceptor {
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    const jwtToken = window.localStorage.getItem('jwtToken');
+    const jwtToken = window.localStorage;
 
     const requestToHandle = jwtToken
-      ? request.clone({
-        headers: request.headers.set('authorization', `Bearer ${jwtToken}`)
-      })
+      ? request.clone({})
       : request;
     return next.handle(requestToHandle);
   }

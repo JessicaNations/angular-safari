@@ -43,11 +43,6 @@ export class DashboardComponent {
     }, 1);
   }
 
-  setJwtToken(token: string): void {
-    this.jwtToken = token;
-    window.localStorage.setItem('jwtToken', token);
-  }
-
   onChangeHandler() {
     this.setImageObject();
     this.showSlider = false;
