@@ -1,5 +1,3 @@
-# Safari TODOs
-# copying 
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
 * Events section like google
@@ -7,6 +5,7 @@
 * maybe a New and upcoming attractions section
 # CALENDAR TODOs
 * calendar month middle swipe like google calendars
+    * https://stackblitz.com/github/sanjayV/ng-image-slider
 * On date click show the details in bottom sheet modal
 * Or Link to event cards
 * gray-out closed days?
