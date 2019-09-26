@@ -16,11 +16,11 @@ export class DashboardComponent {
   @ViewChild('nav') ds: NgImageSliderComponent;  // , {static: false}
   showSlider = true;
 
-    sliderWidth: Number = 940;
+    sliderWidth: Number = 300;
     sliderImageWidth: Number = 300;
     sliderImageHeight: Number = 225;
     sliderArrowShow: Boolean = true;
-    sliderInfinite: Boolean = false;
+    sliderInfinite: Boolean = true;
     sliderImagePopup: Boolean = true;
     sliderAutoSlide: Boolean = false;
     sliderSlideImage: Number = 1;

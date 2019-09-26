@@ -10,48 +10,31 @@
       <h5>Zoo and Educational Park</h5>
     </mat-card-subtitle>
   </mat-card-header>
+  <div class="margin-auto demo-div box-shadow"
+    [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
+    <ng-image-slider *ngIf="showSlider" #nav [images]="imageObject" [infinite]="sliderInfinite"
+      [imagePopup]="sliderImagePopup" [showArrow]="sliderArrowShow"
+      [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}" [autoSlide]="sliderAutoSlide ? 1 : 0"
+      [slideImage]="sliderSlideImage" [animationSpeed]="sliderAnimationSpeed"></ng-image-slider>
+  </div>
   <mat-card-content>
-    <br/>
-    <p style="text-align: center">
-      Big Joel's is a family-owned farm and seasonal attraction.<br/>
-      The farm is home to well over 60 different animal species,<br/>
-      both big and small, mild and wild. View all animals up close<br/>
-      with the opportunity to touch and feed our barnyard companions.<br/>
+    <p>
+      Big Joel's is a family-owned farm and seasonal attraction.
+      The farm is home to well over 60 different animal species,
+      both big and small, mild and wild. View all animals up close
+      with the opportunity to touch and feed our barnyard companions.
     </p>
-  </mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-content>
-      <div class="margin-auto demo-div box-shadow"
-      [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
-          <ng-image-slider *ngIf="showSlider" #nav
-            [images]="imageObject"
-            [infinite]="sliderInfinite"
-            [imagePopup]="sliderImagePopup"
-            [showArrow]="sliderArrowShow"
-            [imageSize]="{width: sliderImageWidth, height: sliderImageHeight}"
-            [autoSlide]="sliderAutoSlide ? 1 : 0"
-            [slideImage]="sliderSlideImage"
-            [animationSpeed]="sliderAnimationSpeed"></ng-image-slider>
-        </div>
-  </mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-content>
     <mat-list>
-        <mat-list-item style="padding:7px; margin-top:15px">
-            <p><b>Address: </b>
-              <a href="https://www.google.com/maps/dir/38.579536,-89.9720122/Big+Joel's
+      <mat-list-item style="margin-left:7px; margin-top:15px">
+        <p><b>Address: </b>
+          <a href="https://www.google.com/maps/dir/38.579536,-89.9720122/Big+Joel's
                 +Safari+Petting+Zoo+%26+Educational+Park,+13187+State+Hwy+M,+Wright+City,
                 +MO+63390/@38.7031252,-91.0603322,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1
                 !1s0x87deb05c0f473b67:0x52376955a2ecd4f7!2m2!1d-91.02146!2d38.7898121">
-                13187 State Hwy M, <br />
-                <div style="margin-left:77px;">
-                  Wright City, MO 63390
-                </div>
-              </a>
-            </p>
-          </mat-list-item>
+            13187 State Hwy M, Wright City, MO 63390
+          </a>
+        </p>
+      </mat-list-item>
       <mat-accordion>
         <mat-expansion-panel style="width:233px" class="mat-elevation-z0">
           <mat-expansion-panel-header>
@@ -105,24 +88,17 @@
       <mat-list-item style="padding:7px">
         <p><b>Phone: </b>(636) 745-3031</p>
       </mat-list-item>
-      <mat-list-item style="padding:7px;">
+      <mat-list-item style="margin-left:7px;">
         <p><b>Email: </b><a href="bigjoelsafari@bigjoelsafaricom"> bigjoelsafari@bigjoelsafari.com</a></p>
       </mat-list-item>
-
     </mat-list>
-
   </mat-card-content>
 </mat-card>
-
 <mat-card>
   <mat-card-content>
     <h4>Events</h4>
     <mat-form-field>
-        <input matInput type="datetime-local" placeholder="start date">
-      </mat-form-field>
-
+      <input matInput type="datetime-local" placeholder="start date">
+    </mat-form-field>
   </mat-card-content>
 </mat-card>
-
-
-
