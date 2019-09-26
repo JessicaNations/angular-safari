@@ -1,6 +1,6 @@
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
-* Events section like google
+* Events section like facebook
     * two soonest events
     * click to show details modal
 # CALENDAR TODOs
@@ -12,7 +12,7 @@
 # Hours TODOs
 * Red "Closed" next to today's hours
 # Outside tools
-* instagram img slider (needs an API)
+* instagram/fb img slider (needs an API)
 * ADMISSION: ecommerce thing
 * JOB APP: switch over to google forms
 * ANIMAL SERVICES: google form/ecommerce
@@ -34,5 +34,3 @@
 ![PartyTable](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/partytable.png)
 ## Admission
 ![Admission](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/admission.png)
-
-
