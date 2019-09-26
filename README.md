@@ -12,9 +12,7 @@
 # Hours TODOs
 * Red "Closed" next to today's hours
 # History
-* Row About the Owners
-* Row History Blurb with pictures
-* Coming soon! maybe on top?
+* pictures
 # Outside tools
 * instagram img slider (needs an API)
 * ADMISSION: ecommerce thing

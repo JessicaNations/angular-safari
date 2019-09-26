@@ -61,24 +61,24 @@ export class DashboardComponent {
             title: 'MP4 Video exmaple two with Poster-Image.',
             alt: 'alt MP4 Video exmaple two with Poster-Image.'
         }, {
-            image: 'assets/img/slider/calf.jpg',
-            thumbImage: 'assets/img/slider/calf.jpeg',
-            title: 'calf'
+            image: 'assets/images/slider/calf.jpg',
+            thumbImage: 'assets/images/slider/calf.jpeg',
+            title: 'Newborn calf'
         }, {
-            image: 'assets/img/slider/zebra.jpg',
-            thumbImage: 'assets/img/slider/zebra.jpeg',
+            image: 'assets/images/slider/zebra.jpg',
+            thumbImage: 'assets/images/slider/zebra.jpeg',
             alt: 'zebra'
         }, {
-            image: 'assets/img/slider/peacock.jpg',
-            thumbImage: 'assets/img/slider/peacock.jpeg',
+            image: 'assets/images/slider/peacock.jpg',
+            thumbImage: 'assets/images/slider/peacock.jpeg',
             alt: 'peacock',
-            title: 'peacock'
+            title: 'Peacock'
         }, {
-            image: 'assets/img/slider/8.jpg',
-            thumbImage: 'assets/img/slider/8_min.jpeg'
+            image: 'assets/images/slider/8.jpg',
+            thumbImage: 'assets/images/slider/8_min.jpeg'
         }, {
-            image: 'assets/img/slider/9.jpg',
-            thumbImage: 'assets/img/slider/9_min.jpeg',
+            image: 'assets/images/slider/9.jpg',
+            thumbImage: 'assets/images/slider/9_min.jpeg',
             title: 'Image nine title'
         }];
     }
