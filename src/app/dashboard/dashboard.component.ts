@@ -61,8 +61,8 @@ export class DashboardComponent {
             title: 'MP4 Video exmaple two with Poster-Image.',
             alt: 'alt MP4 Video exmaple two with Poster-Image.'
         }, {
-            image: 'https://github.com/JessicaNations/angular-safari/blob/master/src/assets/images/slider/calf.png',
-            thumbImage: 'assets/images/slider/calf.jpeg',
+            image: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/4821874_orig.jpg',
+            thumbImage: 'http://www.bigjoelsafari.com/uploads/3/4/3/2/34325501/4821874_orig.jpg',
             title: 'Newborn calf'
         }, {
             image: 'assets/images/slider/zebra.jpg',
