@@ -13,7 +13,7 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
     }
     </style> -->
     <div class="calendar-wrapper">
-      <mat-calendar #calendar
+      <mat-calendar touchUi #calendar
         [(selected)]="selectedDate"
         (monthSelected)="monthSelected($event)"
         (selectedChange)="onDateChanged($event)">
@@ -44,7 +44,7 @@ export class CalendarsComponent implements AfterViewInit {
     if (buttons) {
       Array.from(buttons).forEach(button => {
         this.renderer.listen(button, 'click', () => {
-          alert('Arrow button clicked');
+          // alert('Arrow button clicked');
         });
       })
     }
