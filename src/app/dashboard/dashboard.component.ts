@@ -25,8 +25,8 @@ export class DashboardComponent {
   imageObject: Array<object> = [];
 
 
-  private swipeCoord?: [number, number];
-  private swipeTime?: number;
+  // private swipeCoord?: [number, number];
+  // private swipeTime?: number;
 
   // opened = this.now >= 9 && this.now < 17;
   // closingSoon = this.now >= 16 && this.now < 17;
@@ -98,14 +98,14 @@ export class DashboardComponent {
     this.ds.next();
   }
 
-  swipe(e: TouchEvent, when: string): void {
-    const coord: [number, number] = [e.changedTouches[0].pageX, e.changedTouches[0].pageY];
-    const time = new Date().getTime();
+  // swipe(e: TouchEvent, when: string): void {
+  //   const coord: [number, number] = [e.changedTouches[0].pageX, e.changedTouches[0].pageY];
+  //   const time = new Date().getTime();
 
-    if (when === 'start') {
-        this.swipeCoord = coord;
-        this.swipeTime = time;
-    } else if (when === 'end') {
+  //   if (when === 'start') {
+  //       this.swipeCoord = coord;
+  //       this.swipeTime = time;
+  //   } else if (when === 'end') {
         // const direction = [coord[0] - this.swipeCoord[0], coord[1] - this.swipeCoord[1]];
         // const duration = time - this.swipeTime;
 
@@ -117,9 +117,9 @@ export class DashboardComponent {
         //     } else {
         //         this.prev();
         //     }
-        // }
-    }
-}
+//         // }
+//     }
+// }
 
   // calendars: Calendar[] = [];
 
