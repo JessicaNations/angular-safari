@@ -13,7 +13,7 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
     }
     </style> -->
     <div class="calendar-wrapper">
-      <mat-calendar touchUi #calendar
+      <mat-calendar #calendar
         [(selected)]="selectedDate"
         (monthSelected)="monthSelected($event)"
         (selectedChange)="onDateChanged($event)">
