@@ -1,6 +1,8 @@
 # Thoughts:
 At this point, I might create a second app to test out the hours and calendar stuff.
 Everything is working nicely and I don't want to break it lol.
+9/27 Tried to add a dateClass thing that highlights certain days. 
+* It wasn't working so I tried npm update and broke everything :( So I deleted the app, and recloned.
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
 * Events section like facebook
