@@ -13,3 +13,15 @@ export class CalendarBottomComponent {
     event.preventDefault();
   }
 }
+
+  // calendars: Calendar[] = [];
+
+  // ngOnInit(): void {
+  //   this.calendarService.getCalendars()
+  //     .subscribe(calendars => this.calendars = calendars.slice(1, 5));
+  // }
+
+  // gotoDetail(calendar: Calendar): void {
+  //   const link = ['/detail', calendar.id];
+  //   this.router.navigate(link);
+  // }
