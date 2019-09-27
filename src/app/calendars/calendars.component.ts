@@ -13,10 +13,6 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
       width: 300px;
     }
     </style> -->
-    <style>.example-custom-date-class {
-      background: orange;
-      border-radius: 100%;
-    }</style>
     <div class="calendar-wrapper">
       <mat-calendar #calendar
       [(selected)]="selectedDate"
@@ -24,7 +20,7 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
         (selectedChange)="onDateChanged($event)">
       </mat-calendar>
     </div>`,
-    encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None,
 })
 export class CalendarsComponent implements AfterViewInit {
   @ViewChild('calendar') calendar: MatCalendar<Moment>;
@@ -32,7 +28,7 @@ export class CalendarsComponent implements AfterViewInit {
 
   constructor(
     private renderer: Renderer2,
-    private _bottomSheet: MatBottomSheet) {}
+    private _bottomSheet: MatBottomSheet) { }
 
   // monthSelected(date) {
   //   alert(`Selected: ${date}`);
@@ -54,3 +50,5 @@ export class CalendarsComponent implements AfterViewInit {
     }
   }
 }
+
+
