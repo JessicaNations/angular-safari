@@ -11,8 +11,7 @@
     </mat-card-subtitle>
   </mat-card-header>
   <div class="margin-auto demo-div box-shadow"
-    [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}"
-    (touchstart)="swipe($event, 'start')" (touchend)="swipte($event, 'end')">
+    [ngStyle]="{'width':sliderWidth+'px', 'min-height': sliderImageHeight+'px'}">
     <ng-image-slider *ngIf="showSlider" #nav
       [images]="imageObject"
       [infinite]="sliderInfinite"
