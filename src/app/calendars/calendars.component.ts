@@ -1,8 +1,9 @@
-import { Component, ViewChild, AfterViewInit, Renderer2 } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, Renderer2, ViewEncapsulation } from '@angular/core';
 import { Moment } from 'moment';
 import { MatCalendar } from '@angular/material';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.component';
+
 
 @Component({
   selector: 'app-calendars',
@@ -12,18 +13,21 @@ import { CalendarBottomComponent } from '../calendar-bottom/calendar-bottom.comp
       width: 300px;
     }
     </style> -->
+    <style>.example-custom-date-class {
+      background: orange;
+      border-radius: 100%;
+    }</style>
     <div class="calendar-wrapper">
       <mat-calendar #calendar
-        [(selected)]="selectedDate"
+      [(selected)]="selectedDate"
         (monthSelected)="monthSelected($event)"
         (selectedChange)="onDateChanged($event)">
       </mat-calendar>
-    </div>`
+    </div>`,
+    encapsulation: ViewEncapsulation.None,
 })
 export class CalendarsComponent implements AfterViewInit {
-
   @ViewChild('calendar') calendar: MatCalendar<Moment>;
-
   selectedDate: Moment;
 
   constructor(
