@@ -6,6 +6,7 @@ Everything is working nicely and I don't want to break it lol.
 * FAV: https://stackoverflow.com/questions/54438752/highlighting-certain-dates-in-mat-calendar/58134983#58134983
     * Except they didn't actually figure it out.
 * ALT: https://stackblitz.com/angular/envreeqrgjq?file=app%2Fdatepicker-date-class-example.html
+* OK MAYBE THIS ONE: https://stackblitz.com/edit/angular-date-class-filter
 ![GoogleInfo](https://github.com/JessicaNations/angular-safari/blob/master/src/assets/screenShots/GoogleInfo.png)
 # DASHBOARD TODOs
 * Events section like facebook
