@@ -8,7 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CalendarsComponent } from './calendars/calendars.component';
+// import { CalendarsComponent } from './calendars/calendars.component';
+import { CalendarbComponent } from './calendars/calendarb.component';
+
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitComponent } from './visit/visit.component';
 import { VisitNavbarComponent } from './visit-navbar/visit-navbar.component';
@@ -45,7 +48,9 @@ import { AppMaterialModule } from './material.module';
   ],
   declarations: [
     AppComponent,
-    CalendarsComponent,
+    // CalendarsComponent,
+    CalendarbComponent,
+
     DashboardComponent,
     VisitComponent,
     VisitNavbarComponent,

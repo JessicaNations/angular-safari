@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CalendarsComponent } from './calendars/calendars.component';
+// import { CalendarsComponent } from './calendars/calendars.component';
+import { CalendarbComponent } from './calendars/calendarb.component';
+
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VisitComponent } from './visit/visit.component';
 import { HoursComponent } from './hours/hours.component';
@@ -22,7 +25,10 @@ import { JobAppComponent } from './job-app/job-app.component';
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'calendars', component: CalendarsComponent },
+  // { path: 'calendars', component: CalendarsComponent },
+  { path: 'calendarb', component: CalendarbComponent },
+
+
   { path: 'visit', component: VisitComponent },
   { path: 'hours', component: HoursComponent },
   { path: 'faq', component: FaqComponent },

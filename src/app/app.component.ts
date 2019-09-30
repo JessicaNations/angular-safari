@@ -40,7 +40,8 @@ export class AppComponent implements OnInit {
   }
 
   goCalendar(): void {
-    const link = ['/calendars'];
+    // const link = ['/calendars'];
+    const link = ['/calendarb'];
     this.router.navigate(link);
   }
 
