@@ -35,7 +35,7 @@
     "moment": "^2.24.0",
     "ng-image-slider": "^2.0.3",
     "ngx-bootstrap": "^5.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "rxjs": "^6.1.0",
     "zone.js": "^0.8.26"
   },
